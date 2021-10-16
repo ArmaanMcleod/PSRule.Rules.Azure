@@ -12,9 +12,6 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
 
-      - name: Setup GIT user
-        uses: fregante/setup-git-user@v1
-
       - name: Build
         uses: Amadevus/pwsh-script@v2.0.1
         with:
@@ -31,17 +28,11 @@ jobs:
         with:
           inlineScript: |
             Invoke-Build ExportProviders
-            $changedFiles = git diff --name-only
-            if ($changedFiles -eq 'data/providers.json') {
-              git checkout -b bump-providers
-              git add data/providers.json
-              git commit -m 'Updated providers'
-              git push origin bump-providers
-              gh pr create --base 'main' --head 'bump-providers' --title 'Bump Providers data' --repo 'ArmaanMcleod/PSRule.Rules.Azure'
-            }
-            else {
-              Write-Host 'Providers data up to date!'
-            }
           azPSVersion: latest
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: Bump providers data
+          title: Bump Providers
