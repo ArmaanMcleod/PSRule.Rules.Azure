@@ -42,7 +42,7 @@ jobs:
               git add data/providers.json
               git commit -m 'Updated providers'
               git push origin bump-providers
-              gh pr create --base 'main' --head 'bump-providers' --title 'Bump Providers data'
+              gh pr create --base 'main' --head 'bump-providers' --title 'Bump Providers data' --repo ArmaanMcleod/PSRule.Rules.Azure
             }
             else {
               Write-Host 'Providers data up to date!'
