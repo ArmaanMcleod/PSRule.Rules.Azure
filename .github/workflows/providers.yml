@@ -12,15 +12,9 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
 
-      - name: Setup GIT token
-        uses: fregante/setup-git-token@v1
-        with:
-          token: ${{ secrets.PAT_TOKEN }}
+      - name: Setup GIT user
+        uses: fregante/setup-git-user@v1
 
-      - name: Checkout branch
-        run: |
-          git checkout -b bump-providers
-  
       - name: Build
         uses: Amadevus/pwsh-script@v2.0.1
         with:
@@ -39,6 +33,7 @@ jobs:
             Invoke-Build ExportProviders
             $changedFiles = git diff --name-only
             if ($changedFiles -eq 'data/providers.json') {
+              git checkout -b bump-providers
               git add data/providers.json
               git commit -m 'Updated providers'
               git push origin bump-providers
@@ -49,4 +44,4 @@ jobs:
             }
           azPSVersion: latest
         env:
-          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
