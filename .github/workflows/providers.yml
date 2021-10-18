@@ -12,10 +12,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2.3.5
 
-      - name: Build
+      - name: Install Dependencies
         uses: Amadevus/pwsh-script@v2.0.1
         with:
-          script: ./build.ps1
+          script: Install-Module InvokeBuild -MinimumVersion 5.4.0 -Scope CurrentUser -Force
 
       - name: Azure Login
         uses: Azure/login@v1
