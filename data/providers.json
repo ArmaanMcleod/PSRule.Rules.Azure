@@ -48693,7 +48693,6 @@
       "availableStacks": {
         "resourceType": "availableStacks",
         "apiVersions": [
-          "2021-03-01",
           "2021-02-01",
           "2021-01-15",
           "2021-01-01",
@@ -48766,7 +48765,6 @@
       "billingMeters": {
         "resourceType": "billingMeters",
         "apiVersions": [
-          "2021-03-01",
           "2021-02-01",
           "2021-01-15",
           "2021-01-01",
@@ -48840,7 +48838,6 @@
       "certificates": {
         "resourceType": "certificates",
         "apiVersions": [
-          "2021-03-01",
           "2021-02-01",
           "2021-01-15",
           "2021-01-01",
@@ -48914,7 +48911,6 @@
       "checkNameAvailability": {
         "resourceType": "checkNameAvailability",
         "apiVersions": [
-          "2021-03-01",
           "2021-02-01",
           "2021-01-15",
           "2021-01-01",
@@ -49140,7 +49136,6 @@
       "deletedSites": {
         "resourceType": "deletedSites",
         "apiVersions": [
-          "2021-03-01",
           "2021-02-01",
           "2021-01-15",
           "2021-01-01",
@@ -49213,7 +49208,6 @@
       "deploymentLocations": {
         "resourceType": "deploymentLocations",
         "apiVersions": [
-          "2021-03-01",
           "2021-02-01",
           "2021-01-15",
           "2021-01-01",
@@ -49285,7 +49279,6 @@
       "functionAppStacks": {
         "resourceType": "functionAppStacks",
         "apiVersions": [
-          "2021-03-01",
           "2021-02-01",
           "2021-01-15",
           "2021-01-01",
@@ -49342,7 +49335,6 @@
       "generateGithubAccessTokenForAppserviceCLI": {
         "resourceType": "generateGithubAccessTokenForAppserviceCLI",
         "apiVersions": [
-          "2021-03-01",
           "2021-02-01",
           "2021-01-15",
           "2021-01-01",
@@ -49400,7 +49392,6 @@
       "georegions": {
         "resourceType": "georegions",
         "apiVersions": [
-          "2021-03-01",
           "2021-02-01",
           "2021-01-15",
           "2021-01-01",
@@ -49429,7 +49420,6 @@
       "hostingEnvironments": {
         "resourceType": "hostingEnvironments",
         "apiVersions": [
-          "2021-03-01",
           "2021-02-01",
           "2021-01-15",
           "2021-01-01",
@@ -49507,7 +49497,6 @@
       "hostingEnvironments/eventGridFilters": {
         "resourceType": "hostingEnvironments/eventGridFilters",
         "apiVersions": [
-          "2021-03-01",
           "2021-02-01",
           "2021-01-15",
           "2021-01-01",
@@ -49585,7 +49574,6 @@
       "hostingEnvironments/multiRolePools": {
         "resourceType": "hostingEnvironments/multiRolePools",
         "apiVersions": [
-          "2021-03-01",
           "2021-02-01",
           "2021-01-15",
           "2021-01-01",
@@ -49661,7 +49649,6 @@
       "hostingEnvironments/workerPools": {
         "resourceType": "hostingEnvironments/workerPools",
         "apiVersions": [
-          "2021-03-01",
           "2021-02-01",
           "2021-01-15",
           "2021-01-01",
@@ -49737,7 +49724,6 @@
       "ishostingenvironmentnameavailable": {
         "resourceType": "ishostingenvironmentnameavailable",
         "apiVersions": [
-          "2021-03-01",
           "2021-02-01",
           "2021-01-15",
           "2021-01-01",
@@ -49766,7 +49752,6 @@
       "ishostnameavailable": {
         "resourceType": "ishostnameavailable",
         "apiVersions": [
-          "2021-03-01",
           "2021-02-01",
           "2021-01-15",
           "2021-01-01",
@@ -49839,7 +49824,6 @@
       "isusernameavailable": {
         "resourceType": "isusernameavailable",
         "apiVersions": [
-          "2021-03-01",
           "2021-02-01",
           "2021-01-15",
           "2021-01-01",
@@ -49912,7 +49896,6 @@
       "kubeEnvironments": {
         "resourceType": "kubeEnvironments",
         "apiVersions": [
-          "2021-03-01",
           "2021-02-01",
           "2021-01-15",
           "2021-01-01",
@@ -49952,7 +49935,6 @@
       "listSitesAssignedToHostName": {
         "resourceType": "listSitesAssignedToHostName",
         "apiVersions": [
-          "2021-03-01",
           "2021-02-01",
           "2021-01-15",
           "2021-01-01",
@@ -50133,7 +50115,6 @@
       "locations/deletedSites": {
         "resourceType": "locations/deletedSites",
         "apiVersions": [
-          "2021-03-01",
           "2021-02-01",
           "2021-01-15",
           "2021-01-01",
@@ -50206,7 +50187,6 @@
       "locations/deleteVirtualNetworkOrSubnets": {
         "resourceType": "locations/deleteVirtualNetworkOrSubnets",
         "apiVersions": [
-          "2021-03-01",
           "2021-02-01",
           "2021-01-15",
           "2021-01-01",
@@ -50332,7 +50312,6 @@
       "locations/functionAppStacks": {
         "resourceType": "locations/functionAppStacks",
         "apiVersions": [
-          "2021-03-01",
           "2021-02-01",
           "2021-01-15",
           "2021-01-01",
@@ -50389,7 +50368,6 @@
       "locations/getNetworkPolicies": {
         "resourceType": "locations/getNetworkPolicies",
         "apiVersions": [
-          "2021-03-01",
           "2021-02-01",
           "2021-01-15",
           "2021-01-01",
@@ -50545,7 +50523,6 @@
       "locations/operationResults": {
         "resourceType": "locations/operationResults",
         "apiVersions": [
-          "2021-03-01",
           "2021-02-01",
           "2021-01-15",
           "2021-01-01",
@@ -50610,7 +50587,6 @@
       "locations/operations": {
         "resourceType": "locations/operations",
         "apiVersions": [
-          "2021-03-01",
           "2021-02-01",
           "2021-01-15",
           "2021-01-01",
@@ -50675,7 +50651,6 @@
       "locations/previewStaticSiteWorkflowFile": {
         "resourceType": "locations/previewStaticSiteWorkflowFile",
         "apiVersions": [
-          "2021-03-01",
           "2021-02-01",
           "2021-01-15",
           "2021-01-01",
@@ -50748,7 +50723,6 @@
       "locations/webAppStacks": {
         "resourceType": "locations/webAppStacks",
         "apiVersions": [
-          "2021-03-01",
           "2021-02-01",
           "2021-01-15",
           "2021-01-01",
@@ -50805,7 +50779,6 @@
       "operations": {
         "resourceType": "operations",
         "apiVersions": [
-          "2021-03-01",
           "2021-02-01",
           "2021-01-15",
           "2021-01-01",
@@ -50878,7 +50851,6 @@
       "publishingUsers": {
         "resourceType": "publishingUsers",
         "apiVersions": [
-          "2021-03-01",
           "2021-02-01",
           "2021-01-15",
           "2021-01-01",
@@ -50951,7 +50923,6 @@
       "recommendations": {
         "resourceType": "recommendations",
         "apiVersions": [
-          "2021-03-01",
           "2021-02-01",
           "2021-01-15",
           "2021-01-01",
@@ -50980,7 +50951,6 @@
       "resourceHealthMetadata": {
         "resourceType": "resourceHealthMetadata",
         "apiVersions": [
-          "2021-03-01",
           "2021-02-01",
           "2021-01-15",
           "2021-01-01",
@@ -51009,7 +50979,6 @@
       "runtimes": {
         "resourceType": "runtimes",
         "apiVersions": [
-          "2021-03-01",
           "2021-02-01",
           "2021-01-15",
           "2021-01-01",
@@ -51037,7 +51006,6 @@
       "serverFarms": {
         "resourceType": "serverFarms",
         "apiVersions": [
-          "2021-03-01",
           "2021-02-01",
           "2021-01-15",
           "2021-01-01",
@@ -51112,7 +51080,6 @@
       "serverFarms/eventGridFilters": {
         "resourceType": "serverFarms/eventGridFilters",
         "apiVersions": [
-          "2021-03-01",
           "2021-02-01",
           "2021-01-15",
           "2021-01-01",
@@ -51189,7 +51156,6 @@
       "serverFarms/firstPartyApps": {
         "resourceType": "serverFarms/firstPartyApps",
         "apiVersions": [
-          "2021-03-01",
           "2021-02-01",
           "2021-01-15",
           "2021-01-01",
@@ -51266,7 +51232,6 @@
       "serverFarms/firstPartyApps/keyVaultSettings": {
         "resourceType": "serverFarms/firstPartyApps/keyVaultSettings",
         "apiVersions": [
-          "2021-03-01",
           "2021-02-01",
           "2021-01-15",
           "2021-01-01",
@@ -51343,7 +51308,6 @@
       "sites": {
         "resourceType": "sites",
         "apiVersions": [
-          "2021-03-01",
           "2021-02-01",
           "2021-01-15",
           "2021-01-01",
@@ -51422,7 +51386,6 @@
       "sites/eventGridFilters": {
         "resourceType": "sites/eventGridFilters",
         "apiVersions": [
-          "2021-03-01",
           "2021-02-01",
           "2021-01-15",
           "2021-01-01",
@@ -51503,7 +51466,6 @@
       "sites/hostNameBindings": {
         "resourceType": "sites/hostNameBindings",
         "apiVersions": [
-          "2021-03-01",
           "2021-02-01",
           "2021-01-15",
           "2021-01-01",
@@ -51573,7 +51535,6 @@
       "sites/networkConfig": {
         "resourceType": "sites/networkConfig",
         "apiVersions": [
-          "2021-03-01",
           "2021-02-01",
           "2021-01-15",
           "2021-01-01",
@@ -51643,7 +51604,6 @@
       "sites/premieraddons": {
         "resourceType": "sites/premieraddons",
         "apiVersions": [
-          "2021-03-01",
           "2021-02-01",
           "2021-01-15",
           "2021-01-01",
@@ -51711,7 +51671,6 @@
       "sites/slots": {
         "resourceType": "sites/slots",
         "apiVersions": [
-          "2021-03-01",
           "2021-02-01",
           "2021-01-15",
           "2021-01-01",
@@ -51789,7 +51748,6 @@
       "sites/slots/eventGridFilters": {
         "resourceType": "sites/slots/eventGridFilters",
         "apiVersions": [
-          "2021-03-01",
           "2021-02-01",
           "2021-01-15",
           "2021-01-01",
@@ -51869,7 +51827,6 @@
       "sites/slots/hostNameBindings": {
         "resourceType": "sites/slots/hostNameBindings",
         "apiVersions": [
-          "2021-03-01",
           "2021-02-01",
           "2021-01-15",
           "2021-01-01",
@@ -51939,7 +51896,6 @@
       "sites/slots/networkConfig": {
         "resourceType": "sites/slots/networkConfig",
         "apiVersions": [
-          "2021-03-01",
           "2021-02-01",
           "2021-01-15",
           "2021-01-01",
@@ -52009,7 +51965,6 @@
       "sourceControls": {
         "resourceType": "sourceControls",
         "apiVersions": [
-          "2021-03-01",
           "2021-02-01",
           "2021-01-15",
           "2021-01-01",
@@ -52082,7 +52037,6 @@
       "staticSites": {
         "resourceType": "staticSites",
         "apiVersions": [
-          "2021-03-01",
           "2021-02-01",
           "2021-01-15",
           "2021-01-01",
@@ -52105,7 +52059,6 @@
       "staticSites/builds": {
         "resourceType": "staticSites/builds",
         "apiVersions": [
-          "2021-03-01",
           "2021-02-01",
           "2021-01-15",
           "2021-01-01",
@@ -52156,7 +52109,6 @@
       "validate": {
         "resourceType": "validate",
         "apiVersions": [
-          "2021-03-01",
           "2021-02-01",
           "2021-01-15",
           "2021-01-01",
@@ -52227,7 +52179,6 @@
       "verifyHostingEnvironmentVnet": {
         "resourceType": "verifyHostingEnvironmentVnet",
         "apiVersions": [
-          "2021-03-01",
           "2021-02-01",
           "2021-01-15",
           "2021-01-01",
@@ -52300,7 +52251,6 @@
       "webAppStacks": {
         "resourceType": "webAppStacks",
         "apiVersions": [
-          "2021-03-01",
           "2021-02-01",
           "2021-01-15",
           "2021-01-01",
@@ -66593,14 +66543,6 @@
         "locations": [],
         "zoneMappings": null
       },
-      "BenefitUtilizationSummaries": {
-        "resourceType": "BenefitUtilizationSummaries",
-        "apiVersions": [
-          "2021-11-15-preview"
-        ],
-        "locations": [],
-        "zoneMappings": null
-      },
       "BillingAccounts": {
         "resourceType": "BillingAccounts",
         "apiVersions": [
@@ -66615,14 +66557,6 @@
           "2021-10-01",
           "2019-10-01",
           "2019-04-01-preview"
-        ],
-        "locations": [],
-        "zoneMappings": null
-      },
-      "calculatePrice": {
-        "resourceType": "calculatePrice",
-        "apiVersions": [
-          "2021-11-15-preview"
         ],
         "locations": [],
         "zoneMappings": null
@@ -69175,7 +69109,6 @@
       "applicationgroups": {
         "resourceType": "applicationgroups",
         "apiVersions": [
-          "2021-09-03-preview",
           "2021-07-12",
           "2021-05-13-preview",
           "2021-03-09-preview",
@@ -69210,7 +69143,6 @@
       "applicationgroups/applications": {
         "resourceType": "applicationgroups/applications",
         "apiVersions": [
-          "2021-09-03-preview",
           "2021-07-12",
           "2021-05-13-preview",
           "2021-03-09-preview",
@@ -69245,7 +69177,6 @@
       "applicationgroups/desktops": {
         "resourceType": "applicationgroups/desktops",
         "apiVersions": [
-          "2021-09-03-preview",
           "2021-07-12",
           "2021-05-13-preview",
           "2021-03-09-preview",
@@ -69280,7 +69211,6 @@
       "applicationgroups/startmenuitems": {
         "resourceType": "applicationgroups/startmenuitems",
         "apiVersions": [
-          "2021-09-03-preview",
           "2021-07-12",
           "2021-05-13-preview",
           "2021-03-09-preview",
@@ -69315,7 +69245,6 @@
       "hostpools": {
         "resourceType": "hostpools",
         "apiVersions": [
-          "2021-09-03-preview",
           "2021-07-12",
           "2021-05-13-preview",
           "2021-03-09-preview",
@@ -69350,7 +69279,6 @@
       "hostpools/msixpackages": {
         "resourceType": "hostpools/msixpackages",
         "apiVersions": [
-          "2021-09-03-preview",
           "2021-07-12",
           "2021-05-13-preview",
           "2021-03-09-preview",
@@ -69385,7 +69313,6 @@
       "hostpools/sessionhosts": {
         "resourceType": "hostpools/sessionhosts",
         "apiVersions": [
-          "2021-09-03-preview",
           "2021-07-12",
           "2021-05-13-preview",
           "2021-03-09-preview",
@@ -69420,7 +69347,6 @@
       "hostpools/sessionhosts/usersessions": {
         "resourceType": "hostpools/sessionhosts/usersessions",
         "apiVersions": [
-          "2021-09-03-preview",
           "2021-07-12",
           "2021-05-13-preview",
           "2021-03-09-preview",
@@ -69455,7 +69381,6 @@
       "hostpools/usersessions": {
         "resourceType": "hostpools/usersessions",
         "apiVersions": [
-          "2021-09-03-preview",
           "2021-07-12",
           "2021-05-13-preview",
           "2021-03-09-preview",
@@ -69490,7 +69415,6 @@
       "operations": {
         "resourceType": "operations",
         "apiVersions": [
-          "2021-09-03-preview",
           "2021-07-12",
           "2021-05-13-preview",
           "2021-03-09-preview",
@@ -69510,7 +69434,6 @@
       "scalingplans": {
         "resourceType": "scalingplans",
         "apiVersions": [
-          "2021-09-03-preview",
           "2021-07-12",
           "2021-05-13-preview",
           "2021-03-09-preview",
@@ -69535,7 +69458,6 @@
       "workspaces": {
         "resourceType": "workspaces",
         "apiVersions": [
-          "2021-09-03-preview",
           "2021-07-12",
           "2021-05-13-preview",
           "2021-03-09-preview",
@@ -78175,48 +78097,6 @@
           "Canada East",
           "Central India",
           "Central US",
-          "East Asia",
-          "East US",
-          "East US 2",
-          "France Central",
-          "Germany West Central",
-          "Japan East",
-          "Japan West",
-          "North Central US",
-          "North Europe",
-          "Norway East",
-          "South Africa North",
-          "South Central US",
-          "South India",
-          "Southeast Asia",
-          "Switzerland North",
-          "West Central US",
-          "West Europe",
-          "West India",
-          "West US",
-          "West US 2",
-          "UAE North",
-          "UK West",
-          "UK South",
-          "Brazil South",
-          "Korea South",
-          "Korea Central"
-        ],
-        "zoneMappings": null
-      },
-      "quotas": {
-        "resourceType": "quotas",
-        "apiVersions": [
-          "2020-12-01-preview"
-        ],
-        "locations": [
-          "Central US",
-          "Australia Central",
-          "Australia East",
-          "Australia Southeast",
-          "Canada Central",
-          "Canada East",
-          "Central India",
           "East Asia",
           "East US",
           "East US 2",
