@@ -16,7 +16,7 @@
         <link rel="canonical" href="https://azure.github.io/PSRule.Rules.Azure/CHANGELOG-v1/">
       
       <link rel="icon" href="../assets/ms_icon.png">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.4">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.6">
     
     
       
@@ -24,7 +24,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.db9e7362.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.a57b2b03.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.3f5d1f46.min.css">
@@ -226,11 +226,18 @@
   
   
   
+    
+
+  
+  
+  
     <li class="md-tabs__item">
-      <a href="../features/" class="md-tabs__link md-tabs__link--active">
+      <a href="../about/" class="md-tabs__link md-tabs__link--active">
         Getting started
       </a>
     </li>
+  
+
   
 
       
@@ -386,10 +393,79 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_1" type="checkbox" id="__nav_2_1" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_1">
+          Overview
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Overview" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          Overview
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/" class="md-nav__link">
+        About
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
       <a href="../features/" class="md-nav__link">
-        Overview
+        Features
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/" class="md-nav__link">
+        FAQ
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -660,6 +736,8 @@
       </a>
       
         
+
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
@@ -676,6 +754,27 @@
         <li class="md-nav__item">
   <a href="#unreleased" class="md-nav__link">
     Unreleased
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v190" class="md-nav__link">
+    v1.9.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v190-b2110087pre-release" class="md-nav__link">
+    v1.9.0-B2110087 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v190-b2110082pre-release" class="md-nav__link">
+    v1.9.0-B2110082 (pre-release)
   </a>
   
 </li>
@@ -5354,6 +5453,8 @@
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
+
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
@@ -5370,6 +5471,27 @@
         <li class="md-nav__item">
   <a href="#unreleased" class="md-nav__link">
     Unreleased
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v190" class="md-nav__link">
+    v1.9.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v190-b2110087pre-release" class="md-nav__link">
+    v1.9.0-B2110087 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v190-b2110082pre-release" class="md-nav__link">
+    v1.9.0-B2110082 (pre-release)
   </a>
   
 </li>
@@ -5825,6 +5947,84 @@
 See <a href="../troubleshooting/">troubleshooting guide</a> for a workaround to this issue.</li>
 </ul>
 <h2 id="unreleased">Unreleased<a class="headerlink" href="#unreleased" title="Permanent link">#</a></h2>
+<h2 id="v190">v1.9.0<a class="headerlink" href="#v190" title="Permanent link">#</a></h2>
+<p>What's changed since v1.8.1:</p>
+<ul>
+<li>New rules:<ul>
+<li>API Management Service:<ul>
+<li>Check API management services are using availability zones when available. <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1017">#1017</a></li>
+</ul>
+</li>
+<li>Public IP Address:<ul>
+<li>Check Public IP addresses are configured with zone-redundancy. <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/958">#958</a></li>
+<li>Check Public IP addresses are using Standard SKU. <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/979">#979</a></li>
+</ul>
+</li>
+<li>User Assigned Managed Identity:<ul>
+<li>Check identities meet naming requirements. <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1021">#1021</a></li>
+</ul>
+</li>
+<li>Virtual Network Gateway:<ul>
+<li>Check VPN/ExpressRoute gateways are configured with availability zone SKU. <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/926">#926</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>General improvements:<ul>
+<li>Improved processing of AzOps generated templates. <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/799">#799</a><ul>
+<li><code>Azure.Template.DefineParameters</code> is ignored for AzOps generated templates.</li>
+<li><code>Azure.Template.UseLocationParameter</code> is ignored for AzOps generated templates.</li>
+</ul>
+</li>
+<li>Bicep is now installed when using PSRule GitHub Action. <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1050">#1050</a></li>
+</ul>
+</li>
+<li>Engineering:<ul>
+<li>Bump PSRule dependency to v1.8.0. <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1018">#1018</a></li>
+<li>Added automated PR workflow to bump <code>providers.json</code> monthly. <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1041">#1041</a></li>
+</ul>
+</li>
+<li>Bug fixes:<ul>
+<li>Fixed AKS Network Policy should accept calico. <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1046">#1046</a></li>
+<li>Fixed <code>Azure.ACR.AdminUser</code> fails when <code>adminUserEnabled</code> not set. <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1014">#1014</a></li>
+<li>Fixed <code>Azure.KeyVault.Logs</code> reports cannot index into a null array. <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1024">#1024</a></li>
+<li>Fixed template function empty returns object reference not set exception. <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1025">#1025</a></li>
+<li>Fixed delayed binding of <code>and</code> template function. <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1026">#1026</a></li>
+<li>Fixed template function array nests array with array parameters. <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1027">#1027</a></li>
+<li>Fixed property used by <code>Azure.ACR.MinSKU</code> to work more reliably with templates. <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1034">#1034</a></li>
+<li>Fixed could not determine JSON object type for MockMember using CreateObject. <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1035">#1035</a></li>
+<li>Fixed Bicep convention ordering. <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1053">#1053</a></li>
+</ul>
+</li>
+</ul>
+<p>What's changed since pre-release v1.9.0-B2110087:</p>
+<ul>
+<li>No additional changes.</li>
+</ul>
+<h2 id="v190-b2110087pre-release">v1.9.0-B2110087 (pre-release)<a class="headerlink" href="#v190-b2110087pre-release" title="Permanent link">#</a></h2>
+<p>What's changed since pre-release v1.9.0-B2110082:</p>
+<ul>
+<li>Bug fixes:<ul>
+<li>Fixed Bicep convention ordering. <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1053">#1053</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v190-b2110082pre-release">v1.9.0-B2110082 (pre-release)<a class="headerlink" href="#v190-b2110082pre-release" title="Permanent link">#</a></h2>
+<p>What's changed since pre-release v1.9.0-B2110059:</p>
+<ul>
+<li>General improvements:<ul>
+<li>Bicep is now installed when using PSRule GitHub Action. <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1050">#1050</a></li>
+</ul>
+</li>
+<li>Engineering:<ul>
+<li>Added automated PR workflow to bump <code>providers.json</code> monthly. <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1041">#1041</a></li>
+</ul>
+</li>
+<li>Bug fixes:<ul>
+<li>Fixed AKS Network Policy should accept calico. <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1046">#1046</a></li>
+</ul>
+</li>
+</ul>
 <h2 id="v190-b2110059pre-release">v1.9.0-B2110059 (pre-release)<a class="headerlink" href="#v190-b2110059pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since pre-release v1.9.0-B2110040:</p>
 <ul>
@@ -7074,7 +7274,7 @@ See <a href="../troubleshooting/">troubleshooting guide</a> for a workaround to 
 <div class="md-source-date">
   <small>
     
-      Last update: 2021-10-19
+      Last update: 2021-11-02
     
   </small>
 </div>
@@ -7164,10 +7364,10 @@ See <a href="../troubleshooting/">troubleshooting guide</a> for a workaround to 
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.indexes", {"navigation.sections": {"level": 1}}, "navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.8397ff9e.min.js", "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.indexes", {"navigation.sections": {"level": 1}}, "navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.fcfe8b6d.min.js", "version": {"provider": "mike"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.1e84347e.min.js"></script>
+      <script src="../assets/javascripts/bundle.b1047164.min.js"></script>
       
     
   </body>
