@@ -568,29 +568,17 @@
       
         
           
-            
-          
         
           
-            
-          
         
-          
-            
           
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../customization/">Customization</a>
-          
-            <label for="__nav_2_8">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_2_8">
+          Customization
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Customization" data-md-level="2">
         <label class="md-nav__title" for="__nav_2_8">
@@ -600,12 +588,45 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../customization/storing-custom-rules/" class="md-nav__link">
+        Storing custom rules
+      </a>
+    </li>
+  
+
             
           
             
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../customization/enforce-custom-tags/" class="md-nav__link">
+        Enforcing custom tags
+      </a>
+    </li>
+  
+
             
           
             
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../customization/enforce-codeowners/" class="md-nav__link">
+        Enforcing code ownership
+      </a>
+    </li>
+  
+
             
           
         </ul>
@@ -964,6 +985,14 @@
       
       
       
+        
+          
+        
+          
+        
+          
+        
+          
         
           
         
@@ -2577,6 +2606,48 @@
   
   
     <li class="md-nav__item">
+      <a href="../../rules/Azure.EventGrid.DisableLocalAuth/" class="md-nav__link">
+        Azure.EventGrid.DisableLocalAuth
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rules/Azure.EventGrid.ManagedIdentity/" class="md-nav__link">
+        Azure.EventGrid.ManagedIdentity
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rules/Azure.EventGrid.TopicPublicAccess/" class="md-nav__link">
+        Azure.EventGrid.TopicPublicAccess
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../rules/Azure.Firewall.Mode/" class="md-nav__link">
         Azure.Firewall.Mode
       </a>
@@ -4061,6 +4132,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../rules/Azure.Template.ParameterStrongType/" class="md-nav__link">
+        Azure.Template.ParameterStrongType
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../rules/Azure.Template.ParameterValue/" class="md-nav__link">
         Azure.Template.ParameterValue
       </a>
@@ -5051,7 +5136,7 @@
 <h1 id="azurepreview">Azure.Preview<a class="headerlink" href="#azurepreview" title="Permanent link">#</a></h1>
 <p>Includes Azure features in preview.</p>
 <h2 id="rules">Rules<a class="headerlink" href="#rules" title="Permanent link">#</a></h2>
-<p>The following rules are included within <code>Azure.Preview</code>. This baseline includes a total of 236 rules.</p>
+<p>The following rules are included within <code>Azure.Preview</code>. This baseline includes a total of 240 rules.</p>
 <table>
 <thead>
 <tr>
@@ -5460,6 +5545,21 @@
 <td><a href="../../rules/Azure.DataFactory.Version/">Azure.DataFactory.Version</a></td>
 <td>Consider migrating to DataFactory v2.</td>
 <td>Awareness</td>
+</tr>
+<tr>
+<td><a href="../../rules/Azure.EventGrid.DisableLocalAuth/">Azure.EventGrid.DisableLocalAuth</a></td>
+<td>Authenticate publishing clients with Azure AD identities.</td>
+<td>Important</td>
+</tr>
+<tr>
+<td><a href="../../rules/Azure.EventGrid.ManagedIdentity/">Azure.EventGrid.ManagedIdentity</a></td>
+<td>Use managed identities to deliver Event Grid Topic events.</td>
+<td>Important</td>
+</tr>
+<tr>
+<td><a href="../../rules/Azure.EventGrid.TopicPublicAccess/">Azure.EventGrid.TopicPublicAccess</a></td>
+<td>Use Private Endpoints to access Event Grid topics and domains.</td>
+<td>Important</td>
 </tr>
 <tr>
 <td><a href="../../rules/Azure.Firewall.Mode/">Azure.Firewall.Mode</a></td>
@@ -5992,6 +6092,11 @@
 <td>Awareness</td>
 </tr>
 <tr>
+<td><a href="../../rules/Azure.Template.ParameterStrongType/">Azure.Template.ParameterStrongType</a></td>
+<td>Set the parameter value to a value that matches the specified strong type.</td>
+<td>Awareness</td>
+</tr>
+<tr>
 <td><a href="../../rules/Azure.Template.ParameterValue/">Azure.Template.ParameterValue</a></td>
 <td>Specify a value for each parameter in template parameter files.</td>
 <td>Awareness</td>
@@ -6073,7 +6178,7 @@
 </tr>
 <tr>
 <td><a href="../../rules/Azure.VM.ASMinMembers/">Azure.VM.ASMinMembers</a></td>
-<td>Availability sets should be deployed with at least two members.</td>
+<td>Availability sets should be deployed with at least two virtual machines (VMs).</td>
 <td>Important</td>
 </tr>
 <tr>
@@ -6253,7 +6358,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: 2021-11-02
+      Last update: 2021-11-20
     
   </small>
 </div>

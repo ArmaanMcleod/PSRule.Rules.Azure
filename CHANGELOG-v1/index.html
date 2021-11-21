@@ -570,29 +570,17 @@
       
         
           
-            
-          
         
           
-            
-          
         
-          
-            
           
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../customization/">Customization</a>
-          
-            <label for="__nav_2_8">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_2_8">
+          Customization
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Customization" data-md-level="2">
         <label class="md-nav__title" for="__nav_2_8">
@@ -602,12 +590,45 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../customization/storing-custom-rules/" class="md-nav__link">
+        Storing custom rules
+      </a>
+    </li>
+  
+
             
           
             
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../customization/enforce-custom-tags/" class="md-nav__link">
+        Enforcing custom tags
+      </a>
+    </li>
+  
+
             
           
             
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../customization/enforce-codeowners/" class="md-nav__link">
+        Enforcing code ownership
+      </a>
+    </li>
+  
+
             
           
         </ul>
@@ -754,6 +775,27 @@
         <li class="md-nav__item">
   <a href="#unreleased" class="md-nav__link">
     Unreleased
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v1100-b2111058pre-release" class="md-nav__link">
+    v1.10.0-B2111058 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v1100-b2111040pre-release" class="md-nav__link">
+    v1.10.0-B2111040 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v191" class="md-nav__link">
+    v1.9.1
   </a>
   
 </li>
@@ -1458,6 +1500,14 @@
       
       
       
+        
+          
+        
+          
+        
+          
+        
+          
         
           
         
@@ -3071,6 +3121,48 @@
   
   
     <li class="md-nav__item">
+      <a href="../en/rules/Azure.EventGrid.DisableLocalAuth/" class="md-nav__link">
+        Azure.EventGrid.DisableLocalAuth
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.EventGrid.ManagedIdentity/" class="md-nav__link">
+        Azure.EventGrid.ManagedIdentity
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.EventGrid.TopicPublicAccess/" class="md-nav__link">
+        Azure.EventGrid.TopicPublicAccess
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../en/rules/Azure.Firewall.Mode/" class="md-nav__link">
         Azure.Firewall.Mode
       </a>
@@ -4555,6 +4647,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../en/rules/Azure.Template.ParameterStrongType/" class="md-nav__link">
+        Azure.Template.ParameterStrongType
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../en/rules/Azure.Template.ParameterValue/" class="md-nav__link">
         Azure.Template.ParameterValue
       </a>
@@ -5476,6 +5582,27 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#v1100-b2111058pre-release" class="md-nav__link">
+    v1.10.0-B2111058 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v1100-b2111040pre-release" class="md-nav__link">
+    v1.10.0-B2111040 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v191" class="md-nav__link">
+    v1.9.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#v190" class="md-nav__link">
     v1.9.0
   </a>
@@ -5947,6 +6074,61 @@
 See <a href="../troubleshooting/">troubleshooting guide</a> for a workaround to this issue.</li>
 </ul>
 <h2 id="unreleased">Unreleased<a class="headerlink" href="#unreleased" title="Permanent link">#</a></h2>
+<p>What's changed since pre-release v1.10.0-B2111058:</p>
+<ul>
+<li>Bug fixes:<ul>
+<li>Fixed expansion of secret references. <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1098">#1098</a></li>
+<li>Fixed handling of tagging for deployments. <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1099">#1099</a></li>
+<li>Fixed strong type issue flagged with empty defaultValue string. <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1100">#1100</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v1100-b2111058pre-release">v1.10.0-B2111058 (pre-release)<a class="headerlink" href="#v1100-b2111058pre-release" title="Permanent link">#</a></h2>
+<p>What's changed since pre-release v1.10.0-B2111040:</p>
+<ul>
+<li>New rules:<ul>
+<li>Event Grid:<ul>
+<li>Check topics and domains use managed identities. <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1091">#1091</a></li>
+<li>Check topics and domains use private endpoints. <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1092">#1092</a></li>
+<li>Check topics and domains use identity-based authentication. <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1093">#1093</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>General improvements:<ul>
+<li>Updated default baseline to use module configuration. <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1089">#1089</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v1100-b2111040pre-release">v1.10.0-B2111040 (pre-release)<a class="headerlink" href="#v1100-b2111040pre-release" title="Permanent link">#</a></h2>
+<p>What's changed since v1.9.1:</p>
+<ul>
+<li>New features:<ul>
+<li>Added support for parameter strong types. <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1083">#1083</a><ul>
+<li>The value of string parameters can be tested against the expected type.</li>
+<li>When configuring a location strong type, the parameter value must be a valid Azure location.</li>
+<li>When configuring a resource type strong type, the parameter value must be a matching resource Id.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Engineering:<ul>
+<li>Bump PSRule dependency to v1.9.0. <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1081">#1081</a></li>
+<li>Bump Microsoft.CodeAnalysis.NetAnalyzers to v6.0.0. <a href="https://github.com/Azure/PSRule.Rules.Azure/pull/1080">#1080</a></li>
+<li>Bump Microsoft.SourceLink.GitHub to 1.1.1. <a href="https://github.com/Azure/PSRule.Rules.Azure/pull/1085">#1085</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v191">v1.9.1<a class="headerlink" href="#v191" title="Permanent link">#</a></h2>
+<p>What's changed since v1.9.0:</p>
+<ul>
+<li>Bug fixes:<ul>
+<li>Fixed can not index into resource group tags. <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1066">#1066</a></li>
+<li>Fixed <code>Azure.VM.ASMinMembers</code> for template deployments. <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1064">#1064</a></li>
+<li>Fixed zones property not found on public IP resource. <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1070">#1070</a></li>
+</ul>
+</li>
+</ul>
 <h2 id="v190">v1.9.0<a class="headerlink" href="#v190" title="Permanent link">#</a></h2>
 <p>What's changed since v1.8.1:</p>
 <ul>
@@ -7274,7 +7456,7 @@ See <a href="../troubleshooting/">troubleshooting guide</a> for a workaround to 
 <div class="md-source-date">
   <small>
     
-      Last update: 2021-11-02
+      Last update: 2021-11-20
     
   </small>
 </div>
