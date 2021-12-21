@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://azure.github.io/PSRule.Rules.Azure/en/rules/module/">
       
       <link rel="icon" href="../../../assets/ms_icon.png">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.2">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.3">
     
     
       
@@ -23,7 +23,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.f7951f6f.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.edf004c2.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
@@ -1206,6 +1206,13 @@
           <li class="md-nav__item">
   <a href="#loadbalancingandfailover" class="md-nav__link">
     Load balancing and failover
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#requirements" class="md-nav__link">
+    Requirements
   </a>
   
 </li>
@@ -5895,6 +5902,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#requirements" class="md-nav__link">
+    Requirements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#resiliencyanddependencies" class="md-nav__link">
     Resiliency and dependencies
   </a>
@@ -6177,11 +6191,6 @@
 <tr>
 <td><a href="../Azure.APIM.CertificateExpiry/">Azure.APIM.CertificateExpiry</a></td>
 <td>Renew certificates used for custom domain bindings.</td>
-<td>Important</td>
-</tr>
-<tr>
-<td><a href="../Azure.AppConfig.SKU/">Azure.AppConfig.SKU</a></td>
-<td>App Configuration should use a minimum size of Standard.</td>
 <td>Important</td>
 </tr>
 <tr>
@@ -6936,11 +6945,6 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../Azure.ACR.MinSku/">Azure.ACR.MinSku</a></td>
-<td>ACR should use the Premium or Standard SKU for production deployments.</td>
-<td>Important</td>
-</tr>
-<tr>
 <td><a href="../Azure.AKS.AvailabilityZone/">Azure.AKS.AvailabilityZone</a></td>
 <td>AKS clusters deployed with virtual machine scale sets should use availability zones in supported regions for high availability.</td>
 <td>Important</td>
@@ -7050,6 +7054,28 @@
 <tr>
 <td><a href="../Azure.VNG.VPNActiveActive/">Azure.VNG.VPNActiveActive</a></td>
 <td>Use VPN gateways configured to operate in an Active-Active configuration to reduce connectivity downtime.</td>
+<td>Important</td>
+</tr>
+</tbody>
+</table>
+<h3 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Synopsis</th>
+<th>Severity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../Azure.ACR.MinSku/">Azure.ACR.MinSku</a></td>
+<td>ACR should use the Premium or Standard SKU for production deployments.</td>
+<td>Important</td>
+</tr>
+<tr>
+<td><a href="../Azure.AppConfig.SKU/">Azure.AppConfig.SKU</a></td>
+<td>App Configuration should use a minimum size of Standard.</td>
 <td>Important</td>
 </tr>
 </tbody>
@@ -7741,7 +7767,7 @@
   <small>
     
       Last update:
-      2021-12-18
+      2021-12-21
     
   </small>
 </div>
@@ -7827,7 +7853,7 @@
     <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.indexes", {"navigation.sections": {"level": 1}}, "navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.0bbba5b5.min.js", "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.649a939e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.e1a181d9.min.js"></script>
       
     
   </body>
