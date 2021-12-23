@@ -833,6 +833,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#v1110-b2112104pre-release" class="md-nav__link">
+    v1.11.0-B2112104 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#v1110-b2112073pre-release" class="md-nav__link">
     v1.11.0-B2112073 (pre-release)
   </a>
@@ -1623,6 +1630,10 @@
       
       
       
+        
+          
+        
+          
         
           
         
@@ -4296,6 +4307,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../en/rules/Azure.Redis.AvailabilityZone/" class="md-nav__link">
+        Azure.Redis.AvailabilityZone
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../en/rules/Azure.Redis.MaxMemoryReserved/" class="md-nav__link">
         Azure.Redis.MaxMemoryReserved
       </a>
@@ -4340,6 +4365,20 @@
     <li class="md-nav__item">
       <a href="../en/rules/Azure.Redis.NonSslPort/" class="md-nav__link">
         Azure.Redis.NonSslPort
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.RedisEnterprise.Zones/" class="md-nav__link">
+        Azure.RedisEnterprise.Zones
       </a>
     </li>
   
@@ -5992,6 +6031,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#v1110-b2112104pre-release" class="md-nav__link">
+    v1.11.0-B2112104 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#v1110-b2112073pre-release" class="md-nav__link">
     v1.11.0-B2112073 (pre-release)
   </a>
@@ -6554,11 +6600,33 @@
 See <a href="../troubleshooting/">troubleshooting guide</a> for a workaround to this issue.</li>
 </ul>
 <h2 id="unreleased">Unreleased<a class="headerlink" href="#unreleased" title="Permanent link">#</a></h2>
+<p>What's changed since pre-release v1.11.0-B2112104:</p>
+<ul>
+<li>New rules<ul>
+<li>Azure Redis Cache<ul>
+<li>Use availability zones for Azure Cache for Redis for regions that support it. <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1078">#1078</a><ul>
+<li><code>Azure.Redis.AvailabilityZone</code></li>
+<li><code>Azure.RedisEnterprise.Zones</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="v1110-b2112104pre-release">v1.11.0-B2112104 (pre-release)<a class="headerlink" href="#v1110-b2112104pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since pre-release v1.11.0-B2112073:</p>
 <ul>
+<li>New rules:<ul>
+<li>Azure Kubernetes Service:<ul>
+<li>Check clusters use Azure AD Pod Managed Identities (preview). <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/991">#991</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li>Engineering:<ul>
 <li>Rule refactoring of rules from PowerShell to YAML. <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1109">#1109</a><ul>
-<li>The following rules where refactored:<ul>
+<li>The following rules were refactored:<ul>
 <li><code>Azure.AppConfig.SKU</code></li>
 <li><code>Azure.AppConfig.Name</code></li>
 <li><code>Azure.AppInsights.Workspace</code></li>
@@ -6586,13 +6654,6 @@ See <a href="../troubleshooting/">troubleshooting guide</a> for a workaround to 
 <li>Bug fixes:<ul>
 <li>Fixed output of Bicep informational and warning messages in error stream. <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1157">#1157</a></li>
 <li>Fixed obsolete flag for baseline <code>Azure.Preview_2021_12</code>. <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1166">#1166</a></li>
-</ul>
-</li>
-<li>New rules:<ul>
-<li>Azure Kubernetes Service<ul>
-<li>Use Azure AD Pod Managed Identities (preview). <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/991">#991</a></li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
@@ -6684,7 +6745,7 @@ See <a href="../troubleshooting/">troubleshooting guide</a> for a workaround to 
 </li>
 <li>Engineering:<ul>
 <li>Rule refactoring of rules from PowerShell to YAML. <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1109">#1109</a><ul>
-<li>The following rules where refactored:<ul>
+<li>The following rules were refactored:<ul>
 <li><code>Azure.LB.Name</code></li>
 <li><code>Azure.NSG.Name</code></li>
 <li><code>Azure.Firewall.Mode</code></li>
@@ -8180,7 +8241,7 @@ See <a href="../troubleshooting/">troubleshooting guide</a> for a workaround to 
   <small>
     
       Last update:
-      2021-12-21
+      2021-12-24
     
   </small>
 </div>
