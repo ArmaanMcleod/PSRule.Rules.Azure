@@ -922,6 +922,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#v1130-b2202063pre-release" class="md-nav__link">
+    v1.13.0-B2202063 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#v1122" class="md-nav__link">
     v1.12.2
   </a>
@@ -1810,6 +1817,8 @@
       
       
       
+        
+          
         
           
         
@@ -3617,6 +3626,20 @@
     <li class="md-nav__item">
       <a href="../en/rules/Azure.CDN.MinTLS/" class="md-nav__link">
         Azure.CDN.MinTLS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.ContainerApp.Insecure/" class="md-nav__link">
+        Azure.ContainerApp.Insecure
       </a>
     </li>
   
@@ -6403,6 +6426,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#v1130-b2202063pre-release" class="md-nav__link">
+    v1.13.0-B2202063 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#v1122" class="md-nav__link">
     v1.12.2
   </a>
@@ -7039,15 +7069,28 @@ See <a href="../troubleshooting/">troubleshooting guide</a> for a workaround to 
   Support for <code>Azure_AKSMinimumVersion</code> will be removed in v2.</li>
 </ul>
 <h2 id="unreleased">Unreleased<a class="headerlink" href="#unreleased" title="Permanent link">#</a></h2>
+<h2 id="v1130-b2202063pre-release">v1.13.0-B2202063 (pre-release)<a class="headerlink" href="#v1130-b2202063pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since v1.12.2:</p>
 <ul>
+<li>New features:<ul>
+<li>Added support for setting defaults for required parameters. <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1065">#1065</a><ul>
+<li>When specified, the value will be used when a parameter value is not provided.</li>
+</ul>
+</li>
+<li>Added support expanding Bicep from parameter files. <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1160">#1160</a></li>
+</ul>
+</li>
 <li>New rules:<ul>
-<li>Recovery Services Vault:<ul>
-<li>Check vaults have replication alerts configured. <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/7">#7</a></li>
+<li>Container App:<ul>
+<li>Check insecure ingress is not enabled (preview). <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1252">#1252</a></li>
 </ul>
 </li>
 <li>Key Vault:<ul>
-<li>Configure key auto-rotation in Azure Key Vault (preview). <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1159">#1159</a></li>
+<li>Check key auto-rotation is enabled (preview). <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1159">#1159</a></li>
+</ul>
+</li>
+<li>Recovery Services Vault:<ul>
+<li>Check vaults have replication alerts configured. <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/7">#7</a></li>
 </ul>
 </li>
 </ul>
@@ -8991,7 +9034,7 @@ See <a href="../troubleshooting/">troubleshooting guide</a> for a workaround to 
   <small>
     
       Last update:
-      2022-02-14
+      2022-02-15
     
   </small>
 </div>

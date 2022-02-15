@@ -1125,6 +1125,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#requiredparameterdefaults" class="md-nav__link">
+    Required parameter defaults
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1259,6 +1266,8 @@
       
       
       
+        
+          
         
           
         
@@ -3066,6 +3075,20 @@
     <li class="md-nav__item">
       <a href="../../en/rules/Azure.CDN.MinTLS/" class="md-nav__link">
         Azure.CDN.MinTLS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/rules/Azure.ContainerApp.Insecure/" class="md-nav__link">
+        Azure.ContainerApp.Insecure
       </a>
     </li>
   
@@ -5901,6 +5924,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#requiredparameterdefaults" class="md-nav__link">
+    Required parameter defaults
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -5942,7 +5972,8 @@ To learn how to set configuration options see <a href="../configuring-options/">
 <h3 id="parameterfileexpansion">Parameter file expansion<a class="headerlink" href="#parameterfileexpansion" title="Permanent link">#</a></h3>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M11.75 1a.75.75 0 0 1 .75.75V4h6.532c.42 0 .826.15 1.143.425l3.187 2.75a1.75 1.75 0 0 1 0 2.65l-3.187 2.75a1.75 1.75 0 0 1-1.143.425H12.5v9.25a.75.75 0 0 1-1.5 0V13H3.75A1.75 1.75 0 0 1 2 11.25v-5.5C2 4.783 2.784 4 3.75 4H11V1.75a.75.75 0 0 1 .75-.75zm0 4.5h7.282a.25.25 0 0 1 .163.06l3.188 2.75a.25.25 0 0 1 0 .38l-3.188 2.75a.25.25 0 0 1-.163.06H3.75a.25.25 0 0 1-.25-.25v-5.5a.25.25 0 0 1 .25-.25h8z"/></svg></span> v1.4.1</p>
 <p>This configuration option determines if Azure template parameter files will automatically be expanded.
-By default, parameter files will not be automatically expanded.</p>
+By default, parameter files will not be automatically expanded.
+When enabled, PSRule will discover and expand JSON parameter files for Azure templates or Bicep modules.</p>
 <p>Parameter files are expanded when PSRule cmdlets with the <code>-Format File</code> parameter are used.</p>
 <p>Syntax:</p>
 <div class="highlight"><pre><span></span><code><span class="nt">configuration</span><span class="p">:</span><span class="w"></span>
@@ -6113,6 +6144,29 @@ Any properties that are not provided with use the defaults as specified below.</
 <span class="w">    </span><span class="nt">properties</span><span class="p">:</span><span class="w"></span>
 <span class="w">      </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;My</span><span class="nv"> </span><span class="s">test</span><span class="nv"> </span><span class="s">management</span><span class="nv"> </span><span class="s">group&#39;</span><span class="w"></span>
 </code></pre></div>
+<h3 id="requiredparameterdefaults">Required parameter defaults<a class="headerlink" href="#requiredparameterdefaults" title="Permanent link">#</a></h3>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M11.75 1a.75.75 0 0 1 .75.75V4h6.532c.42 0 .826.15 1.143.425l3.187 2.75a1.75 1.75 0 0 1 0 2.65l-3.187 2.75a1.75 1.75 0 0 1-1.143.425H12.5v9.25a.75.75 0 0 1-1.5 0V13H3.75A1.75 1.75 0 0 1 2 11.25v-5.5C2 4.783 2.784 4 3.75 4H11V1.75a.75.75 0 0 1 .75-.75zm0 4.5h7.282a.25.25 0 0 1 .163.06l3.188 2.75a.25.25 0 0 1 0 .38l-3.188 2.75a.25.25 0 0 1-.163.06H3.75a.25.25 0 0 1-.25-.25v-5.5a.25.25 0 0 1 .25-.25h8z"/></svg></span> v1.13.0</p>
+<p>This configuration option allows a fallback value to be configured for required parameters.
+When a parameter value is not provided and a default is not set, the fallback value will be used.</p>
+<p>Configure this option when you are providing a set of common parameters dynamically during a pipeline.
+In this scenario, it may not make sense to add the parameters to a parameter file or Bicep deployment.</p>
+<p>Syntax:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">configuration</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">AZURE_PARAMETER_DEFAULTS</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&lt;parameter&gt;</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;value&gt;</span><span class="w"></span>
+</code></pre></div>
+<p>Default:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># YAML: The default AZURE_PARAMETER_DEFAULTS configuration option</span><span class="w"></span>
+<span class="nt">configuration</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">AZURE_PARAMETER_DEFAULTS</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="w"> </span><span class="p p-Indicator">}</span><span class="w"></span>
+</code></pre></div>
+<p>Example:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># YAML: Set fallback values for adminPassword and workspaceId parameters.</span><span class="w"></span>
+<span class="nt">configuration</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">AZURE_PARAMETER_DEFAULTS</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">adminPassword</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$CREDENTIAL_PLACEHOLDER$</span><span class="w"></span>
+<span class="w">    </span><span class="nt">workspaceId</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.OperationalInsights/workspaces/{workspaceName}</span><span class="w"></span>
+</code></pre></div>
 <h2 id="excludingfiles">Excluding files<a class="headerlink" href="#excludingfiles" title="Permanent link">#</a></h2>
 <p>Template or Bicep source files can be excluded from being processed by PSRule and expansion.
 To exclude a file, configure the <code>input.pathIgnore</code> option by providing a path spec to ignore.</p>
@@ -6140,7 +6194,7 @@ To exclude a file, configure the <code>input.pathIgnore</code> option by providi
   <small>
     
       Last update:
-      2021-12-27
+      2022-02-15
     
   </small>
 </div>
