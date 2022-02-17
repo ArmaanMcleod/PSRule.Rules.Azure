@@ -1,0 +1,44 @@
+#
+# Build Docs
+#
+
+# NOTES:
+# Automatically build docs for pull requests if not done manually
+
+name: BuildDocs
+
+on:
+  pull_request:
+    branches: [ main, 'release/*' ]
+  workflow_dispatch:
+    
+jobs:
+  buildDocs:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      
+      - name: Checkout
+        uses: actions/checkout@v2.4.0
+
+      - name: BuildDocs
+        run: |
+          Install-Module InvokeBuild -MinimumVersion 5.4.0 -Scope CurrentUser -Force
+          Invoke-Build BuildDocs
+        shell: pwsh
+
+      - name: Commit Docs
+        run: |
+          git config user.name github-actions
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m "Update rule docs" -a
+
+      - name: Push Docs
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
