@@ -32,15 +32,13 @@ jobs:
           git config user.name github-actions
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
 
-      - name: Checkout PR branch
-        run: |
-          git checkout $GITHUB_HEAD_REF
-
       - name: Sync Upstream
-        run: |
-          git remote add upstream https://github.com/Azure/PSRule.Rules.Azure.git
-          git pull upstream main
-          git push
+        uses: aormsby/Fork-Sync-With-Upstream-action@v3.2
+        with:
+          target_sync_branch: ${{ github.head_ref }}
+          target_repo_token: ${{ secrets.GITHUB_TOKEN }}
+          upstream_sync_branch: main
+          upstream_sync_repo: Azure/PSRule.Rules.Azure
 
       - name: BuildDocs
         run: |
