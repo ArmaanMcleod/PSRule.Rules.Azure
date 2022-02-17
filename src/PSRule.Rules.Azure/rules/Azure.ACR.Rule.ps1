@@ -49,3 +49,8 @@ Rule 'Azure.ACR.GeoReplica' -Type 'Microsoft.ContainerRegistry/registries' -If {
         }
     }
 }
+
+# Synopsis: Consider testing ACR.
+Rule 'Azure.ACR.Test' -Type 'Microsoft.ContainerRegistry/registries' -Tag @{ release = 'GA'; ruleSet = '2022_03'; } {
+    $True
+}
