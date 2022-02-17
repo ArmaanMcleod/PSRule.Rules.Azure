@@ -224,6 +224,7 @@ Name | Synopsis | Severity
 [Azure.ACR.Name](Azure.ACR.Name.md) | Container registry names should meet naming requirements. | Awareness
 [Azure.ACR.Quarantine](Azure.ACR.Quarantine.md) | Enable container image quarantine, scan, and mark images as verified. | Important
 [Azure.ACR.Retention](Azure.ACR.Retention.md) | Use a retention policy to cleanup untagged manifests. | Important
+[Azure.ACR.Test](Azure.ACR.Test.md) |          | Important
 [Azure.ACR.Usage](Azure.ACR.Usage.md) | Regularly remove deprecated and unneeded images to reduce storage usage. | Important
 
 ## Content Delivery Network

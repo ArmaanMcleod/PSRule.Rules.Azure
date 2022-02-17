@@ -19,6 +19,7 @@ Name | Synopsis | Severity
 
 Name | Synopsis | Severity
 ---- | -------- | --------
+[Azure.ACR.Test](Azure.ACR.Test.md) |          | Important
 [Azure.ACR.Usage](Azure.ACR.Usage.md) | Regularly remove deprecated and unneeded images to reduce storage usage. | Important
 [Azure.ADX.Usage](Azure.ADX.Usage.md) | Regularly remove unused resources to reduce costs. | Important
 [Azure.EventHub.Usage](Azure.EventHub.Usage.md) | Regularly remove unused resources to reduce costs. | Important

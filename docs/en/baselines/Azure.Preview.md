@@ -4,7 +4,7 @@ Includes rules for Azure GA and preview features.
 
 ## Rules
 
-The following rules are included within `Azure.Preview`. This baseline includes a total of 270 rules.
+The following rules are included within `Azure.Preview`. This baseline includes a total of 271 rules.
 
 Name | Synopsis | Severity
 ---- | -------- | --------
@@ -17,6 +17,7 @@ Name | Synopsis | Severity
 [Azure.ACR.Name](../rules/Azure.ACR.Name.md) | Container registry names should meet naming requirements. | Awareness
 [Azure.ACR.Quarantine](../rules/Azure.ACR.Quarantine.md) | Enable container image quarantine, scan, and mark images as verified. | Important
 [Azure.ACR.Retention](../rules/Azure.ACR.Retention.md) | Use a retention policy to cleanup untagged manifests. | Important
+[Azure.ACR.Test](../rules/Azure.ACR.Test.md) |          | Important
 [Azure.ACR.Usage](../rules/Azure.ACR.Usage.md) | Regularly remove deprecated and unneeded images to reduce storage usage. | Important
 [Azure.ADX.DiskEncryption](../rules/Azure.ADX.DiskEncryption.md) | Use disk encryption for Azure Data Explorer (ADX) clusters. | Important
 [Azure.ADX.ManagedIdentity](../rules/Azure.ADX.ManagedIdentity.md) | Configure Data Explorer clusters to use managed identities to access Azure resources securely. | Important
