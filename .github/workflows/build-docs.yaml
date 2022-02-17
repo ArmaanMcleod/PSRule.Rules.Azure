@@ -10,7 +10,7 @@ name: BuildDocs
 on:
   pull_request:
     branches: [ main, 'release/*' ]
-  workflow_dispatch:
+    types: [ opened, reopened, synchronize ]
     
 jobs:
   buildDocs:
@@ -33,12 +33,10 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
 
       - name: Sync Upstream
-        uses: aormsby/Fork-Sync-With-Upstream-action@v3.2
-        with:
-          target_sync_branch: ${{ github.ref }}
-          target_repo_token: ${{ secrets.GITHUB_TOKEN }}
-          upstream_sync_repo: Azure/PSRule.Rules.Azure
-          upstream_sync_branch: main
+        run: |
+          git remote add upstream https://github.com/Azure/PSRule.Rules.Azure.git
+          git pull upstream main
+          git push
 
       - name: BuildDocs
         run: |
