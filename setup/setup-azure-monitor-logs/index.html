@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://azure.github.io/PSRule.Rules.Azure/setup/setup-azure-monitor-logs/">
       
       <link rel="icon" href="../../assets/ms_icon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.13">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.3">
     
     
       
@@ -23,15 +23,16 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.e411adfe.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.4a0965b7.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.cc9b2e1e.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
         
           
           
           <meta name="theme-color" content="#000000">
         
+      
       
     
     
@@ -988,6 +989,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_3">
@@ -1153,6 +1156,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/" class="md-nav__link">
+        Integrations
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -1240,6 +1257,12 @@
       
       
       
+        
+          
+        
+          
+        
+          
         
           
         
@@ -2947,6 +2970,48 @@
     <li class="md-nav__item">
       <a href="../../en/rules/Azure.AppService.UseHTTPS/" class="md-nav__link">
         Azure.AppService.UseHTTPS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/rules/Azure.AppService.WebProbe/" class="md-nav__link">
+        Azure.AppService.WebProbe
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/rules/Azure.AppService.WebProbePath/" class="md-nav__link">
+        Azure.AppService.WebProbePath
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/rules/Azure.AppService.WebSecureFtp/" class="md-nav__link">
+        Azure.AppService.WebSecureFtp
       </a>
     </li>
   
@@ -5937,6 +6002,14 @@
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
       
       
         <label class="md-nav__link" for="__nav_4_5">
@@ -5950,6 +6023,62 @@
           Selectors
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/selectors/Azure.AppService.IsAPIApp/" class="md-nav__link">
+        Azure.AppService.IsAPIApp
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/selectors/Azure.AppService.IsFunctionApp/" class="md-nav__link">
+        Azure.AppService.IsFunctionApp
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/selectors/Azure.AppService.IsLogicApp/" class="md-nav__link">
+        Azure.AppService.IsLogicApp
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/selectors/Azure.AppService.IsWebApp/" class="md-nav__link">
+        Azure.AppService.IsWebApp
+      </a>
+    </li>
+  
+
+            
           
             
               
@@ -6068,6 +6197,9 @@
   </a>
 
 
+  
+
+
 
 <h1 id="setupazuremonitorlogs">Setup Azure Monitor logs<a class="headerlink" href="#setupazuremonitorlogs" title="Permanent link">#</a></h1>
 <p>When analyzing Azure resources, you may want to capture the results of each analysis run.
@@ -6123,7 +6255,7 @@ To enable, reference the <code>Monitor.LogAnalytics.Import</code> convention in 
 <div class="tabbed-block">
 <p>Install the latest stable module versions.</p>
 <div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Analyze Azure template files</span><span class="w"></span>
-<span class="w">  </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Microsoft/ps-rule@v1.12.0</span><span class="w"></span>
+<span class="w">  </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">microsoft/ps-rule@v2.1.0</span><span class="w"></span>
 <span class="w">  </span><span class="nt">with</span><span class="p">:</span><span class="w"></span>
 <span class="w">    </span><span class="nt">modules</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PSRule.Rules.Azure,PSRule.Monitor</span><span class="w"></span>
 <span class="w">    </span><span class="nt">conventions</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Monitor.LogAnalytics.Import</span><span class="w"></span>
@@ -6136,7 +6268,7 @@ To enable, reference the <code>Monitor.LogAnalytics.Import</code> convention in 
 <div class="tabbed-block">
 <p>Install the latest stable or pre-release module versions.</p>
 <div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Analyze Azure template files</span><span class="w"></span>
-<span class="w">  </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Microsoft/ps-rule@v1.12.0</span><span class="w"></span>
+<span class="w">  </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">microsoft/ps-rule@v2.1.0</span><span class="w"></span>
 <span class="w">  </span><span class="nt">with</span><span class="p">:</span><span class="w"></span>
 <span class="w">    </span><span class="nt">modules</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PSRule.Rules.Azure,PSRule.Monitor</span><span class="w"></span>
 <span class="w">    </span><span class="nt">conventions</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Monitor.LogAnalytics.Import</span><span class="w"></span>
@@ -6167,10 +6299,9 @@ To keep <code>MONITOR_WORKSPACE_KEY</code> secure, use an <a href="https://docs.
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p>Install the latest stable module versions.</p>
-<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ps-rule-assert@1</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ps-rule-assert@2</span><span class="w"></span>
 <span class="w">  </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Analyze Azure template files</span><span class="w"></span>
 <span class="w">  </span><span class="nt">inputs</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">inputType</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">repository</span><span class="w"></span>
 <span class="w">    </span><span class="nt">modules</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PSRule.Rules.Azure,PSRule.Monitor</span><span class="w"></span>
 <span class="w">    </span><span class="nt">conventions</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Monitor.LogAnalytics.Import</span><span class="w"></span>
 <span class="w">  </span><span class="nt">env</span><span class="p">:</span><span class="w"></span>
@@ -6181,22 +6312,21 @@ To keep <code>MONITOR_WORKSPACE_KEY</code> secure, use an <a href="https://docs.
 </div>
 <div class="tabbed-block">
 <p>Install the latest stable or pre-release module versions.</p>
-<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ps-rule-install@1</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ps-rule-install@2</span><span class="w"></span>
 <span class="w">  </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Install PSRule for Azure (pre-release)</span><span class="w"></span>
 <span class="w">  </span><span class="nt">inputs</span><span class="p">:</span><span class="w"></span>
 <span class="w">    </span><span class="nt">module</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PSRule.Rules.Azure</span><span class="w"></span>
 <span class="w">    </span><span class="nt">prerelease</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
 
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ps-rule-install@1</span><span class="w"></span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ps-rule-install@2</span><span class="w"></span>
 <span class="w">  </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Install PSRule for Azure Monitor (pre-release)</span><span class="w"></span>
 <span class="w">  </span><span class="nt">inputs</span><span class="p">:</span><span class="w"></span>
 <span class="w">    </span><span class="nt">module</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PSRule.Monitor</span><span class="w"></span>
 <span class="w">    </span><span class="nt">prerelease</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
 
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ps-rule-assert@1</span><span class="w"></span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ps-rule-assert@2</span><span class="w"></span>
 <span class="w">  </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Analyze Azure template files</span><span class="w"></span>
 <span class="w">  </span><span class="nt">inputs</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">inputType</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">repository</span><span class="w"></span>
 <span class="w">    </span><span class="nt">modules</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PSRule.Rules.Azure,PSRule.Monitor</span><span class="w"></span>
 <span class="w">    </span><span class="nt">conventions</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Monitor.LogAnalytics.Import</span><span class="w"></span>
 <span class="w">  </span><span class="nt">env</span><span class="p">:</span><span class="w"></span>
@@ -6218,13 +6348,14 @@ To keep <code>MONITORWORKSPACEKEY</code> secure, use a <a href="https://docs.mic
   <small>
     
       Last update:
-      2022-01-07
+      2022-05-25
     
   </small>
 </div>
 
               
             </article>
+            
           </div>
         </div>
         
@@ -6232,7 +6363,8 @@ To keep <code>MONITORWORKSPACEKEY</code> secure, use a <a href="https://docs.mic
       
         <footer class="md-footer">
   
-    <nav class="md-footer__inner md-grid" aria-label="Footer">
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
         <a href="../setup-bicep/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Setup Bicep" rel="prev">
@@ -6251,13 +6383,13 @@ To keep <code>MONITORWORKSPACEKEY</code> secure, use a <a href="https://docs.mic
       
       
         
-        <a href="../../en/rules/module/" class="md-footer__link md-footer__link--next" aria-label="Next: By pillar" rel="next">
+        <a href="../../integrations/" class="md-footer__link md-footer__link--next" aria-label="Next: Integrations" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              By pillar
+              Integrations
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -6300,10 +6432,10 @@ To keep <code>MONITORWORKSPACEKEY</code> secure, use a <a href="https://docs.mic
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.indexes", {"navigation.sections": {"level": 1}}, "navigation.tabs", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.indexes", {"navigation.sections": {"level": 1}}, "navigation.tabs", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.b028fd86.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.ed9748b7.min.js"></script>
+      <script src="../../assets/javascripts/bundle.f758a944.min.js"></script>
       
     
   </body>

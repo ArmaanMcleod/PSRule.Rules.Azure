@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://azure.github.io/PSRule.Rules.Azure/using-bicep/">
       
       <link rel="icon" href="../assets/ms_icon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.13">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.3">
     
     
       
@@ -23,15 +23,16 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.e411adfe.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.4a0965b7.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.cc9b2e1e.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
         
           
           
           <meta name="theme-color" content="#000000">
         
+      
       
     
     
@@ -635,6 +636,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#restoringmodulesfromaprivateregistry" class="md-nav__link">
+    Restoring modules from a private registry
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#usingparameterfiles" class="md-nav__link">
     Using parameter files
   </a>
@@ -1078,6 +1086,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_3">
@@ -1156,6 +1166,20 @@
     <li class="md-nav__item">
       <a href="../setup/setup-azure-monitor-logs/" class="md-nav__link">
         Setup Azure Monitor logs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../integrations/" class="md-nav__link">
+        Integrations
       </a>
     </li>
   
@@ -1249,6 +1273,12 @@
       
       
       
+        
+          
+        
+          
+        
+          
         
           
         
@@ -2956,6 +2986,48 @@
     <li class="md-nav__item">
       <a href="../en/rules/Azure.AppService.UseHTTPS/" class="md-nav__link">
         Azure.AppService.UseHTTPS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.AppService.WebProbe/" class="md-nav__link">
+        Azure.AppService.WebProbe
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.AppService.WebProbePath/" class="md-nav__link">
+        Azure.AppService.WebProbePath
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.AppService.WebSecureFtp/" class="md-nav__link">
+        Azure.AppService.WebSecureFtp
       </a>
     </li>
   
@@ -5946,6 +6018,14 @@
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
       
       
         <label class="md-nav__link" for="__nav_4_5">
@@ -5959,6 +6039,62 @@
           Selectors
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/selectors/Azure.AppService.IsAPIApp/" class="md-nav__link">
+        Azure.AppService.IsAPIApp
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/selectors/Azure.AppService.IsFunctionApp/" class="md-nav__link">
+        Azure.AppService.IsFunctionApp
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/selectors/Azure.AppService.IsLogicApp/" class="md-nav__link">
+        Azure.AppService.IsLogicApp
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/selectors/Azure.AppService.IsWebApp/" class="md-nav__link">
+        Azure.AppService.IsWebApp
+      </a>
+    </li>
+  
+
+            
           
             
               
@@ -6056,6 +6192,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#restoringmodulesfromaprivateregistry" class="md-nav__link">
+    Restoring modules from a private registry
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#usingparameterfiles" class="md-nav__link">
     Using parameter files
   </a>
@@ -6082,6 +6225,9 @@
   <a href="https://github.com/Azure/PSRule.Rules.Azure/blob/main/docs/using-bicep.md" title="Edit this page" class="md-content__button md-icon">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
+
+
+  
 
 
 
@@ -6178,6 +6324,8 @@ Instead expand resources from deployments or tests.</p>
 
 <span class="nt">input</span><span class="p">:</span><span class="w"></span>
 <span class="w">  </span><span class="nt">pathIgnore</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="c1"># Exclude bicepconfig.json</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&#39;bicepconfig.json&#39;</span><span class="w"></span>
 <span class="w">  </span><span class="c1"># Exclude module files</span><span class="w"></span>
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&#39;modules/**/*.bicep&#39;</span><span class="w"></span>
 <span class="w">  </span><span class="c1"># Include test files from modules</span><span class="w"></span>
@@ -6188,6 +6336,53 @@ Instead expand resources from deployments or tests.</p>
 <p class="admonition-title">Note</p>
 <p>In this example, Bicep files such as <code>deploy.bicep</code> in other directories will be expanded.</p>
 </div>
+<h3 id="restoringmodulesfromaprivateregistry">Restoring modules from a private registry<a class="headerlink" href="#restoringmodulesfromaprivateregistry" title="Permanent link">#</a></h3>
+<p>Bicep modules can be stored in a private registry.
+Storing modules in a private registry gives you a central location to reference modules across your organization.</p>
+<p>To test Bicep deployments which uses modules stored in a private registry, these modules must be restored.
+The restore process automatically occurs when PSRule is run, however must be authenticated.</p>
+<p>To authenticate to a private registry configure <code>bicepconfig.json</code> by setting <a href="https://docs.microsoft.com/azure/azure-resource-manager/bicep/bicep-config#credential-precedence">credentialPrecedence</a>.
+This setting determines the order to find a credential to use when authenticating to the registry.</p>
+<p>You may need to <a href="https://docs.microsoft.com/dotnet/api/azure.identity.environmentcredential">configure credentials</a> to access the private registry from a CI pipeline.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">GitHub Actions</label><label for="__tabbed_1_2">Azure Pipelines</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Configure the <code>microsoft/ps-rule</code> action with Azure environment variables.</p>
+<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Analyze Azure template files</span><span class="w"></span>
+<span class="w">  </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">microsoft/ps-rule@v2.1.0</span><span class="w"></span>
+<span class="w">  </span><span class="nt">with</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">modules</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PSRule.Rules.Azure,PSRule.Monitor</span><span class="w"></span>
+<span class="w">    </span><span class="nt">conventions</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Monitor.LogAnalytics.Import</span><span class="w"></span>
+<span class="w">  </span><span class="nt">env</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="c1"># Define environment variables using GitHub encrypted secrets</span><span class="w"></span>
+<span class="w">    </span><span class="nt">AZURE_CLIENT_ID</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ secrets.BICEP_REGISTRY_CLIENTID }}</span><span class="w"></span>
+<span class="w">    </span><span class="nt">AZURE_CLIENT_SECRET</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ secrets.BICEP_REGISTRY_CLIENTSECRET }}</span><span class="w"></span>
+<span class="w">    </span><span class="nt">AZURE_TENANT_ID</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ secrets.BICEP_REGISTRY_TENANTID }}</span><span class="w"></span>
+</code></pre></div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Environment variables can be configured in the workflow or from a secret.
+To keep <code>BICEP_REGISTRY_CLIENTSECRET</code> secure, use an <a href="https://docs.github.com/actions/reference/encrypted-secrets">encrypted secret</a>.</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>Configure the <code>ps-rule-assert</code> task with Azure environment variables.</p>
+<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ps-rule-assert@2</span><span class="w"></span>
+<span class="w">  </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Analyze Azure template files</span><span class="w"></span>
+<span class="w">  </span><span class="nt">inputs</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">modules</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;PSRule.Rules.Azure&#39;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">env</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="c1"># Define environment variables within Azure Pipelines</span><span class="w"></span>
+<span class="w">    </span><span class="nt">AZURE_CLIENT_ID</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$(BICEPREGISTRYCLIENTID)</span><span class="w"></span>
+<span class="w">    </span><span class="nt">AZURE_CLIENT_SECRET</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$(BICEPREGISTRYCLIENTSECRET)</span><span class="w"></span>
+<span class="w">    </span><span class="nt">AZURE_TENANT_ID</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$(BICEPREGISTRYTENANTID)</span><span class="w"></span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<p>!!! Important
+      Variables can be configured in YAML, on the pipeline, or referenced from a defined variable group.
+      To keep <code>BICEPREGISTRYCLIENTSECRET</code> secure, use a <a href="https://docs.microsoft.com/azure/devops/pipelines/library/variable-groups">variable group</a> linked to an Azure Key Vault.</p>
 <h3 id="usingparameterfiles">Using parameter files<a class="headerlink" href="#usingparameterfiles" title="Permanent link">#</a></h3>
 <p>When using Bicep, you don't need to use parameter files.
 You can call <code>.bicep</code> files directly from other <code>.bicep</code> files with modules by using the <code>module</code> keyword.
@@ -6204,6 +6399,8 @@ This option will discover Bicep files from parameter metadata.</p>
 
 <span class="nt">input</span><span class="p">:</span><span class="w"></span>
 <span class="w">  </span><span class="nt">pathIgnore</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="c1"># Exclude bicepconfig.json</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&#39;bicepconfig.json&#39;</span><span class="w"></span>
 <span class="w">  </span><span class="c1"># Exclude module files</span><span class="w"></span>
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&#39;modules/**/*.bicep&#39;</span><span class="w"></span>
 </code></pre></div>
@@ -6235,13 +6432,14 @@ This option will discover Bicep files from parameter metadata.</p>
   <small>
     
       Last update:
-      2022-03-17
+      2022-05-25
     
   </small>
 </div>
 
               
             </article>
+            
           </div>
         </div>
         
@@ -6249,7 +6447,8 @@ This option will discover Bicep files from parameter metadata.</p>
       
         <footer class="md-footer">
   
-    <nav class="md-footer__inner md-grid" aria-label="Footer">
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
         <a href="../using-templates/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Using templates" rel="prev">
@@ -6317,10 +6516,10 @@ This option will discover Bicep files from parameter metadata.</p>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.indexes", {"navigation.sections": {"level": 1}}, "navigation.tabs", "content.code.annotate"], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.indexes", {"navigation.sections": {"level": 1}}, "navigation.tabs", "content.code.annotate"], "search": "../assets/javascripts/workers/search.b028fd86.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.ed9748b7.min.js"></script>
+      <script src="../assets/javascripts/bundle.f758a944.min.js"></script>
       
     
   </body>

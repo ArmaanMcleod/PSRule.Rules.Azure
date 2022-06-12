@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://azure.github.io/PSRule.Rules.Azure/en/selectors/Azure.Resource.SupportsTags/">
       
       <link rel="icon" href="../../../assets/ms_icon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.13">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.3">
     
     
       
@@ -23,15 +23,16 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.e411adfe.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.4a0965b7.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.cc9b2e1e.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.cbb835fc.min.css">
         
           
           
           <meta name="theme-color" content="#000000">
         
+      
       
     
     
@@ -986,6 +987,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_3">
@@ -1064,6 +1067,20 @@
     <li class="md-nav__item">
       <a href="../../../setup/setup-azure-monitor-logs/" class="md-nav__link">
         Setup Azure Monitor logs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../integrations/" class="md-nav__link">
+        Integrations
       </a>
     </li>
   
@@ -1159,6 +1176,12 @@
       
       
       
+        
+          
+        
+          
+        
+          
         
           
         
@@ -2866,6 +2889,48 @@
     <li class="md-nav__item">
       <a href="../../rules/Azure.AppService.UseHTTPS/" class="md-nav__link">
         Azure.AppService.UseHTTPS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rules/Azure.AppService.WebProbe/" class="md-nav__link">
+        Azure.AppService.WebProbe
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rules/Azure.AppService.WebProbePath/" class="md-nav__link">
+        Azure.AppService.WebProbePath
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rules/Azure.AppService.WebSecureFtp/" class="md-nav__link">
+        Azure.AppService.WebSecureFtp
       </a>
     </li>
   
@@ -5858,6 +5923,14 @@
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
       
       
         <label class="md-nav__link" for="__nav_4_5">
@@ -5871,6 +5944,62 @@
           Selectors
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Azure.AppService.IsAPIApp/" class="md-nav__link">
+        Azure.AppService.IsAPIApp
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Azure.AppService.IsFunctionApp/" class="md-nav__link">
+        Azure.AppService.IsFunctionApp
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Azure.AppService.IsLogicApp/" class="md-nav__link">
+        Azure.AppService.IsLogicApp
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Azure.AppService.IsWebApp/" class="md-nav__link">
+        Azure.AppService.IsWebApp
+      </a>
+    </li>
+  
+
+            
           
             
               
@@ -6058,6 +6187,9 @@
   </a>
 
 
+  
+
+
 
 <h1 id="azureresourcesupportstags">Azure.Resource.SupportsTags<a class="headerlink" href="#azureresourcesupportstags" title="Permanent link">#</a></h1>
 <p>Resources that supports tags.</p>
@@ -6066,7 +6198,7 @@
 <h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">#</a></h2>
 <h3 id="configurewithyaml-basedrules">Configure with YAML-based rules<a class="headerlink" href="#configurewithyaml-basedrules" title="Permanent link">#</a></h3>
 <ul>
-<li>Use the <code>with</code> property to set <code>Azure.Resource.SupportsTags</code>.</li>
+<li>Use the <code>with</code> property to set <code>PSRule.Rules.Azure\Azure.Resource.SupportsTags</code>.</li>
 </ul>
 <div class="highlight"><pre><span></span><code><span class="nn">---</span><span class="w"></span>
 <span class="c1"># Synopsis: An example rule.</span><span class="w"></span>
@@ -6076,13 +6208,13 @@
 <span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Local.MyRule</span><span class="w"></span>
 <span class="nt">spec</span><span class="p">:</span><span class="w"></span>
 <span class="w">  </span><span class="nt">with</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Azure.Resource.SupportsTags</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PSRule.Rules.Azure\Azure.Resource.SupportsTags</span><span class="w"></span>
 <span class="w">  </span><span class="nt">condition</span><span class="p">:</span><span class="w"></span>
 <span class="w">    </span><span class="c1"># Rule logic goes here</span><span class="w"></span>
 </code></pre></div>
 <h3 id="configurewithjson-basedrules">Configure with JSON-based rules<a class="headerlink" href="#configurewithjson-basedrules" title="Permanent link">#</a></h3>
 <ul>
-<li>Use the <code>with</code> property to set <code>Azure.Resource.SupportsTags</code>.</li>
+<li>Use the <code>with</code> property to set <code>PSRule.Rules.Azure\Azure.Resource.SupportsTags</code>.</li>
 </ul>
 <div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
 <span class="w">    </span><span class="c1">// Synopsis: An example rule.</span><span class="w"></span>
@@ -6093,7 +6225,7 @@
 <span class="w">    </span><span class="p">},</span><span class="w"></span>
 <span class="w">    </span><span class="nt">&quot;spec&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">        </span><span class="nt">&quot;with&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
-<span class="w">            </span><span class="s2">&quot;Azure.Resource.SupportsTags&quot;</span><span class="w"></span>
+<span class="w">            </span><span class="s2">&quot;PSRule.Rules.Azure\\Azure.Resource.SupportsTags&quot;</span><span class="w"></span>
 <span class="w">        </span><span class="p">],</span><span class="w"></span>
 <span class="w">        </span><span class="nt">&quot;condition&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">            </span><span class="c1">// Rule logic goes here</span><span class="w"></span>
@@ -6103,10 +6235,10 @@
 </code></pre></div>
 <h3 id="configurewithpowershell-basedrules">Configure with PowerShell-based rules<a class="headerlink" href="#configurewithpowershell-basedrules" title="Permanent link">#</a></h3>
 <ul>
-<li>Use the <code>-With</code> parameter to set <code>Azure.Resource.SupportsTags</code>.</li>
+<li>Use the <code>-With</code> parameter to set <code>PSRule.Rules.Azure\Azure.Resource.SupportsTags</code>.</li>
 </ul>
 <div class="highlight"><pre><span></span><code><span class="c"># Synopsis: An example rule.</span>
-<span class="n">Rule</span> <span class="s1">&#39;Local.MyRule&#39;</span> <span class="n">-With</span> <span class="s1">&#39;Azure.Resource.SupportsTags&#39;</span> <span class="p">{</span>
+<span class="n">Rule</span> <span class="s1">&#39;Local.MyRule&#39;</span> <span class="n">-With</span> <span class="s1">&#39;PSRule.Rules.Azure\Azure.Resource.SupportsTags&#39;</span> <span class="p">{</span>
   <span class="c"># Rule logic goes here</span>
 <span class="p">}</span>
 </code></pre></div>
@@ -6116,13 +6248,14 @@
   <small>
     
       Last update:
-      2022-05-05
+      2022-05-18
     
   </small>
 </div>
 
               
             </article>
+            
           </div>
         </div>
         
@@ -6163,10 +6296,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.indexes", {"navigation.sections": {"level": 1}}, "navigation.tabs", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.indexes", {"navigation.sections": {"level": 1}}, "navigation.tabs", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.b028fd86.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.ed9748b7.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.f758a944.min.js"></script>
       
     
   </body>

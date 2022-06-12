@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://azure.github.io/PSRule.Rules.Azure/en/baselines/Azure.All/">
       
       <link rel="icon" href="../../../assets/ms_icon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.13">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.3">
     
     
       
@@ -23,15 +23,16 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.e411adfe.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.4a0965b7.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.cc9b2e1e.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.cbb835fc.min.css">
         
           
           
           <meta name="theme-color" content="#000000">
         
+      
       
     
     
@@ -986,6 +987,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_3">
@@ -1064,6 +1067,20 @@
     <li class="md-nav__item">
       <a href="../../../setup/setup-azure-monitor-logs/" class="md-nav__link">
         Setup Azure Monitor logs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../integrations/" class="md-nav__link">
+        Integrations
       </a>
     </li>
   
@@ -1159,6 +1176,12 @@
       
       
       
+        
+          
+        
+          
+        
+          
         
           
         
@@ -2866,6 +2889,48 @@
     <li class="md-nav__item">
       <a href="../../rules/Azure.AppService.UseHTTPS/" class="md-nav__link">
         Azure.AppService.UseHTTPS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rules/Azure.AppService.WebProbe/" class="md-nav__link">
+        Azure.AppService.WebProbe
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rules/Azure.AppService.WebProbePath/" class="md-nav__link">
+        Azure.AppService.WebProbePath
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rules/Azure.AppService.WebSecureFtp/" class="md-nav__link">
+        Azure.AppService.WebSecureFtp
       </a>
     </li>
   
@@ -5899,6 +5964,14 @@
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
       
       
         <label class="md-nav__link" for="__nav_4_5">
@@ -5912,6 +5985,62 @@
           Selectors
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../selectors/Azure.AppService.IsAPIApp/" class="md-nav__link">
+        Azure.AppService.IsAPIApp
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../selectors/Azure.AppService.IsFunctionApp/" class="md-nav__link">
+        Azure.AppService.IsFunctionApp
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../selectors/Azure.AppService.IsLogicApp/" class="md-nav__link">
+        Azure.AppService.IsLogicApp
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../selectors/Azure.AppService.IsWebApp/" class="md-nav__link">
+        Azure.AppService.IsWebApp
+      </a>
+    </li>
+  
+
+            
           
             
               
@@ -5999,7 +6128,7 @@
 <h1 id="azureall">Azure.All<a class="headerlink" href="#azureall" title="Permanent link">#</a></h1>
 <p>Includes all Azure rules.</p>
 <h2 id="rules">Rules<a class="headerlink" href="#rules" title="Permanent link">#</a></h2>
-<p>The following rules are included within <code>Azure.All</code>. This baseline includes a total of 275 rules.</p>
+<p>The following rules are included within <code>Azure.All</code>. This baseline includes a total of 278 rules.</p>
 <table>
 <thead>
 <tr>
@@ -6301,7 +6430,7 @@
 </tr>
 <tr>
 <td><a href="../../rules/Azure.AppGw.AvailabilityZone/">Azure.AppGw.AvailabilityZone</a></td>
-<td>Application gateways deployed with V2 SKU(Standard_v2, WAF_v2) should use availability zones in supported regions for high availability.</td>
+<td>Application gateways deployed with should use availability zones in supported regions for high availability.</td>
 <td>Important</td>
 </tr>
 <tr>
@@ -6391,7 +6520,7 @@
 </tr>
 <tr>
 <td><a href="../../rules/Azure.AppService.NETVersion/">Azure.AppService.NETVersion</a></td>
-<td>Configure applications to use newer .NET Framework versions.</td>
+<td>Configure applications to use newer .NET versions.</td>
 <td>Important</td>
 </tr>
 <tr>
@@ -6415,6 +6544,21 @@
 <td>Important</td>
 </tr>
 <tr>
+<td><a href="../../rules/Azure.AppService.WebProbe/">Azure.AppService.WebProbe</a></td>
+<td>Configure and enable instance health probes.</td>
+<td>Important</td>
+</tr>
+<tr>
+<td><a href="../../rules/Azure.AppService.WebProbePath/">Azure.AppService.WebProbePath</a></td>
+<td>Configure a dedicated path for health probe requests.</td>
+<td>Important</td>
+</tr>
+<tr>
+<td><a href="../../rules/Azure.AppService.WebSecureFtp/">Azure.AppService.WebSecureFtp</a></td>
+<td>Web apps should disable insecure FTP and configure SFTP when required.</td>
+<td>Important</td>
+</tr>
+<tr>
 <td><a href="../../rules/Azure.ASG.Name/">Azure.ASG.Name</a></td>
 <td>Application Security Group (ASG) names should meet naming requirements.</td>
 <td>Awareness</td>
@@ -6431,7 +6575,7 @@
 </tr>
 <tr>
 <td><a href="../../rules/Azure.Automation.ManagedIdentity/">Azure.Automation.ManagedIdentity</a></td>
-<td>Ensure managed identity is used for authentication.</td>
+<td>Ensure Managed Identity is used for authentication.</td>
 <td>Important</td>
 </tr>
 <tr>
@@ -7395,7 +7539,7 @@
   <small>
     
       Last update:
-      2022-03-17
+      2022-05-26
     
   </small>
 </div>
@@ -7403,6 +7547,7 @@
 
 
             </article>
+            
           </div>
         </div>
         
@@ -7443,10 +7588,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.indexes", {"navigation.sections": {"level": 1}}, "navigation.tabs", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.indexes", {"navigation.sections": {"level": 1}}, "navigation.tabs", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.b028fd86.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.ed9748b7.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.f758a944.min.js"></script>
       
     
   </body>
