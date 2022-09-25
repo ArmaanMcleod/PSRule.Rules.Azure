@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://azure.github.io/PSRule.Rules.Azure/troubleshooting/">
       
       <link rel="icon" href="../assets/ms_icon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.4">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.5.3">
     
     
       
@@ -23,7 +23,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.4a0965b7.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.7a952b86.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
@@ -34,6 +34,7 @@
         
       
       
+
     
     
     
@@ -48,10 +49,11 @@
     
       <link rel="stylesheet" href="../assets/stylesheets/extra.css">
     
-    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
+    
     
     
 
@@ -61,10 +63,15 @@
     
   
 
+  <!-- Determine description -->
+  
+  
+
   <!-- The image needs to have an absolute URL -->
   
 
   <!-- Open graph meta tags -->
+  <meta property="og:site_name" content="PSRule for Azure" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="PSRule for Azure - Troubleshooting" />
   <meta property="og:description" content="Ready to go validation and governance controls for Azure Infrastructure as Code (IaC)." />
@@ -111,9 +118,7 @@
     </div>
     
       <div data-md-component="outdated" hidden>
-        <aside class="md-banner md-banner--warning">
-          
-        </aside>
+        
       </div>
     
     
@@ -162,7 +167,7 @@
       </label>
       <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
@@ -186,7 +191,7 @@
         <a href="https://github.com/Azure/PSRule.Rules.Azure/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -270,7 +275,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../en/rules/module/" class="md-tabs__link">
+      <a href="../en/rules/" class="md-tabs__link">
         Reference
       </a>
     </li>
@@ -310,7 +315,7 @@
       <a href="https://github.com/Azure/PSRule.Rules.Azure/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -352,6 +357,8 @@
       
       
       
+        
+          
         
           
         
@@ -702,6 +709,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_2_6">
@@ -758,6 +767,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../customization/permit-outbound-management/" class="md-nav__link">
+        Permit outbound management
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -805,21 +828,42 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#anearlierversionofazaccountsisimported" class="md-nav__link">
+  <a href="#an-earlier-version-of-azaccounts-is-imported" class="md-nav__link">
     An earlier version of Az.Accounts is imported
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#bicepcompilationtimeout" class="md-nav__link">
+  <a href="#bicep-compilation-timeout" class="md-nav__link">
     Bicep compilation timeout
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#couldnotloadfileorassemblyyamldotnet" class="md-nav__link">
+  <a href="#no-rules-or-no-azure-resources-are-found" class="md-nav__link">
+    No rules or no Azure resources are found
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom-rules-are-not-running" class="md-nav__link">
+    Custom rules are not running
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parameter-file-warns-of-metadata-property" class="md-nav__link">
+    Parameter file warns of metadata property
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#could-not-load-file-or-assembly-yamldotnet" class="md-nav__link">
     Could not load file or assembly YamlDotNet
   </a>
   
@@ -829,6 +873,20 @@
   
 </nav>
       
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../samples/" class="md-nav__link">
+        Samples
+      </a>
     </li>
   
 
@@ -871,7 +929,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_10" type="checkbox" id="__nav_2_10" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_11" type="checkbox" id="__nav_2_11" >
       
       
       
@@ -884,13 +942,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_2_10">
+        <label class="md-nav__link" for="__nav_2_11">
           Releases
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Releases" data-md-level="2">
-        <label class="md-nav__title" for="__nav_2_10">
+        <label class="md-nav__title" for="__nav_2_11">
           <span class="md-nav__icon md-icon"></span>
           Releases
         </label>
@@ -905,7 +963,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_10_1" type="checkbox" id="__nav_2_10_1" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_11_1" type="checkbox" id="__nav_2_11_1" >
       
       
       
@@ -916,13 +974,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_2_10_1">
+        <label class="md-nav__link" for="__nav_2_11_1">
           Change log
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Change log" data-md-level="3">
-        <label class="md-nav__title" for="__nav_2_10_1">
+        <label class="md-nav__title" for="__nav_2_11_1">
           <span class="md-nav__icon md-icon"></span>
           Change log
         </label>
@@ -1167,6 +1225,12 @@
       
         
           
+            
+          
+        
+          
+        
+          
         
           
         
@@ -1178,10 +1242,16 @@
         
       
       
-        <label class="md-nav__link" for="__nav_4">
-          Reference
-          <span class="md-nav__icon md-icon"></span>
-        </label>
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../en/rules/">Reference</a>
+          
+            <label for="__nav_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
       
       <nav class="md-nav" aria-label="Reference" data-md-level="1">
         <label class="md-nav__title" for="__nav_4">
@@ -1189,6 +1259,8 @@
           Reference
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
+          
+            
           
             
               
@@ -1223,11 +1295,25 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../en/asb-v3/" class="md-nav__link">
+        Azure Security Benchmark
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
     
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3" type="checkbox" id="__nav_4_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_5" type="checkbox" id="__nav_4_5" >
       
       
       
@@ -1790,15 +1876,77 @@
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
       
       
-        <label class="md-nav__link" for="__nav_4_3">
+        <label class="md-nav__link" for="__nav_4_5">
           Rules
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Rules" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_3">
+        <label class="md-nav__title" for="__nav_4_5">
           <span class="md-nav__icon md-icon"></span>
           Rules
         </label>
@@ -1924,6 +2072,20 @@
     <li class="md-nav__item">
       <a href="../en/rules/Azure.ACR.Retention/" class="md-nav__link">
         Azure.ACR.Retention
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.ACR.SoftDelete/" class="md-nav__link">
+        Azure.ACR.SoftDelete
       </a>
     </li>
   
@@ -2146,6 +2308,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../en/rules/Azure.AKS.EphemeralOSDisk/" class="md-nav__link">
+        Azure.AKS.EphemeralOSDisk
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../en/rules/Azure.AKS.HttpAppRouting/" class="md-nav__link">
         Azure.AKS.HttpAppRouting
       </a>
@@ -2344,6 +2520,20 @@
     <li class="md-nav__item">
       <a href="../en/rules/Azure.AKS.StandardLB/" class="md-nav__link">
         Azure.AKS.StandardLB
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.AKS.UptimeSLA/" class="md-nav__link">
+        Azure.AKS.UptimeSLA
       </a>
     </li>
   
@@ -2608,6 +2798,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../en/rules/Azure.AppConfig.DisableLocalAuth/" class="md-nav__link">
+        Azure.AppConfig.DisableLocalAuth
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../en/rules/Azure.AppConfig.Name/" class="md-nav__link">
         Azure.AppConfig.Name
       </a>
@@ -2764,6 +2968,62 @@
     <li class="md-nav__item">
       <a href="../en/rules/Azure.AppGw.WAFRules/" class="md-nav__link">
         Azure.AppGw.WAFRules
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.AppGwWAF.Enabled/" class="md-nav__link">
+        Azure.AppGwWAF.Enabled
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.AppGwWAF.Exclusions/" class="md-nav__link">
+        Azure.AppGwWAF.Exclusions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.AppGwWAF.PreventionMode/" class="md-nav__link">
+        Azure.AppGwWAF.PreventionMode
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.AppGwWAF.RuleGroups/" class="md-nav__link">
+        Azure.AppGwWAF.RuleGroups
       </a>
     </li>
   
@@ -3112,6 +3372,76 @@
   
   
     <li class="md-nav__item">
+      <a href="../en/rules/Azure.CDN.UseFrontDoor/" class="md-nav__link">
+        Azure.CDN.UseFrontDoor
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.Cognitive.DisableLocalAuth/" class="md-nav__link">
+        Azure.Cognitive.DisableLocalAuth
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.Cognitive.ManagedIdentity/" class="md-nav__link">
+        Azure.Cognitive.ManagedIdentity
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.Cognitive.PrivateEndpoints/" class="md-nav__link">
+        Azure.Cognitive.PrivateEndpoints
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.Cognitive.PublicAccess/" class="md-nav__link">
+        Azure.Cognitive.PublicAccess
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../en/rules/Azure.ContainerApp.Insecure/" class="md-nav__link">
         Azure.ContainerApp.Insecure
       </a>
@@ -3156,6 +3486,132 @@
     <li class="md-nav__item">
       <a href="../en/rules/Azure.DataFactory.Version/" class="md-nav__link">
         Azure.DataFactory.Version
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.Defender.AppServices/" class="md-nav__link">
+        Azure.Defender.AppServices
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.Defender.Containers/" class="md-nav__link">
+        Azure.Defender.Containers
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.Defender.SQL/" class="md-nav__link">
+        Azure.Defender.SQL
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.Defender.SQLOnVM/" class="md-nav__link">
+        Azure.Defender.SQLOnVM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.Defender.Servers/" class="md-nav__link">
+        Azure.Defender.Servers
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.Defender.Storage/" class="md-nav__link">
+        Azure.Defender.Storage
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.DefenderCloud.Contact/" class="md-nav__link">
+        Azure.DefenderCloud.Contact
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.DefenderCloud.Provisioning/" class="md-nav__link">
+        Azure.DefenderCloud.Provisioning
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.Deployment.AdminUsername/" class="md-nav__link">
+        Azure.Deployment.AdminUsername
       </a>
     </li>
   
@@ -3436,6 +3892,62 @@
     <li class="md-nav__item">
       <a href="../en/rules/Azure.FrontDoor.WAF.Name/" class="md-nav__link">
         Azure.FrontDoor.WAF.Name
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.FrontDoorWAF.Enabled/" class="md-nav__link">
+        Azure.FrontDoorWAF.Enabled
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.FrontDoorWAF.Exclusions/" class="md-nav__link">
+        Azure.FrontDoorWAF.Exclusions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.FrontDoorWAF.PreventionMode/" class="md-nav__link">
+        Azure.FrontDoorWAF.PreventionMode
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.FrontDoorWAF.RuleGroups/" class="md-nav__link">
+        Azure.FrontDoorWAF.RuleGroups
       </a>
     </li>
   
@@ -3730,6 +4242,20 @@
     <li class="md-nav__item">
       <a href="../en/rules/Azure.MySQL.UseSSL/" class="md-nav__link">
         Azure.MySQL.UseSSL
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.NSG.AKSRules/" class="md-nav__link">
+        Azure.NSG.AKSRules
       </a>
     </li>
   
@@ -4176,6 +4702,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../en/rules/Azure.Redis.FirewallIPRange/" class="md-nav__link">
+        Azure.Redis.FirewallIPRange
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.Redis.FirewallRuleCount/" class="md-nav__link">
+        Azure.Redis.FirewallRuleCount
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../en/rules/Azure.Redis.MaxMemoryReserved/" class="md-nav__link">
         Azure.Redis.MaxMemoryReserved
       </a>
@@ -4234,6 +4788,20 @@
     <li class="md-nav__item">
       <a href="../en/rules/Azure.Redis.PublicNetworkAccess/" class="md-nav__link">
         Azure.Redis.PublicNetworkAccess
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.RedisEnterprise.MinTLS/" class="md-nav__link">
+        Azure.RedisEnterprise.MinTLS
       </a>
     </li>
   
@@ -4372,6 +4940,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../en/rules/Azure.SQL.DefenderCloud/" class="md-nav__link">
+        Azure.SQL.DefenderCloud
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../en/rules/Azure.SQL.FGName/" class="md-nav__link">
         Azure.SQL.FGName
       </a>
@@ -4456,20 +5038,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../en/rules/Azure.SQL.ThreatDetection/" class="md-nav__link">
-        Azure.SQL.ThreatDetection
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../en/rules/Azure.SQLMI.Name/" class="md-nav__link">
         Azure.SQLMI.Name
       </a>
@@ -4542,34 +5110,6 @@
     <li class="md-nav__item">
       <a href="../en/rules/Azure.Search.SKU/" class="md-nav__link">
         Azure.Search.SKU
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../en/rules/Azure.SecurityCenter.Contact/" class="md-nav__link">
-        Azure.SecurityCenter.Contact
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../en/rules/Azure.SecurityCenter.Provisioning/" class="md-nav__link">
-        Azure.SecurityCenter.Provisioning
       </a>
     </li>
   
@@ -4682,6 +5222,34 @@
     <li class="md-nav__item">
       <a href="../en/rules/Azure.Storage.BlobPublicAccess/" class="md-nav__link">
         Azure.Storage.BlobPublicAccess
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.Storage.ContainerSoftDelete/" class="md-nav__link">
+        Azure.Storage.ContainerSoftDelete
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.Storage.FileShareSoftDelete/" class="md-nav__link">
+        Azure.Storage.FileShareSoftDelete
       </a>
     </li>
   
@@ -5492,6 +6060,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../en/rules/Azure.VMSS.PublicKey/" class="md-nav__link">
+        Azure.VMSS.PublicKey
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../en/rules/Azure.VNET.LocalDNS/" class="md-nav__link">
         Azure.VNET.LocalDNS
       </a>
@@ -5726,7 +6308,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4" type="checkbox" id="__nav_4_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_6" type="checkbox" id="__nav_4_6" >
       
       
       
@@ -5759,15 +6341,19 @@
         
           
         
+          
+        
+          
+        
       
       
-        <label class="md-nav__link" for="__nav_4_4">
+        <label class="md-nav__link" for="__nav_4_6">
           Baselines
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Baselines" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_4">
+        <label class="md-nav__title" for="__nav_4_6">
           <span class="md-nav__icon md-icon"></span>
           Baselines
         </label>
@@ -5919,6 +6505,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../en/baselines/Azure.GA_2022_06/" class="md-nav__link">
+        Azure.GA_2022_06
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../en/baselines/Azure.Preview/" class="md-nav__link">
         Azure.Preview
       </a>
@@ -5969,6 +6569,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/baselines/Azure.Preview_2022_06/" class="md-nav__link">
+        Azure.Preview_2022_06
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -5985,7 +6599,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_5" type="checkbox" id="__nav_4_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_7" type="checkbox" id="__nav_4_7" >
       
       
       
@@ -6002,13 +6616,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_4_5">
+        <label class="md-nav__link" for="__nav_4_7">
           Selectors
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Selectors" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_5">
+        <label class="md-nav__title" for="__nav_4_7">
           <span class="md-nav__icon md-icon"></span>
           Selectors
         </label>
@@ -6124,21 +6738,42 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#anearlierversionofazaccountsisimported" class="md-nav__link">
+  <a href="#an-earlier-version-of-azaccounts-is-imported" class="md-nav__link">
     An earlier version of Az.Accounts is imported
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#bicepcompilationtimeout" class="md-nav__link">
+  <a href="#bicep-compilation-timeout" class="md-nav__link">
     Bicep compilation timeout
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#couldnotloadfileorassemblyyamldotnet" class="md-nav__link">
+  <a href="#no-rules-or-no-azure-resources-are-found" class="md-nav__link">
+    No rules or no Azure resources are found
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom-rules-are-not-running" class="md-nav__link">
+    Custom rules are not running
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parameter-file-warns-of-metadata-property" class="md-nav__link">
+    Parameter file warns of metadata property
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#could-not-load-file-or-assembly-yamldotnet" class="md-nav__link">
     Could not load file or assembly YamlDotNet
   </a>
   
@@ -6152,22 +6787,25 @@
               </div>
             
           
-          <div class="md-content" data-md-component="content">
-            <article class="md-content__inner md-typeset">
-              
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
                 
-  <a href="https://github.com/Azure/PSRule.Rules.Azure/blob/main/docs/troubleshooting.md" title="Edit this page" class="md-content__button md-icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
-  </a>
-
-
+  
+                  
   
 
 
 
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/blob/main/docs/troubleshooting.md" title="Edit this page" class="md-content__button md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
 <h1 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">#</a></h1>
 <p>This article provides troubleshooting instructions for common errors.</p>
-<h2 id="anearlierversionofazaccountsisimported">An earlier version of Az.Accounts is imported<a class="headerlink" href="#anearlierversionofazaccountsisimported" title="Permanent link">#</a></h2>
+<h2 id="an-earlier-version-of-azaccounts-is-imported">An earlier version of Az.Accounts is imported<a class="headerlink" href="#an-earlier-version-of-azaccounts-is-imported" title="Permanent link">#</a></h2>
 <p>When running PSRule for Azure in Azure DevOps within the <code>AzurePowerShell@5</code> task,
 you may see the following error.</p>
 <div class="admonition error">
@@ -6189,7 +6827,7 @@ When using export commands from PSRule, you may need to install these modules.</
 <p>To install these modules, use the following PowerShell command:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">Install-Module</span> <span class="n">Az</span><span class="p">.</span><span class="n">Resources</span> <span class="n">-Force</span> <span class="n">-Scope</span> <span class="n">CurrentUser</span>
 </code></pre></div>
-<h2 id="bicepcompilationtimeout">Bicep compilation timeout<a class="headerlink" href="#bicepcompilationtimeout" title="Permanent link">#</a></h2>
+<h2 id="bicep-compilation-timeout">Bicep compilation timeout<a class="headerlink" href="#bicep-compilation-timeout" title="Permanent link">#</a></h2>
 <p>When expanding Bicep source files you may get an error similar to the following:</p>
 <div class="admonition error">
 <p class="admonition-title">Error</p>
@@ -6203,8 +6841,79 @@ The default timeout is 5 seconds.</p>
 <li>Cache bicep modules restored from a registry in continuous integration (CI) pipelines.</li>
 </ul>
 <p>To increase the timeout value, set the <code>AZURE_BICEP_FILE_EXPANSION_TIMEOUT</code> configuration option.
-See <a href="../setup/configuring-expansion/#bicepcompilationtimeout">Bicep compilation timeout</a> for details on how to configure this option.</p>
-<h2 id="couldnotloadfileorassemblyyamldotnet">Could not load file or assembly YamlDotNet<a class="headerlink" href="#couldnotloadfileorassemblyyamldotnet" title="Permanent link">#</a></h2>
+See <a href="../setup/configuring-expansion/#bicep-compilation-timeout">Bicep compilation timeout</a> for details on how to configure this option.</p>
+<h2 id="no-rules-or-no-azure-resources-are-found">No rules or no Azure resources are found<a class="headerlink" href="#no-rules-or-no-azure-resources-are-found" title="Permanent link">#</a></h2>
+<p>There is a few common causes of this issue including:</p>
+<ul>
+<li><strong>Check input format</strong> &mdash; PSRule for Azure must discover files to expand them.<ul>
+<li>When running PSRule for Azure using GitHub Actions or the Azure Pipelines extension:<ul>
+<li>Your pipeline <strong>must</strong> be set to <code>inputType: repository</code>, which is the default value.</li>
+<li>PSRule for Azure will not work with <code>inputType</code> set to <code>inputPath</code>.</li>
+<li>You may have set this parameter because you wanted to use the <code>inputPath</code> parameter.
+  Setting the <code>inputType</code> is not a requirement for using the <code>inputPath</code> parameter.
+  The <code>inputPath</code> parameter can be used independently.</li>
+</ul>
+</li>
+<li>When running PSRule for Azure from PowerShell:<ul>
+<li>Your command-line <strong>must</strong> use the <code>-Format File</code> parameter.</li>
+<li>Your command-line <strong>must</strong> use the <code>-InputPath</code> or <code>-f</code> parameter followed by a file or directory path.</li>
+<li>For example: <code>Assert-PSRule -Module PSRule.Rules.Azure -Format File -f 'modules/'</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Check expansion is enabled</strong> &mdash; Expansion must be enabled to analyze Azure Infrastructure as Code.
+  See <a href="../using-templates/">using templates</a> and <a href="../using-bicep/">using Bicep source</a> for details on how to enable expansion.</li>
+<li><strong>Check parameter files are linked</strong> &mdash; Parameter files must be linked to ARM templates or Bicep source files.
+  See <a href="../using-templates/">using templates</a> for details on how to link using metadata or naming convention.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If your pipeline is still not finding any Azure resources, please <a href="https://github.com/Azure/PSRule.Rules.Azure/discussions">join or start a discussion</a>.</p>
+</div>
+<h2 id="custom-rules-are-not-running">Custom rules are not running<a class="headerlink" href="#custom-rules-are-not-running" title="Permanent link">#</a></h2>
+<p>There is a few common causes of this issue including:</p>
+<ul>
+<li><strong>Check rule path</strong> &mdash; By default, PSRule will look for rules in the <code>.ps-rule/</code> directory.
+  This directory is the root for your repository or the current working path by default.
+  On case-sensitive file systems such as Linux, this directory name is case-sensitive.
+  See <a href="https://github.com/Azure/PSRule.Rules.Azure/discussions">Storing and naming rules</a> for more information.</li>
+<li><strong>Check file name suffix</strong> &mdash; PSRule only looks for files with the <code>.Rule.ps1</code>, <code>.Rule.yaml</code>, or <code>.Rule.jsonc</code> suffix.
+  On case-sensitive file systems such as Linux, this file siffix is case-sensitive.
+  See <a href="https://github.com/Azure/PSRule.Rules.Azure/discussions">Storing and naming rules</a> for more information.</li>
+<li><strong>Check binding configuration</strong> &mdash; PSRule uses <em>binding</em> to work out which property to use for a resource type.
+  To be able to use the <code>-Type</code> parameter or <code>type</code> properties in rules definitions, binding must be set.
+  This is automatically configured for PSRule for Azure, however must be set in <code>ps-rule.yaml</code> for custom rules.
+  See <a href="../customization/enforce-custom-tags/#binding-type">binding type</a> for more information.</li>
+<li><strong>Check modules</strong> &mdash; PSRule for Azure is responsible for expanding Azure resources from Infrastructure as Code.
+  Expansion occurs automatically in memory when enabled.
+  For this to work, the module <code>PSRule.Rules.Azure</code> must be run with any custom rules.
+  See <a href="../using-templates/">using templates</a> and <a href="../using-bicep/">using Bicep source</a> for details on how to enable expansion.</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You may be able to use <code>git mv</code> to change the case of a file if it is commited to the repository inorrectly.</p>
+</div>
+<h2 id="parameter-file-warns-of-metadata-property">Parameter file warns of metadata property<a class="headerlink" href="#parameter-file-warns-of-metadata-property" title="Permanent link">#</a></h2>
+<p>You may find while editing a <code>.json</code> parameter file the root <code>metadata</code> property is flagged with a warning.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The property 'metadata' is not allowed.</p>
+</div>
+<div class="highlight"><span class="filename">Azure parameter file</span><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;$schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;contentVersion&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.0.0.0&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="hll"><span class="w">    </span><span class="nt">&quot;metadata&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+</span><span class="w">        </span><span class="nt">&quot;template&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;./storage.template.json&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="p">},</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;parameters&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<p>This doesn't affect the workings of the parameter file or deployment.
+The reason for the warning is that the <code>metadata</code> property has not been added to the parameter file JSON schema.
+However, the top level <code>metadata</code> property is ignored by Azure Resource Manager when deploying a template.</p>
+<h2 id="could-not-load-file-or-assembly-yamldotnet">Could not load file or assembly YamlDotNet<a class="headerlink" href="#could-not-load-file-or-assembly-yamldotnet" title="Permanent link">#</a></h2>
 <p>PSRule <strong>&gt;=1.3.0</strong> uses an updated version of the YamlDotNet library.
 The PSRule for Azure <strong>&lt;1.3.1</strong> uses an older version of this library which may conflict.</p>
 <p>To avoid this issue:</p>
@@ -6217,7 +6926,7 @@ The PSRule for Azure <strong>&lt;1.3.1</strong> uses an older version of this li
 </code></pre></div>
 <p>For the PSRule GitHub Action, use <strong>&gt;=1.4.0</strong>.</p>
 <div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Run PSRule analysis</span><span class="w"></span>
-<span class="w">  </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Microsoft/ps-rule@v1.4.0</span><span class="w"></span>
+<span class="w">  </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Microsoft/ps-rule@v2.3.2</span><span class="w"></span>
 </code></pre></div>
 
   <hr>
@@ -6225,15 +6934,26 @@ The PSRule for Azure <strong>&lt;1.3.1</strong> uses an older version of this li
   <small>
     
       Last update:
-      2022-06-03
+      2022-08-27
     
   </small>
 </div>
 
-              
-            </article>
-            
-          </div>
+
+
+
+
+                
+
+  
+
+
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
         </div>
         
       </main>
@@ -6244,7 +6964,7 @@ The PSRule for Azure <strong>&lt;1.3.1</strong> uses an older version of this li
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../customization/enforce-codeowners/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Enforcing code ownership" rel="prev">
+        <a href="../customization/permit-outbound-management/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Permit outbound management" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -6253,20 +6973,20 @@ The PSRule for Azure <strong>&lt;1.3.1</strong> uses an older version of this li
               <span class="md-footer__direction">
                 Previous
               </span>
-              Enforcing code ownership
+              Permit outbound management
             </div>
           </div>
         </a>
       
       
         
-        <a href="../license-contributing/" class="md-footer__link md-footer__link--next" aria-label="Next: License and contributing" rel="next">
+        <a href="../samples/" class="md-footer__link md-footer__link--next" aria-label="Next: Samples" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              License and contributing
+              Samples
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -6296,7 +7016,7 @@ The PSRule for Azure <strong>&lt;1.3.1</strong> uses an older version of this li
       
     
     <a href="https://github.com/Azure/PSRule.Rules.Azure/" target="_blank" rel="noopener" title="github.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
     </a>
   
 </div>
@@ -6309,10 +7029,11 @@ The PSRule for Azure <strong>&lt;1.3.1</strong> uses an older version of this li
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.indexes", {"navigation.sections": {"level": 1}}, "navigation.tabs", "content.code.annotate"], "search": "../assets/javascripts/workers/search.85cb4492.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.indexes", {"navigation.sections": {"level": 1}}, "navigation.tabs", "content.code.annotate", "content.tabs.link"], "search": "../assets/javascripts/workers/search.5bf1dace.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.f758a944.min.js"></script>
+      <script src="../assets/javascripts/bundle.37e9125f.min.js"></script>
       
     
   </body>

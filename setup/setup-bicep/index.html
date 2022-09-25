@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://azure.github.io/PSRule.Rules.Azure/setup/setup-bicep/">
       
       <link rel="icon" href="../../assets/ms_icon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.4">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.5.3">
     
     
       
@@ -23,7 +23,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.4a0965b7.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7a952b86.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
@@ -34,6 +34,7 @@
         
       
       
+
     
     
     
@@ -48,10 +49,11 @@
     
       <link rel="stylesheet" href="../../assets/stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
+    
     
     
 
@@ -61,10 +63,15 @@
     
   
 
+  <!-- Determine description -->
+  
+  
+
   <!-- The image needs to have an absolute URL -->
   
 
   <!-- Open graph meta tags -->
+  <meta property="og:site_name" content="PSRule for Azure" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="PSRule for Azure - Setup Bicep" />
   <meta property="og:description" content="Ready to go validation and governance controls for Azure Infrastructure as Code (IaC)." />
@@ -101,7 +108,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#setupbicep" class="md-skip">
+        <a href="#setup-bicep" class="md-skip">
           Skip to content
         </a>
       
@@ -111,9 +118,7 @@
     </div>
     
       <div data-md-component="outdated" hidden>
-        <aside class="md-banner md-banner--warning">
-          
-        </aside>
+        
       </div>
     
     
@@ -162,7 +167,7 @@
       </label>
       <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
@@ -186,7 +191,7 @@
         <a href="https://github.com/Azure/PSRule.Rules.Azure/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -270,7 +275,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../en/rules/module/" class="md-tabs__link">
+      <a href="../../en/rules/" class="md-tabs__link">
         Reference
       </a>
     </li>
@@ -310,7 +315,7 @@
       <a href="https://github.com/Azure/PSRule.Rules.Azure/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -350,6 +355,8 @@
       
       
       
+        
+          
         
           
         
@@ -700,6 +707,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_2_6">
@@ -756,6 +765,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../customization/permit-outbound-management/" class="md-nav__link">
+        Permit outbound management
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -771,6 +794,20 @@
     <li class="md-nav__item">
       <a href="../../troubleshooting/" class="md-nav__link">
         Troubleshooting
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../samples/" class="md-nav__link">
+        Samples
       </a>
     </li>
   
@@ -814,7 +851,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_10" type="checkbox" id="__nav_2_10" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_11" type="checkbox" id="__nav_2_11" >
       
       
       
@@ -827,13 +864,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_2_10">
+        <label class="md-nav__link" for="__nav_2_11">
           Releases
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Releases" data-md-level="2">
-        <label class="md-nav__title" for="__nav_2_10">
+        <label class="md-nav__title" for="__nav_2_11">
           <span class="md-nav__icon md-icon"></span>
           Releases
         </label>
@@ -848,7 +885,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_10_1" type="checkbox" id="__nav_2_10_1" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_11_1" type="checkbox" id="__nav_2_11_1" >
       
       
       
@@ -859,13 +896,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_2_10_1">
+        <label class="md-nav__link" for="__nav_2_11_1">
           Change log
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Change log" data-md-level="3">
-        <label class="md-nav__title" for="__nav_2_10_1">
+        <label class="md-nav__title" for="__nav_2_11_1">
           <span class="md-nav__icon md-icon"></span>
           Change log
         </label>
@@ -1087,14 +1124,14 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#installingbicepcli" class="md-nav__link">
+  <a href="#installing-bicep-cli" class="md-nav__link">
     Installing Bicep CLI
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#settingenvironmentvariables" class="md-nav__link">
+  <a href="#setting-environment-variables" class="md-nav__link">
     Setting environment variables
   </a>
   
@@ -1102,14 +1139,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#usingazurecli" class="md-nav__link">
+  <a href="#using-azure-cli" class="md-nav__link">
     Using Azure CLI
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#additionalarguments" class="md-nav__link">
+  <a href="#additional-arguments" class="md-nav__link">
     Additional arguments
   </a>
   
@@ -1121,7 +1158,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#configuringexpansion" class="md-nav__link">
+  <a href="#configuring-expansion" class="md-nav__link">
     Configuring expansion
   </a>
   
@@ -1129,7 +1166,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#configuringtimeout" class="md-nav__link">
+  <a href="#configuring-timeout" class="md-nav__link">
     Configuring timeout
   </a>
   
@@ -1200,6 +1237,12 @@
       
         
           
+            
+          
+        
+          
+        
+          
         
           
         
@@ -1211,10 +1254,16 @@
         
       
       
-        <label class="md-nav__link" for="__nav_4">
-          Reference
-          <span class="md-nav__icon md-icon"></span>
-        </label>
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../en/rules/">Reference</a>
+          
+            <label for="__nav_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
       
       <nav class="md-nav" aria-label="Reference" data-md-level="1">
         <label class="md-nav__title" for="__nav_4">
@@ -1222,6 +1271,8 @@
           Reference
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
+          
+            
           
             
               
@@ -1256,11 +1307,25 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../../en/asb-v3/" class="md-nav__link">
+        Azure Security Benchmark
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
     
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3" type="checkbox" id="__nav_4_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_5" type="checkbox" id="__nav_4_5" >
       
       
       
@@ -1823,15 +1888,77 @@
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
       
       
-        <label class="md-nav__link" for="__nav_4_3">
+        <label class="md-nav__link" for="__nav_4_5">
           Rules
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Rules" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_3">
+        <label class="md-nav__title" for="__nav_4_5">
           <span class="md-nav__icon md-icon"></span>
           Rules
         </label>
@@ -1957,6 +2084,20 @@
     <li class="md-nav__item">
       <a href="../../en/rules/Azure.ACR.Retention/" class="md-nav__link">
         Azure.ACR.Retention
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/rules/Azure.ACR.SoftDelete/" class="md-nav__link">
+        Azure.ACR.SoftDelete
       </a>
     </li>
   
@@ -2179,6 +2320,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../en/rules/Azure.AKS.EphemeralOSDisk/" class="md-nav__link">
+        Azure.AKS.EphemeralOSDisk
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../en/rules/Azure.AKS.HttpAppRouting/" class="md-nav__link">
         Azure.AKS.HttpAppRouting
       </a>
@@ -2377,6 +2532,20 @@
     <li class="md-nav__item">
       <a href="../../en/rules/Azure.AKS.StandardLB/" class="md-nav__link">
         Azure.AKS.StandardLB
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/rules/Azure.AKS.UptimeSLA/" class="md-nav__link">
+        Azure.AKS.UptimeSLA
       </a>
     </li>
   
@@ -2641,6 +2810,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../en/rules/Azure.AppConfig.DisableLocalAuth/" class="md-nav__link">
+        Azure.AppConfig.DisableLocalAuth
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../en/rules/Azure.AppConfig.Name/" class="md-nav__link">
         Azure.AppConfig.Name
       </a>
@@ -2797,6 +2980,62 @@
     <li class="md-nav__item">
       <a href="../../en/rules/Azure.AppGw.WAFRules/" class="md-nav__link">
         Azure.AppGw.WAFRules
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/rules/Azure.AppGwWAF.Enabled/" class="md-nav__link">
+        Azure.AppGwWAF.Enabled
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/rules/Azure.AppGwWAF.Exclusions/" class="md-nav__link">
+        Azure.AppGwWAF.Exclusions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/rules/Azure.AppGwWAF.PreventionMode/" class="md-nav__link">
+        Azure.AppGwWAF.PreventionMode
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/rules/Azure.AppGwWAF.RuleGroups/" class="md-nav__link">
+        Azure.AppGwWAF.RuleGroups
       </a>
     </li>
   
@@ -3145,6 +3384,76 @@
   
   
     <li class="md-nav__item">
+      <a href="../../en/rules/Azure.CDN.UseFrontDoor/" class="md-nav__link">
+        Azure.CDN.UseFrontDoor
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/rules/Azure.Cognitive.DisableLocalAuth/" class="md-nav__link">
+        Azure.Cognitive.DisableLocalAuth
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/rules/Azure.Cognitive.ManagedIdentity/" class="md-nav__link">
+        Azure.Cognitive.ManagedIdentity
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/rules/Azure.Cognitive.PrivateEndpoints/" class="md-nav__link">
+        Azure.Cognitive.PrivateEndpoints
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/rules/Azure.Cognitive.PublicAccess/" class="md-nav__link">
+        Azure.Cognitive.PublicAccess
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../en/rules/Azure.ContainerApp.Insecure/" class="md-nav__link">
         Azure.ContainerApp.Insecure
       </a>
@@ -3189,6 +3498,132 @@
     <li class="md-nav__item">
       <a href="../../en/rules/Azure.DataFactory.Version/" class="md-nav__link">
         Azure.DataFactory.Version
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/rules/Azure.Defender.AppServices/" class="md-nav__link">
+        Azure.Defender.AppServices
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/rules/Azure.Defender.Containers/" class="md-nav__link">
+        Azure.Defender.Containers
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/rules/Azure.Defender.SQL/" class="md-nav__link">
+        Azure.Defender.SQL
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/rules/Azure.Defender.SQLOnVM/" class="md-nav__link">
+        Azure.Defender.SQLOnVM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/rules/Azure.Defender.Servers/" class="md-nav__link">
+        Azure.Defender.Servers
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/rules/Azure.Defender.Storage/" class="md-nav__link">
+        Azure.Defender.Storage
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/rules/Azure.DefenderCloud.Contact/" class="md-nav__link">
+        Azure.DefenderCloud.Contact
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/rules/Azure.DefenderCloud.Provisioning/" class="md-nav__link">
+        Azure.DefenderCloud.Provisioning
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/rules/Azure.Deployment.AdminUsername/" class="md-nav__link">
+        Azure.Deployment.AdminUsername
       </a>
     </li>
   
@@ -3469,6 +3904,62 @@
     <li class="md-nav__item">
       <a href="../../en/rules/Azure.FrontDoor.WAF.Name/" class="md-nav__link">
         Azure.FrontDoor.WAF.Name
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/rules/Azure.FrontDoorWAF.Enabled/" class="md-nav__link">
+        Azure.FrontDoorWAF.Enabled
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/rules/Azure.FrontDoorWAF.Exclusions/" class="md-nav__link">
+        Azure.FrontDoorWAF.Exclusions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/rules/Azure.FrontDoorWAF.PreventionMode/" class="md-nav__link">
+        Azure.FrontDoorWAF.PreventionMode
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/rules/Azure.FrontDoorWAF.RuleGroups/" class="md-nav__link">
+        Azure.FrontDoorWAF.RuleGroups
       </a>
     </li>
   
@@ -3763,6 +4254,20 @@
     <li class="md-nav__item">
       <a href="../../en/rules/Azure.MySQL.UseSSL/" class="md-nav__link">
         Azure.MySQL.UseSSL
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/rules/Azure.NSG.AKSRules/" class="md-nav__link">
+        Azure.NSG.AKSRules
       </a>
     </li>
   
@@ -4209,6 +4714,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../../en/rules/Azure.Redis.FirewallIPRange/" class="md-nav__link">
+        Azure.Redis.FirewallIPRange
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/rules/Azure.Redis.FirewallRuleCount/" class="md-nav__link">
+        Azure.Redis.FirewallRuleCount
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../en/rules/Azure.Redis.MaxMemoryReserved/" class="md-nav__link">
         Azure.Redis.MaxMemoryReserved
       </a>
@@ -4267,6 +4800,20 @@
     <li class="md-nav__item">
       <a href="../../en/rules/Azure.Redis.PublicNetworkAccess/" class="md-nav__link">
         Azure.Redis.PublicNetworkAccess
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/rules/Azure.RedisEnterprise.MinTLS/" class="md-nav__link">
+        Azure.RedisEnterprise.MinTLS
       </a>
     </li>
   
@@ -4405,6 +4952,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../en/rules/Azure.SQL.DefenderCloud/" class="md-nav__link">
+        Azure.SQL.DefenderCloud
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../en/rules/Azure.SQL.FGName/" class="md-nav__link">
         Azure.SQL.FGName
       </a>
@@ -4489,20 +5050,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../en/rules/Azure.SQL.ThreatDetection/" class="md-nav__link">
-        Azure.SQL.ThreatDetection
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../en/rules/Azure.SQLMI.Name/" class="md-nav__link">
         Azure.SQLMI.Name
       </a>
@@ -4575,34 +5122,6 @@
     <li class="md-nav__item">
       <a href="../../en/rules/Azure.Search.SKU/" class="md-nav__link">
         Azure.Search.SKU
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../en/rules/Azure.SecurityCenter.Contact/" class="md-nav__link">
-        Azure.SecurityCenter.Contact
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../en/rules/Azure.SecurityCenter.Provisioning/" class="md-nav__link">
-        Azure.SecurityCenter.Provisioning
       </a>
     </li>
   
@@ -4715,6 +5234,34 @@
     <li class="md-nav__item">
       <a href="../../en/rules/Azure.Storage.BlobPublicAccess/" class="md-nav__link">
         Azure.Storage.BlobPublicAccess
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/rules/Azure.Storage.ContainerSoftDelete/" class="md-nav__link">
+        Azure.Storage.ContainerSoftDelete
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/rules/Azure.Storage.FileShareSoftDelete/" class="md-nav__link">
+        Azure.Storage.FileShareSoftDelete
       </a>
     </li>
   
@@ -5525,6 +6072,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../en/rules/Azure.VMSS.PublicKey/" class="md-nav__link">
+        Azure.VMSS.PublicKey
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../en/rules/Azure.VNET.LocalDNS/" class="md-nav__link">
         Azure.VNET.LocalDNS
       </a>
@@ -5759,7 +6320,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4" type="checkbox" id="__nav_4_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_6" type="checkbox" id="__nav_4_6" >
       
       
       
@@ -5792,15 +6353,19 @@
         
           
         
+          
+        
+          
+        
       
       
-        <label class="md-nav__link" for="__nav_4_4">
+        <label class="md-nav__link" for="__nav_4_6">
           Baselines
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Baselines" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_4">
+        <label class="md-nav__title" for="__nav_4_6">
           <span class="md-nav__icon md-icon"></span>
           Baselines
         </label>
@@ -5952,6 +6517,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../en/baselines/Azure.GA_2022_06/" class="md-nav__link">
+        Azure.GA_2022_06
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../en/baselines/Azure.Preview/" class="md-nav__link">
         Azure.Preview
       </a>
@@ -6002,6 +6581,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/baselines/Azure.Preview_2022_06/" class="md-nav__link">
+        Azure.Preview_2022_06
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -6018,7 +6611,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_5" type="checkbox" id="__nav_4_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_7" type="checkbox" id="__nav_4_7" >
       
       
       
@@ -6035,13 +6628,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_4_5">
+        <label class="md-nav__link" for="__nav_4_7">
           Selectors
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Selectors" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_5">
+        <label class="md-nav__title" for="__nav_4_7">
           <span class="md-nav__icon md-icon"></span>
           Selectors
         </label>
@@ -6157,14 +6750,14 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#installingbicepcli" class="md-nav__link">
+  <a href="#installing-bicep-cli" class="md-nav__link">
     Installing Bicep CLI
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#settingenvironmentvariables" class="md-nav__link">
+  <a href="#setting-environment-variables" class="md-nav__link">
     Setting environment variables
   </a>
   
@@ -6172,14 +6765,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#usingazurecli" class="md-nav__link">
+  <a href="#using-azure-cli" class="md-nav__link">
     Using Azure CLI
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#additionalarguments" class="md-nav__link">
+  <a href="#additional-arguments" class="md-nav__link">
     Additional arguments
   </a>
   
@@ -6191,7 +6784,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#configuringexpansion" class="md-nav__link">
+  <a href="#configuring-expansion" class="md-nav__link">
     Configuring expansion
   </a>
   
@@ -6199,7 +6792,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#configuringtimeout" class="md-nav__link">
+  <a href="#configuring-timeout" class="md-nav__link">
     Configuring timeout
   </a>
   
@@ -6218,27 +6811,30 @@
               </div>
             
           
-          <div class="md-content" data-md-component="content">
-            <article class="md-content__inner md-typeset">
-              
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
                 
-  <a href="https://github.com/Azure/PSRule.Rules.Azure/blob/main/docs/setup/setup-bicep.md" title="Edit this page" class="md-content__button md-icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
-  </a>
-
-
+  
+                  
   
 
 
 
-<h1 id="setupbicep">Setup Bicep<a class="headerlink" href="#setupbicep" title="Permanent link">#</a></h1>
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/blob/main/docs/setup/setup-bicep.md" title="Edit this page" class="md-content__button md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+<h1 id="setup-bicep">Setup Bicep<a class="headerlink" href="#setup-bicep" title="Permanent link">#</a></h1>
 <p>To expand Azure resources for analysis from Bicep source files the Bicep CLI is required.
 The Bicep CLI is already installed on hosted runners and agents used by GitHub Actions and Azure Pipelines.</p>
 <div class="admonition abstract">
 <p class="admonition-title">Abstract</p>
 <p>This topic covers setting up support for analyzing Azure resources within Bicep source files.</p>
 </div>
-<h2 id="installingbicepcli">Installing Bicep CLI<a class="headerlink" href="#installingbicepcli" title="Permanent link">#</a></h2>
+<h2 id="installing-bicep-cli">Installing Bicep CLI<a class="headerlink" href="#installing-bicep-cli" title="Permanent link">#</a></h2>
 <p>PSRule for Azure requires a minimum of Bicep CLI version <strong>0.4.451</strong>.</p>
 <p>You may need to install or upgrade the Bicep CLI in the following scenarios:</p>
 <ul>
@@ -6256,7 +6852,7 @@ For installation instructions see <a href="https://docs.microsoft.com/azure/azur
 To use PSRule for Azure with the Azure CLI set the <code>PSRULE_AZURE_BICEP_USE_AZURE_CLI</code> to <code>true</code>.
 Setting this environment variable is explained in the next section.</p>
 </div>
-<h2 id="settingenvironmentvariables">Setting environment variables<a class="headerlink" href="#settingenvironmentvariables" title="Permanent link">#</a></h2>
+<h2 id="setting-environment-variables">Setting environment variables<a class="headerlink" href="#setting-environment-variables" title="Permanent link">#</a></h2>
 <p>When expanding Bicep files, the path to the Bicep CLI binary is required.
 By default, the <code>PATH</code> environment variable will be used to discover the binary path.
 When using this option, add the sub-directory containing the Bicep binary to the environment variable.</p>
@@ -6277,7 +6873,7 @@ File names used for Bicep binaries include <code>bicep</code>, or <code>bicep.ex
 <span class="w">  </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;/usr/local/bin/bicep&#39;</span><span class="w"></span>
 </code></pre></div>
 </div>
-<h3 id="usingazurecli">Using Azure CLI<a class="headerlink" href="#usingazurecli" title="Permanent link">#</a></h3>
+<h3 id="using-azure-cli">Using Azure CLI<a class="headerlink" href="#using-azure-cli" title="Permanent link">#</a></h3>
 <p>By default, PSRule for Azure uses the Bicep CLI directly.
 An additional option is to use the Azure CLI to invoke the Bicep CLI.
 When using this option the required version of the CLI must be installed prior to using PSRule for Azure.
@@ -6297,17 +6893,17 @@ This is explained in <a href="https://docs.microsoft.com/azure/azure-resource-ma
 <span class="w">  </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
 </code></pre></div>
 </div>
-<h3 id="additionalarguments">Additional arguments<a class="headerlink" href="#additionalarguments" title="Permanent link">#</a></h3>
+<h3 id="additional-arguments">Additional arguments<a class="headerlink" href="#additional-arguments" title="Permanent link">#</a></h3>
 <p>For configuration, additional arguments can be passed to the Bicep CLI.
 This is intended to improve forward compatibility with Bicep CLI.</p>
 <p>To configure additional arguments, set the <code>PSRULE_AZURE_BICEP_ARGS</code> environment variable.</p>
-<h2 id="configuringexpansion">Configuring expansion<a class="headerlink" href="#configuringexpansion" title="Permanent link">#</a></h2>
-<p><a href="../configuring-expansion/#bicepsourceexpansion"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M0 3.75A.75.75 0 0 1 .75 3h7.497c1.566 0 2.945.8 3.751 2.014A4.496 4.496 0 0 1 15.75 3h7.5a.75.75 0 0 1 .75.75v15.063a.75.75 0 0 1-.755.75l-7.682-.052a3 3 0 0 0-2.142.878l-.89.891a.75.75 0 0 1-1.061 0l-.902-.901a3 3 0 0 0-2.121-.879H.75a.75.75 0 0 1-.75-.75v-15zm11.247 3.747a3 3 0 0 0-3-2.997H1.5V18h6.947a4.5 4.5 0 0 1 2.803.98l-.003-11.483zm1.503 11.485V7.5a3 3 0 0 1 3-3h6.75v13.558l-6.927-.047a4.5 4.5 0 0 0-2.823.971z"/></svg></span> Docs</a></p>
+<h2 id="configuring-expansion">Configuring expansion<a class="headerlink" href="#configuring-expansion" title="Permanent link">#</a></h2>
+<p><a href="configuring-expansion#bicep-source-expansion"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M0 3.75A.75.75 0 0 1 .75 3h7.497c1.566 0 2.945.8 3.751 2.014A4.496 4.496 0 0 1 15.75 3h7.5a.75.75 0 0 1 .75.75v15.063a.75.75 0 0 1-.755.75l-7.682-.052a3 3 0 0 0-2.142.878l-.89.891a.75.75 0 0 1-1.061 0l-.902-.901a3 3 0 0 0-2.121-.879H.75a.75.75 0 0 1-.75-.75v-15zm11.247 3.747a3 3 0 0 0-3-2.997H1.5V18h6.947a4.5 4.5 0 0 1 2.803.98l-.003-11.483zm1.503 11.485V7.5a3 3 0 0 1 3-3h6.75v13.558l-6.927-.047a4.5 4.5 0 0 0-2.823.971z"/></svg></span> Docs</a></p>
 <p>PSRule for Azure can automatically expand Bicep source files.
 When enabled, PSRule for Azure automatically expands and analyzes Azure resource from <code>.bicep</code> files.</p>
 <p>To enabled this feature, set the <code>Configuration.AZURE_BICEP_FILE_EXPANSION</code> to <code>true</code>.
 This option can be set within the <code>ps-rule.yaml</code> file.</p>
-<div class="highlight"><pre><span></span><code><span class="nt">configuration</span><span class="p">:</span><span class="w"></span>
+<div class="highlight"><span class="filename">ps-rule.yaml</span><pre><span></span><code><span class="nt">configuration</span><span class="p">:</span><span class="w"></span>
 <span class="w">  </span><span class="c1"># Enable automatic expansion of bicep source files.</span><span class="w"></span>
 <span class="w">  </span><span class="nt">AZURE_BICEP_FILE_EXPANSION</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
 </code></pre></div>
@@ -6315,10 +6911,10 @@ This option can be set within the <code>ps-rule.yaml</code> file.</p>
 <p class="admonition-title">Tip</p>
 <p>If you deploy Bicep code using JSON parameter files this option does not need to be set.
 Set <code>Configuration.AZURE_PARAMETER_FILE_EXPANSION</code> to <code>true</code> instead.
-See <a href="../../using-bicep/#usingparameterfiles">Using parameter files</a> and <a href="../../using-templates/#bymetadata">By metadata</a> for more information.</p>
+See <a href="../../using-bicep/#using-parameter-files">Using parameter files</a> and <a href="../../using-templates/#by-metadata">By metadata</a> for more information.</p>
 </div>
-<h3 id="configuringtimeout">Configuring timeout<a class="headerlink" href="#configuringtimeout" title="Permanent link">#</a></h3>
-<p><a href="../configuring-expansion/#bicepcompilationtimeout"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M0 3.75A.75.75 0 0 1 .75 3h7.497c1.566 0 2.945.8 3.751 2.014A4.496 4.496 0 0 1 15.75 3h7.5a.75.75 0 0 1 .75.75v15.063a.75.75 0 0 1-.755.75l-7.682-.052a3 3 0 0 0-2.142.878l-.89.891a.75.75 0 0 1-1.061 0l-.902-.901a3 3 0 0 0-2.121-.879H.75a.75.75 0 0 1-.75-.75v-15zm11.247 3.747a3 3 0 0 0-3-2.997H1.5V18h6.947a4.5 4.5 0 0 1 2.803.98l-.003-11.483zm1.503 11.485V7.5a3 3 0 0 1 3-3h6.75v13.558l-6.927-.047a4.5 4.5 0 0 0-2.823.971z"/></svg></span> Docs</a></p>
+<h3 id="configuring-timeout">Configuring timeout<a class="headerlink" href="#configuring-timeout" title="Permanent link">#</a></h3>
+<p><a href="../configuring-expansion/#bicep-compilation-timeout"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M0 3.75A.75.75 0 0 1 .75 3h7.497c1.566 0 2.945.8 3.751 2.014A4.496 4.496 0 0 1 15.75 3h7.5a.75.75 0 0 1 .75.75v15.063a.75.75 0 0 1-.755.75l-7.682-.052a3 3 0 0 0-2.142.878l-.89.891a.75.75 0 0 1-1.061 0l-.902-.901a3 3 0 0 0-2.121-.879H.75a.75.75 0 0 1-.75-.75v-15zm11.247 3.747a3 3 0 0 0-3-2.997H1.5V18h6.947a4.5 4.5 0 0 1 2.803.98l-.003-11.483zm1.503 11.485V7.5a3 3 0 0 1 3-3h6.75v13.558l-6.927-.047a4.5 4.5 0 0 0-2.823.971z"/></svg></span> Docs</a></p>
 <p>In certain environments it may be necessary to increase the default timeout for building Bicep files.
 This can occur if your Bicep deployments are:</p>
 <ul>
@@ -6328,7 +6924,7 @@ This can occur if your Bicep deployments are:</p>
 </ul>
 <p>If you are experincing timeout errors you can increase the default timeout of 5 seconds.
 To configure the timeout, set <code>Configuration.AZURE_BICEP_FILE_EXPANSION_TIMEOUT</code> to the timeout in seconds.</p>
-<div class="highlight"><pre><span></span><code><span class="nt">configuration</span><span class="p">:</span><span class="w"></span>
+<div class="highlight"><span class="filename">ps-rule.yaml</span><pre><span></span><code><span class="nt">configuration</span><span class="p">:</span><span class="w"></span>
 <span class="w">  </span><span class="c1"># Enable automatic expansion of bicep source files.</span><span class="w"></span>
 <span class="w">  </span><span class="nt">AZURE_BICEP_FILE_EXPANSION</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
 
@@ -6341,15 +6937,80 @@ To configure the timeout, set <code>Configuration.AZURE_BICEP_FILE_EXPANSION_TIM
   <small>
     
       Last update:
-      2022-03-13
+      2022-09-11
     
   </small>
 </div>
 
-              
-            </article>
-            
-          </div>
+
+
+
+
+                
+
+  
+
+
+  <!-- Giscus -->
+  <h2 id="__comments">Comments</h2>
+  
+
+  
+    <script src="https://giscus.app/client.js"
+      data-repo="Azure/PSRule.Rules.Azure"
+      data-repo-id="MDEwOlJlcG9zaXRvcnkxODQxNTQ2Njg="
+      data-category="Documentation"
+      data-category-id="DIC_kwDOCvn6LM4CQqE6"
+      data-mapping="pathname"
+      data-strict="0"
+      data-reactions-enabled="1"
+      data-emit-metadata="0"
+      data-input-position="top"
+      data-theme="light"
+      data-lang="en"
+      data-loading="lazy"
+      crossorigin="anonymous"
+      async>
+    </script>
+  
+
+  <!-- Synchronize Giscus theme with palette -->
+  <script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    /* Set palette on initial load */
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate" ? "dark" : "light"
+      giscus.setAttribute("data-theme", theme) 
+    }
+
+    /* Register event handlers after documented loaded */
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate" ? "dark" : "light"
+
+          /* Instruct Giscus to change theme */
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
+
+
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
         </div>
         
       </main>
@@ -6412,7 +7073,7 @@ To configure the timeout, set <code>Configuration.AZURE_BICEP_FILE_EXPANSION_TIM
       
     
     <a href="https://github.com/Azure/PSRule.Rules.Azure/" target="_blank" rel="noopener" title="github.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
     </a>
   
 </div>
@@ -6425,10 +7086,11 @@ To configure the timeout, set <code>Configuration.AZURE_BICEP_FILE_EXPANSION_TIM
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.indexes", {"navigation.sections": {"level": 1}}, "navigation.tabs", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.85cb4492.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.indexes", {"navigation.sections": {"level": 1}}, "navigation.tabs", "content.code.annotate", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.5bf1dace.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.f758a944.min.js"></script>
+      <script src="../../assets/javascripts/bundle.37e9125f.min.js"></script>
       
     
   </body>

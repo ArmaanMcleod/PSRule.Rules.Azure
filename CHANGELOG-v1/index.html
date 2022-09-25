@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://azure.github.io/PSRule.Rules.Azure/CHANGELOG-v1/">
       
       <link rel="icon" href="../assets/ms_icon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.4">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.5.3">
     
     
       
@@ -23,7 +23,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.4a0965b7.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.7a952b86.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
@@ -34,6 +34,7 @@
         
       
       
+
     
     
     
@@ -48,10 +49,11 @@
     
       <link rel="stylesheet" href="../assets/stylesheets/extra.css">
     
-    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
+    
     
     
 
@@ -61,10 +63,15 @@
     
   
 
+  <!-- Determine description -->
+  
+  
+
   <!-- The image needs to have an absolute URL -->
   
 
   <!-- Open graph meta tags -->
+  <meta property="og:site_name" content="PSRule for Azure" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="PSRule for Azure - v1" />
   <meta property="og:description" content="Ready to go validation and governance controls for Azure Infrastructure as Code (IaC)." />
@@ -101,7 +108,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#changelog" class="md-skip">
+        <a href="#change-log" class="md-skip">
           Skip to content
         </a>
       
@@ -111,9 +118,7 @@
     </div>
     
       <div data-md-component="outdated" hidden>
-        <aside class="md-banner md-banner--warning">
-          
-        </aside>
+        
       </div>
     
     
@@ -162,7 +167,7 @@
       </label>
       <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
@@ -186,7 +191,7 @@
         <a href="https://github.com/Azure/PSRule.Rules.Azure/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -270,7 +275,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../en/rules/module/" class="md-tabs__link">
+      <a href="../en/rules/" class="md-tabs__link">
         Reference
       </a>
     </li>
@@ -310,7 +315,7 @@
       <a href="https://github.com/Azure/PSRule.Rules.Azure/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -352,6 +357,8 @@
       
       
       
+        
+          
         
           
         
@@ -702,6 +709,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_2_6">
@@ -758,6 +767,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../customization/permit-outbound-management/" class="md-nav__link">
+        Permit outbound management
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -773,6 +796,20 @@
     <li class="md-nav__item">
       <a href="../troubleshooting/" class="md-nav__link">
         Troubleshooting
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../samples/" class="md-nav__link">
+        Samples
       </a>
     </li>
   
@@ -818,7 +855,7 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_10" type="checkbox" id="__nav_2_10" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_11" type="checkbox" id="__nav_2_11" checked>
       
       
       
@@ -831,13 +868,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_2_10">
+        <label class="md-nav__link" for="__nav_2_11">
           Releases
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Releases" data-md-level="2">
-        <label class="md-nav__title" for="__nav_2_10">
+        <label class="md-nav__title" for="__nav_2_11">
           <span class="md-nav__icon md-icon"></span>
           Releases
         </label>
@@ -854,7 +891,7 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_10_1" type="checkbox" id="__nav_2_10_1" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_11_1" type="checkbox" id="__nav_2_11_1" checked>
       
       
       
@@ -865,13 +902,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_2_10_1">
+        <label class="md-nav__link" for="__nav_2_11_1">
           Change log
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Change log" data-md-level="3">
-        <label class="md-nav__title" for="__nav_2_10_1">
+        <label class="md-nav__title" for="__nav_2_11_1">
           <span class="md-nav__icon md-icon"></span>
           Change log
         </label>
@@ -924,6 +961,132 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#v1200-b0028-pre-release" class="md-nav__link">
+    v1.20.0-B0028 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v1200-b0004-pre-release" class="md-nav__link">
+    v1.20.0-B0004 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v1192" class="md-nav__link">
+    v1.19.2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v1191" class="md-nav__link">
+    v1.19.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v1190" class="md-nav__link">
+    v1.19.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v1190-b0077-pre-release" class="md-nav__link">
+    v1.19.0-B0077 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v1190-b0042-pre-release" class="md-nav__link">
+    v1.19.0-B0042 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v1190-b0010-pre-release" class="md-nav__link">
+    v1.19.0-B0010 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v1181" class="md-nav__link">
+    v1.18.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v1180" class="md-nav__link">
+    v1.18.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v1180-b0027-pre-release" class="md-nav__link">
+    v1.18.0-B0027 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v1180-b0010-pre-release" class="md-nav__link">
+    v1.18.0-B0010 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v1180-b0002-pre-release" class="md-nav__link">
+    v1.18.0-B0002 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v1171" class="md-nav__link">
+    v1.17.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v1170" class="md-nav__link">
+    v1.17.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v1170-b0064-pre-release" class="md-nav__link">
+    v1.17.0-B0064 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v1170-b0035-pre-release" class="md-nav__link">
+    v1.17.0-B0035 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v1170-b0014-pre-release" class="md-nav__link">
+    v1.17.0-B0014 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#v1161" class="md-nav__link">
     v1.16.1
   </a>
@@ -938,21 +1101,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#v1160-b0072pre-release" class="md-nav__link">
+  <a href="#v1160-b0072-pre-release" class="md-nav__link">
     v1.16.0-B0072 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v1160-b0041pre-release" class="md-nav__link">
+  <a href="#v1160-b0041-pre-release" class="md-nav__link">
     v1.16.0-B0041 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v1160-b0017pre-release" class="md-nav__link">
+  <a href="#v1160-b0017-pre-release" class="md-nav__link">
     v1.16.0-B0017 (pre-release)
   </a>
   
@@ -980,14 +1143,14 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#v1150-b0053pre-release" class="md-nav__link">
+  <a href="#v1150-b0053-pre-release" class="md-nav__link">
     v1.15.0-B0053 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v1150-b0022pre-release" class="md-nav__link">
+  <a href="#v1150-b0022-pre-release" class="md-nav__link">
     v1.15.0-B0022 (pre-release)
   </a>
   
@@ -1022,35 +1185,35 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#v1140-b2204013pre-release" class="md-nav__link">
+  <a href="#v1140-b2204013-pre-release" class="md-nav__link">
     v1.14.0-B2204013 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v1140-b2204007pre-release" class="md-nav__link">
+  <a href="#v1140-b2204007-pre-release" class="md-nav__link">
     v1.14.0-B2204007 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v1140-b2203117pre-release" class="md-nav__link">
+  <a href="#v1140-b2203117-pre-release" class="md-nav__link">
     v1.14.0-B2203117 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v1140-b2203088pre-release" class="md-nav__link">
+  <a href="#v1140-b2203088-pre-release" class="md-nav__link">
     v1.14.0-B2203088 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v1140-b2203066pre-release" class="md-nav__link">
+  <a href="#v1140-b2203066-pre-release" class="md-nav__link">
     v1.14.0-B2203066 (pre-release)
   </a>
   
@@ -1092,35 +1255,35 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#v1130-b2202113pre-release" class="md-nav__link">
+  <a href="#v1130-b2202113-pre-release" class="md-nav__link">
     v1.13.0-B2202113 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v1130-b2202108pre-release" class="md-nav__link">
+  <a href="#v1130-b2202108-pre-release" class="md-nav__link">
     v1.13.0-B2202108 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v1130-b2202103pre-release" class="md-nav__link">
+  <a href="#v1130-b2202103-pre-release" class="md-nav__link">
     v1.13.0-B2202103 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v1130-b2202090pre-release" class="md-nav__link">
+  <a href="#v1130-b2202090-pre-release" class="md-nav__link">
     v1.13.0-B2202090 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v1130-b2202063pre-release" class="md-nav__link">
+  <a href="#v1130-b2202063-pre-release" class="md-nav__link">
     v1.13.0-B2202063 (pre-release)
   </a>
   
@@ -1148,21 +1311,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#v1120-b2201086pre-release" class="md-nav__link">
+  <a href="#v1120-b2201086-pre-release" class="md-nav__link">
     v1.12.0-B2201086 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v1120-b2201067pre-release" class="md-nav__link">
+  <a href="#v1120-b2201067-pre-release" class="md-nav__link">
     v1.12.0-B2201067 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v1120-b2201054pre-release" class="md-nav__link">
+  <a href="#v1120-b2201054-pre-release" class="md-nav__link">
     v1.12.0-B2201054 (pre-release)
   </a>
   
@@ -1183,35 +1346,35 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#v1110-b2112112pre-release" class="md-nav__link">
+  <a href="#v1110-b2112112-pre-release" class="md-nav__link">
     v1.11.0-B2112112 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v1110-b2112104pre-release" class="md-nav__link">
+  <a href="#v1110-b2112104-pre-release" class="md-nav__link">
     v1.11.0-B2112104 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v1110-b2112073pre-release" class="md-nav__link">
+  <a href="#v1110-b2112073-pre-release" class="md-nav__link">
     v1.11.0-B2112073 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v1110-b2112024pre-release" class="md-nav__link">
+  <a href="#v1110-b2112024-pre-release" class="md-nav__link">
     v1.11.0-B2112024 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v1110-b2111014pre-release" class="md-nav__link">
+  <a href="#v1110-b2111014-pre-release" class="md-nav__link">
     v1.11.0-B2111014 (pre-release)
   </a>
   
@@ -1253,28 +1416,28 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#v1100-b2111081pre-release" class="md-nav__link">
+  <a href="#v1100-b2111081-pre-release" class="md-nav__link">
     v1.10.0-B2111081 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v1100-b2111072pre-release" class="md-nav__link">
+  <a href="#v1100-b2111072-pre-release" class="md-nav__link">
     v1.10.0-B2111072 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v1100-b2111058pre-release" class="md-nav__link">
+  <a href="#v1100-b2111058-pre-release" class="md-nav__link">
     v1.10.0-B2111058 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v1100-b2111040pre-release" class="md-nav__link">
+  <a href="#v1100-b2111040-pre-release" class="md-nav__link">
     v1.10.0-B2111040 (pre-release)
   </a>
   
@@ -1295,56 +1458,56 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#v190-b2110087pre-release" class="md-nav__link">
+  <a href="#v190-b2110087-pre-release" class="md-nav__link">
     v1.9.0-B2110087 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v190-b2110082pre-release" class="md-nav__link">
+  <a href="#v190-b2110082-pre-release" class="md-nav__link">
     v1.9.0-B2110082 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v190-b2110059pre-release" class="md-nav__link">
+  <a href="#v190-b2110059-pre-release" class="md-nav__link">
     v1.9.0-B2110059 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v190-b2110040pre-release" class="md-nav__link">
+  <a href="#v190-b2110040-pre-release" class="md-nav__link">
     v1.9.0-B2110040 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v190-b2110025pre-release" class="md-nav__link">
+  <a href="#v190-b2110025-pre-release" class="md-nav__link">
     v1.9.0-B2110025 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v190-b2110014pre-release" class="md-nav__link">
+  <a href="#v190-b2110014-pre-release" class="md-nav__link">
     v1.9.0-B2110014 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v190-b2110009pre-release" class="md-nav__link">
+  <a href="#v190-b2110009-pre-release" class="md-nav__link">
     v1.9.0-B2110009 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v190-b2109027pre-release" class="md-nav__link">
+  <a href="#v190-b2109027-pre-release" class="md-nav__link">
     v1.9.0-B2109027 (pre-release)
   </a>
   
@@ -1365,42 +1528,42 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#v180-b2109086pre-release" class="md-nav__link">
+  <a href="#v180-b2109086-pre-release" class="md-nav__link">
     v1.8.0-B2109086 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v180-b2109060pre-release" class="md-nav__link">
+  <a href="#v180-b2109060-pre-release" class="md-nav__link">
     v1.8.0-B2109060 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v180-b2109046pre-release" class="md-nav__link">
+  <a href="#v180-b2109046-pre-release" class="md-nav__link">
     v1.8.0-B2109046 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v180-b2109020pre-release" class="md-nav__link">
+  <a href="#v180-b2109020-pre-release" class="md-nav__link">
     v1.8.0-B2109020 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v180-b2108026pre-release" class="md-nav__link">
+  <a href="#v180-b2108026-pre-release" class="md-nav__link">
     v1.8.0-B2108026 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v180-b2108013pre-release" class="md-nav__link">
+  <a href="#v180-b2108013-pre-release" class="md-nav__link">
     v1.8.0-B2108013 (pre-release)
   </a>
   
@@ -1414,28 +1577,28 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#v170-b2108059pre-release" class="md-nav__link">
+  <a href="#v170-b2108059-pre-release" class="md-nav__link">
     v1.7.0-B2108059 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v170-b2108049pre-release" class="md-nav__link">
+  <a href="#v170-b2108049-pre-release" class="md-nav__link">
     v1.7.0-B2108049 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v170-b2108040pre-release" class="md-nav__link">
+  <a href="#v170-b2108040-pre-release" class="md-nav__link">
     v1.7.0-B2108040 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v170-b2108020pre-release" class="md-nav__link">
+  <a href="#v170-b2108020-pre-release" class="md-nav__link">
     v1.7.0-B2108020 (pre-release)
   </a>
   
@@ -1449,21 +1612,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#v160-b2108038pre-release" class="md-nav__link">
+  <a href="#v160-b2108038-pre-release" class="md-nav__link">
     v1.6.0-B2108038 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v160-b2108023pre-release" class="md-nav__link">
+  <a href="#v160-b2108023-pre-release" class="md-nav__link">
     v1.6.0-B2108023 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v160-b2107028pre-release" class="md-nav__link">
+  <a href="#v160-b2107028-pre-release" class="md-nav__link">
     v1.6.0-B2107028 (pre-release)
   </a>
   
@@ -1484,14 +1647,14 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#v150-b2107002pre-release" class="md-nav__link">
+  <a href="#v150-b2107002-pre-release" class="md-nav__link">
     v1.5.0-B2107002 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v150-b2106018pre-release" class="md-nav__link">
+  <a href="#v150-b2106018-pre-release" class="md-nav__link">
     v1.5.0-B2106018 (pre-release)
   </a>
   
@@ -1512,35 +1675,35 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#v140-b2105057pre-release" class="md-nav__link">
+  <a href="#v140-b2105057-pre-release" class="md-nav__link">
     v1.4.0-B2105057 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v140-b2105050pre-release" class="md-nav__link">
+  <a href="#v140-b2105050-pre-release" class="md-nav__link">
     v1.4.0-B2105050 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v140-b2105044pre-release" class="md-nav__link">
+  <a href="#v140-b2105044-pre-release" class="md-nav__link">
     v1.4.0-B2105044 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v140-b2105027pre-release" class="md-nav__link">
+  <a href="#v140-b2105027-pre-release" class="md-nav__link">
     v1.4.0-B2105027 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v140-b2105020pre-release" class="md-nav__link">
+  <a href="#v140-b2105020-pre-release" class="md-nav__link">
     v1.4.0-B2105020 (pre-release)
   </a>
   
@@ -1568,35 +1731,35 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#v130-b2104040pre-release" class="md-nav__link">
+  <a href="#v130-b2104040-pre-release" class="md-nav__link">
     v1.3.0-B2104040 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v130-b2104034pre-release" class="md-nav__link">
+  <a href="#v130-b2104034-pre-release" class="md-nav__link">
     v1.3.0-B2104034 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v130-b2104023pre-release" class="md-nav__link">
+  <a href="#v130-b2104023-pre-release" class="md-nav__link">
     v1.3.0-B2104023 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v130-b2104013pre-release" class="md-nav__link">
+  <a href="#v130-b2104013-pre-release" class="md-nav__link">
     v1.3.0-B2104013 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v130-b2103007pre-release" class="md-nav__link">
+  <a href="#v130-b2103007-pre-release" class="md-nav__link">
     v1.3.0-B2103007 (pre-release)
   </a>
   
@@ -1617,21 +1780,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#v120-b2103044pre-release" class="md-nav__link">
+  <a href="#v120-b2103044-pre-release" class="md-nav__link">
     v1.2.0-B2103044 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v120-b2103032pre-release" class="md-nav__link">
+  <a href="#v120-b2103032-pre-release" class="md-nav__link">
     v1.2.0-B2103032 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v120-b2103024pre-release" class="md-nav__link">
+  <a href="#v120-b2103024-pre-release" class="md-nav__link">
     v1.2.0-B2103024 (pre-release)
   </a>
   
@@ -1673,35 +1836,35 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#v110-b2102034pre-release" class="md-nav__link">
+  <a href="#v110-b2102034-pre-release" class="md-nav__link">
     v1.1.0-B2102034 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v110-b2102023pre-release" class="md-nav__link">
+  <a href="#v110-b2102023-pre-release" class="md-nav__link">
     v1.1.0-B2102023 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v110-b2102015pre-release" class="md-nav__link">
+  <a href="#v110-b2102015-pre-release" class="md-nav__link">
     v1.1.0-B2102015 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v110-b2102010pre-release" class="md-nav__link">
+  <a href="#v110-b2102010-pre-release" class="md-nav__link">
     v1.1.0-B2102010 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v110-b2102001pre-release" class="md-nav__link">
+  <a href="#v110-b2102001-pre-release" class="md-nav__link">
     v1.1.0-B2102001 (pre-release)
   </a>
   
@@ -1715,21 +1878,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#v100-b2101028pre-release" class="md-nav__link">
+  <a href="#v100-b2101028-pre-release" class="md-nav__link">
     v1.0.0-B2101028 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v100-b2101016pre-release" class="md-nav__link">
+  <a href="#v100-b2101016-pre-release" class="md-nav__link">
     v1.0.0-B2101016 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v100-b2101006pre-release" class="md-nav__link">
+  <a href="#v100-b2101006-pre-release" class="md-nav__link">
     v1.0.0-B2101006 (pre-release)
   </a>
   
@@ -1969,6 +2132,12 @@
       
         
           
+            
+          
+        
+          
+        
+          
         
           
         
@@ -1980,10 +2149,16 @@
         
       
       
-        <label class="md-nav__link" for="__nav_4">
-          Reference
-          <span class="md-nav__icon md-icon"></span>
-        </label>
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../en/rules/">Reference</a>
+          
+            <label for="__nav_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
       
       <nav class="md-nav" aria-label="Reference" data-md-level="1">
         <label class="md-nav__title" for="__nav_4">
@@ -1991,6 +2166,8 @@
           Reference
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
+          
+            
           
             
               
@@ -2025,11 +2202,25 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../en/asb-v3/" class="md-nav__link">
+        Azure Security Benchmark
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
     
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3" type="checkbox" id="__nav_4_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_5" type="checkbox" id="__nav_4_5" >
       
       
       
@@ -2592,15 +2783,77 @@
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
       
       
-        <label class="md-nav__link" for="__nav_4_3">
+        <label class="md-nav__link" for="__nav_4_5">
           Rules
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Rules" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_3">
+        <label class="md-nav__title" for="__nav_4_5">
           <span class="md-nav__icon md-icon"></span>
           Rules
         </label>
@@ -2726,6 +2979,20 @@
     <li class="md-nav__item">
       <a href="../en/rules/Azure.ACR.Retention/" class="md-nav__link">
         Azure.ACR.Retention
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.ACR.SoftDelete/" class="md-nav__link">
+        Azure.ACR.SoftDelete
       </a>
     </li>
   
@@ -2948,6 +3215,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../en/rules/Azure.AKS.EphemeralOSDisk/" class="md-nav__link">
+        Azure.AKS.EphemeralOSDisk
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../en/rules/Azure.AKS.HttpAppRouting/" class="md-nav__link">
         Azure.AKS.HttpAppRouting
       </a>
@@ -3146,6 +3427,20 @@
     <li class="md-nav__item">
       <a href="../en/rules/Azure.AKS.StandardLB/" class="md-nav__link">
         Azure.AKS.StandardLB
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.AKS.UptimeSLA/" class="md-nav__link">
+        Azure.AKS.UptimeSLA
       </a>
     </li>
   
@@ -3410,6 +3705,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../en/rules/Azure.AppConfig.DisableLocalAuth/" class="md-nav__link">
+        Azure.AppConfig.DisableLocalAuth
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../en/rules/Azure.AppConfig.Name/" class="md-nav__link">
         Azure.AppConfig.Name
       </a>
@@ -3566,6 +3875,62 @@
     <li class="md-nav__item">
       <a href="../en/rules/Azure.AppGw.WAFRules/" class="md-nav__link">
         Azure.AppGw.WAFRules
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.AppGwWAF.Enabled/" class="md-nav__link">
+        Azure.AppGwWAF.Enabled
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.AppGwWAF.Exclusions/" class="md-nav__link">
+        Azure.AppGwWAF.Exclusions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.AppGwWAF.PreventionMode/" class="md-nav__link">
+        Azure.AppGwWAF.PreventionMode
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.AppGwWAF.RuleGroups/" class="md-nav__link">
+        Azure.AppGwWAF.RuleGroups
       </a>
     </li>
   
@@ -3914,6 +4279,76 @@
   
   
     <li class="md-nav__item">
+      <a href="../en/rules/Azure.CDN.UseFrontDoor/" class="md-nav__link">
+        Azure.CDN.UseFrontDoor
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.Cognitive.DisableLocalAuth/" class="md-nav__link">
+        Azure.Cognitive.DisableLocalAuth
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.Cognitive.ManagedIdentity/" class="md-nav__link">
+        Azure.Cognitive.ManagedIdentity
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.Cognitive.PrivateEndpoints/" class="md-nav__link">
+        Azure.Cognitive.PrivateEndpoints
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.Cognitive.PublicAccess/" class="md-nav__link">
+        Azure.Cognitive.PublicAccess
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../en/rules/Azure.ContainerApp.Insecure/" class="md-nav__link">
         Azure.ContainerApp.Insecure
       </a>
@@ -3958,6 +4393,132 @@
     <li class="md-nav__item">
       <a href="../en/rules/Azure.DataFactory.Version/" class="md-nav__link">
         Azure.DataFactory.Version
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.Defender.AppServices/" class="md-nav__link">
+        Azure.Defender.AppServices
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.Defender.Containers/" class="md-nav__link">
+        Azure.Defender.Containers
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.Defender.SQL/" class="md-nav__link">
+        Azure.Defender.SQL
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.Defender.SQLOnVM/" class="md-nav__link">
+        Azure.Defender.SQLOnVM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.Defender.Servers/" class="md-nav__link">
+        Azure.Defender.Servers
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.Defender.Storage/" class="md-nav__link">
+        Azure.Defender.Storage
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.DefenderCloud.Contact/" class="md-nav__link">
+        Azure.DefenderCloud.Contact
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.DefenderCloud.Provisioning/" class="md-nav__link">
+        Azure.DefenderCloud.Provisioning
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.Deployment.AdminUsername/" class="md-nav__link">
+        Azure.Deployment.AdminUsername
       </a>
     </li>
   
@@ -4238,6 +4799,62 @@
     <li class="md-nav__item">
       <a href="../en/rules/Azure.FrontDoor.WAF.Name/" class="md-nav__link">
         Azure.FrontDoor.WAF.Name
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.FrontDoorWAF.Enabled/" class="md-nav__link">
+        Azure.FrontDoorWAF.Enabled
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.FrontDoorWAF.Exclusions/" class="md-nav__link">
+        Azure.FrontDoorWAF.Exclusions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.FrontDoorWAF.PreventionMode/" class="md-nav__link">
+        Azure.FrontDoorWAF.PreventionMode
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.FrontDoorWAF.RuleGroups/" class="md-nav__link">
+        Azure.FrontDoorWAF.RuleGroups
       </a>
     </li>
   
@@ -4532,6 +5149,20 @@
     <li class="md-nav__item">
       <a href="../en/rules/Azure.MySQL.UseSSL/" class="md-nav__link">
         Azure.MySQL.UseSSL
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.NSG.AKSRules/" class="md-nav__link">
+        Azure.NSG.AKSRules
       </a>
     </li>
   
@@ -4978,6 +5609,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../en/rules/Azure.Redis.FirewallIPRange/" class="md-nav__link">
+        Azure.Redis.FirewallIPRange
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.Redis.FirewallRuleCount/" class="md-nav__link">
+        Azure.Redis.FirewallRuleCount
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../en/rules/Azure.Redis.MaxMemoryReserved/" class="md-nav__link">
         Azure.Redis.MaxMemoryReserved
       </a>
@@ -5036,6 +5695,20 @@
     <li class="md-nav__item">
       <a href="../en/rules/Azure.Redis.PublicNetworkAccess/" class="md-nav__link">
         Azure.Redis.PublicNetworkAccess
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.RedisEnterprise.MinTLS/" class="md-nav__link">
+        Azure.RedisEnterprise.MinTLS
       </a>
     </li>
   
@@ -5174,6 +5847,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../en/rules/Azure.SQL.DefenderCloud/" class="md-nav__link">
+        Azure.SQL.DefenderCloud
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../en/rules/Azure.SQL.FGName/" class="md-nav__link">
         Azure.SQL.FGName
       </a>
@@ -5258,20 +5945,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../en/rules/Azure.SQL.ThreatDetection/" class="md-nav__link">
-        Azure.SQL.ThreatDetection
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../en/rules/Azure.SQLMI.Name/" class="md-nav__link">
         Azure.SQLMI.Name
       </a>
@@ -5344,34 +6017,6 @@
     <li class="md-nav__item">
       <a href="../en/rules/Azure.Search.SKU/" class="md-nav__link">
         Azure.Search.SKU
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../en/rules/Azure.SecurityCenter.Contact/" class="md-nav__link">
-        Azure.SecurityCenter.Contact
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../en/rules/Azure.SecurityCenter.Provisioning/" class="md-nav__link">
-        Azure.SecurityCenter.Provisioning
       </a>
     </li>
   
@@ -5484,6 +6129,34 @@
     <li class="md-nav__item">
       <a href="../en/rules/Azure.Storage.BlobPublicAccess/" class="md-nav__link">
         Azure.Storage.BlobPublicAccess
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.Storage.ContainerSoftDelete/" class="md-nav__link">
+        Azure.Storage.ContainerSoftDelete
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/rules/Azure.Storage.FileShareSoftDelete/" class="md-nav__link">
+        Azure.Storage.FileShareSoftDelete
       </a>
     </li>
   
@@ -6294,6 +6967,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../en/rules/Azure.VMSS.PublicKey/" class="md-nav__link">
+        Azure.VMSS.PublicKey
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../en/rules/Azure.VNET.LocalDNS/" class="md-nav__link">
         Azure.VNET.LocalDNS
       </a>
@@ -6528,7 +7215,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4" type="checkbox" id="__nav_4_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_6" type="checkbox" id="__nav_4_6" >
       
       
       
@@ -6561,15 +7248,19 @@
         
           
         
+          
+        
+          
+        
       
       
-        <label class="md-nav__link" for="__nav_4_4">
+        <label class="md-nav__link" for="__nav_4_6">
           Baselines
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Baselines" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_4">
+        <label class="md-nav__title" for="__nav_4_6">
           <span class="md-nav__icon md-icon"></span>
           Baselines
         </label>
@@ -6721,6 +7412,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../en/baselines/Azure.GA_2022_06/" class="md-nav__link">
+        Azure.GA_2022_06
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../en/baselines/Azure.Preview/" class="md-nav__link">
         Azure.Preview
       </a>
@@ -6771,6 +7476,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../en/baselines/Azure.Preview_2022_06/" class="md-nav__link">
+        Azure.Preview_2022_06
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -6787,7 +7506,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_5" type="checkbox" id="__nav_4_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_7" type="checkbox" id="__nav_4_7" >
       
       
       
@@ -6804,13 +7523,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_4_5">
+        <label class="md-nav__link" for="__nav_4_7">
           Selectors
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Selectors" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_5">
+        <label class="md-nav__title" for="__nav_4_7">
           <span class="md-nav__icon md-icon"></span>
           Selectors
         </label>
@@ -6933,6 +7652,132 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#v1200-b0028-pre-release" class="md-nav__link">
+    v1.20.0-B0028 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v1200-b0004-pre-release" class="md-nav__link">
+    v1.20.0-B0004 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v1192" class="md-nav__link">
+    v1.19.2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v1191" class="md-nav__link">
+    v1.19.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v1190" class="md-nav__link">
+    v1.19.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v1190-b0077-pre-release" class="md-nav__link">
+    v1.19.0-B0077 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v1190-b0042-pre-release" class="md-nav__link">
+    v1.19.0-B0042 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v1190-b0010-pre-release" class="md-nav__link">
+    v1.19.0-B0010 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v1181" class="md-nav__link">
+    v1.18.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v1180" class="md-nav__link">
+    v1.18.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v1180-b0027-pre-release" class="md-nav__link">
+    v1.18.0-B0027 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v1180-b0010-pre-release" class="md-nav__link">
+    v1.18.0-B0010 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v1180-b0002-pre-release" class="md-nav__link">
+    v1.18.0-B0002 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v1171" class="md-nav__link">
+    v1.17.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v1170" class="md-nav__link">
+    v1.17.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v1170-b0064-pre-release" class="md-nav__link">
+    v1.17.0-B0064 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v1170-b0035-pre-release" class="md-nav__link">
+    v1.17.0-B0035 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v1170-b0014-pre-release" class="md-nav__link">
+    v1.17.0-B0014 (pre-release)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#v1161" class="md-nav__link">
     v1.16.1
   </a>
@@ -6947,21 +7792,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#v1160-b0072pre-release" class="md-nav__link">
+  <a href="#v1160-b0072-pre-release" class="md-nav__link">
     v1.16.0-B0072 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v1160-b0041pre-release" class="md-nav__link">
+  <a href="#v1160-b0041-pre-release" class="md-nav__link">
     v1.16.0-B0041 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v1160-b0017pre-release" class="md-nav__link">
+  <a href="#v1160-b0017-pre-release" class="md-nav__link">
     v1.16.0-B0017 (pre-release)
   </a>
   
@@ -6989,14 +7834,14 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#v1150-b0053pre-release" class="md-nav__link">
+  <a href="#v1150-b0053-pre-release" class="md-nav__link">
     v1.15.0-B0053 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v1150-b0022pre-release" class="md-nav__link">
+  <a href="#v1150-b0022-pre-release" class="md-nav__link">
     v1.15.0-B0022 (pre-release)
   </a>
   
@@ -7031,35 +7876,35 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#v1140-b2204013pre-release" class="md-nav__link">
+  <a href="#v1140-b2204013-pre-release" class="md-nav__link">
     v1.14.0-B2204013 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v1140-b2204007pre-release" class="md-nav__link">
+  <a href="#v1140-b2204007-pre-release" class="md-nav__link">
     v1.14.0-B2204007 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v1140-b2203117pre-release" class="md-nav__link">
+  <a href="#v1140-b2203117-pre-release" class="md-nav__link">
     v1.14.0-B2203117 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v1140-b2203088pre-release" class="md-nav__link">
+  <a href="#v1140-b2203088-pre-release" class="md-nav__link">
     v1.14.0-B2203088 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v1140-b2203066pre-release" class="md-nav__link">
+  <a href="#v1140-b2203066-pre-release" class="md-nav__link">
     v1.14.0-B2203066 (pre-release)
   </a>
   
@@ -7101,35 +7946,35 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#v1130-b2202113pre-release" class="md-nav__link">
+  <a href="#v1130-b2202113-pre-release" class="md-nav__link">
     v1.13.0-B2202113 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v1130-b2202108pre-release" class="md-nav__link">
+  <a href="#v1130-b2202108-pre-release" class="md-nav__link">
     v1.13.0-B2202108 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v1130-b2202103pre-release" class="md-nav__link">
+  <a href="#v1130-b2202103-pre-release" class="md-nav__link">
     v1.13.0-B2202103 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v1130-b2202090pre-release" class="md-nav__link">
+  <a href="#v1130-b2202090-pre-release" class="md-nav__link">
     v1.13.0-B2202090 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v1130-b2202063pre-release" class="md-nav__link">
+  <a href="#v1130-b2202063-pre-release" class="md-nav__link">
     v1.13.0-B2202063 (pre-release)
   </a>
   
@@ -7157,21 +8002,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#v1120-b2201086pre-release" class="md-nav__link">
+  <a href="#v1120-b2201086-pre-release" class="md-nav__link">
     v1.12.0-B2201086 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v1120-b2201067pre-release" class="md-nav__link">
+  <a href="#v1120-b2201067-pre-release" class="md-nav__link">
     v1.12.0-B2201067 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v1120-b2201054pre-release" class="md-nav__link">
+  <a href="#v1120-b2201054-pre-release" class="md-nav__link">
     v1.12.0-B2201054 (pre-release)
   </a>
   
@@ -7192,35 +8037,35 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#v1110-b2112112pre-release" class="md-nav__link">
+  <a href="#v1110-b2112112-pre-release" class="md-nav__link">
     v1.11.0-B2112112 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v1110-b2112104pre-release" class="md-nav__link">
+  <a href="#v1110-b2112104-pre-release" class="md-nav__link">
     v1.11.0-B2112104 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v1110-b2112073pre-release" class="md-nav__link">
+  <a href="#v1110-b2112073-pre-release" class="md-nav__link">
     v1.11.0-B2112073 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v1110-b2112024pre-release" class="md-nav__link">
+  <a href="#v1110-b2112024-pre-release" class="md-nav__link">
     v1.11.0-B2112024 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v1110-b2111014pre-release" class="md-nav__link">
+  <a href="#v1110-b2111014-pre-release" class="md-nav__link">
     v1.11.0-B2111014 (pre-release)
   </a>
   
@@ -7262,28 +8107,28 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#v1100-b2111081pre-release" class="md-nav__link">
+  <a href="#v1100-b2111081-pre-release" class="md-nav__link">
     v1.10.0-B2111081 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v1100-b2111072pre-release" class="md-nav__link">
+  <a href="#v1100-b2111072-pre-release" class="md-nav__link">
     v1.10.0-B2111072 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v1100-b2111058pre-release" class="md-nav__link">
+  <a href="#v1100-b2111058-pre-release" class="md-nav__link">
     v1.10.0-B2111058 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v1100-b2111040pre-release" class="md-nav__link">
+  <a href="#v1100-b2111040-pre-release" class="md-nav__link">
     v1.10.0-B2111040 (pre-release)
   </a>
   
@@ -7304,56 +8149,56 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#v190-b2110087pre-release" class="md-nav__link">
+  <a href="#v190-b2110087-pre-release" class="md-nav__link">
     v1.9.0-B2110087 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v190-b2110082pre-release" class="md-nav__link">
+  <a href="#v190-b2110082-pre-release" class="md-nav__link">
     v1.9.0-B2110082 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v190-b2110059pre-release" class="md-nav__link">
+  <a href="#v190-b2110059-pre-release" class="md-nav__link">
     v1.9.0-B2110059 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v190-b2110040pre-release" class="md-nav__link">
+  <a href="#v190-b2110040-pre-release" class="md-nav__link">
     v1.9.0-B2110040 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v190-b2110025pre-release" class="md-nav__link">
+  <a href="#v190-b2110025-pre-release" class="md-nav__link">
     v1.9.0-B2110025 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v190-b2110014pre-release" class="md-nav__link">
+  <a href="#v190-b2110014-pre-release" class="md-nav__link">
     v1.9.0-B2110014 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v190-b2110009pre-release" class="md-nav__link">
+  <a href="#v190-b2110009-pre-release" class="md-nav__link">
     v1.9.0-B2110009 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v190-b2109027pre-release" class="md-nav__link">
+  <a href="#v190-b2109027-pre-release" class="md-nav__link">
     v1.9.0-B2109027 (pre-release)
   </a>
   
@@ -7374,42 +8219,42 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#v180-b2109086pre-release" class="md-nav__link">
+  <a href="#v180-b2109086-pre-release" class="md-nav__link">
     v1.8.0-B2109086 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v180-b2109060pre-release" class="md-nav__link">
+  <a href="#v180-b2109060-pre-release" class="md-nav__link">
     v1.8.0-B2109060 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v180-b2109046pre-release" class="md-nav__link">
+  <a href="#v180-b2109046-pre-release" class="md-nav__link">
     v1.8.0-B2109046 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v180-b2109020pre-release" class="md-nav__link">
+  <a href="#v180-b2109020-pre-release" class="md-nav__link">
     v1.8.0-B2109020 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v180-b2108026pre-release" class="md-nav__link">
+  <a href="#v180-b2108026-pre-release" class="md-nav__link">
     v1.8.0-B2108026 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v180-b2108013pre-release" class="md-nav__link">
+  <a href="#v180-b2108013-pre-release" class="md-nav__link">
     v1.8.0-B2108013 (pre-release)
   </a>
   
@@ -7423,28 +8268,28 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#v170-b2108059pre-release" class="md-nav__link">
+  <a href="#v170-b2108059-pre-release" class="md-nav__link">
     v1.7.0-B2108059 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v170-b2108049pre-release" class="md-nav__link">
+  <a href="#v170-b2108049-pre-release" class="md-nav__link">
     v1.7.0-B2108049 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v170-b2108040pre-release" class="md-nav__link">
+  <a href="#v170-b2108040-pre-release" class="md-nav__link">
     v1.7.0-B2108040 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v170-b2108020pre-release" class="md-nav__link">
+  <a href="#v170-b2108020-pre-release" class="md-nav__link">
     v1.7.0-B2108020 (pre-release)
   </a>
   
@@ -7458,21 +8303,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#v160-b2108038pre-release" class="md-nav__link">
+  <a href="#v160-b2108038-pre-release" class="md-nav__link">
     v1.6.0-B2108038 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v160-b2108023pre-release" class="md-nav__link">
+  <a href="#v160-b2108023-pre-release" class="md-nav__link">
     v1.6.0-B2108023 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v160-b2107028pre-release" class="md-nav__link">
+  <a href="#v160-b2107028-pre-release" class="md-nav__link">
     v1.6.0-B2107028 (pre-release)
   </a>
   
@@ -7493,14 +8338,14 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#v150-b2107002pre-release" class="md-nav__link">
+  <a href="#v150-b2107002-pre-release" class="md-nav__link">
     v1.5.0-B2107002 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v150-b2106018pre-release" class="md-nav__link">
+  <a href="#v150-b2106018-pre-release" class="md-nav__link">
     v1.5.0-B2106018 (pre-release)
   </a>
   
@@ -7521,35 +8366,35 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#v140-b2105057pre-release" class="md-nav__link">
+  <a href="#v140-b2105057-pre-release" class="md-nav__link">
     v1.4.0-B2105057 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v140-b2105050pre-release" class="md-nav__link">
+  <a href="#v140-b2105050-pre-release" class="md-nav__link">
     v1.4.0-B2105050 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v140-b2105044pre-release" class="md-nav__link">
+  <a href="#v140-b2105044-pre-release" class="md-nav__link">
     v1.4.0-B2105044 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v140-b2105027pre-release" class="md-nav__link">
+  <a href="#v140-b2105027-pre-release" class="md-nav__link">
     v1.4.0-B2105027 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v140-b2105020pre-release" class="md-nav__link">
+  <a href="#v140-b2105020-pre-release" class="md-nav__link">
     v1.4.0-B2105020 (pre-release)
   </a>
   
@@ -7577,35 +8422,35 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#v130-b2104040pre-release" class="md-nav__link">
+  <a href="#v130-b2104040-pre-release" class="md-nav__link">
     v1.3.0-B2104040 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v130-b2104034pre-release" class="md-nav__link">
+  <a href="#v130-b2104034-pre-release" class="md-nav__link">
     v1.3.0-B2104034 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v130-b2104023pre-release" class="md-nav__link">
+  <a href="#v130-b2104023-pre-release" class="md-nav__link">
     v1.3.0-B2104023 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v130-b2104013pre-release" class="md-nav__link">
+  <a href="#v130-b2104013-pre-release" class="md-nav__link">
     v1.3.0-B2104013 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v130-b2103007pre-release" class="md-nav__link">
+  <a href="#v130-b2103007-pre-release" class="md-nav__link">
     v1.3.0-B2103007 (pre-release)
   </a>
   
@@ -7626,21 +8471,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#v120-b2103044pre-release" class="md-nav__link">
+  <a href="#v120-b2103044-pre-release" class="md-nav__link">
     v1.2.0-B2103044 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v120-b2103032pre-release" class="md-nav__link">
+  <a href="#v120-b2103032-pre-release" class="md-nav__link">
     v1.2.0-B2103032 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v120-b2103024pre-release" class="md-nav__link">
+  <a href="#v120-b2103024-pre-release" class="md-nav__link">
     v1.2.0-B2103024 (pre-release)
   </a>
   
@@ -7682,35 +8527,35 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#v110-b2102034pre-release" class="md-nav__link">
+  <a href="#v110-b2102034-pre-release" class="md-nav__link">
     v1.1.0-B2102034 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v110-b2102023pre-release" class="md-nav__link">
+  <a href="#v110-b2102023-pre-release" class="md-nav__link">
     v1.1.0-B2102023 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v110-b2102015pre-release" class="md-nav__link">
+  <a href="#v110-b2102015-pre-release" class="md-nav__link">
     v1.1.0-B2102015 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v110-b2102010pre-release" class="md-nav__link">
+  <a href="#v110-b2102010-pre-release" class="md-nav__link">
     v1.1.0-B2102010 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v110-b2102001pre-release" class="md-nav__link">
+  <a href="#v110-b2102001-pre-release" class="md-nav__link">
     v1.1.0-B2102001 (pre-release)
   </a>
   
@@ -7724,21 +8569,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#v100-b2101028pre-release" class="md-nav__link">
+  <a href="#v100-b2101028-pre-release" class="md-nav__link">
     v1.0.0-B2101028 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v100-b2101016pre-release" class="md-nav__link">
+  <a href="#v100-b2101016-pre-release" class="md-nav__link">
     v1.0.0-B2101016 (pre-release)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#v100-b2101006pre-release" class="md-nav__link">
+  <a href="#v100-b2101006-pre-release" class="md-nav__link">
     v1.0.0-B2101006 (pre-release)
   </a>
   
@@ -7752,20 +8597,23 @@
               </div>
             
           
-          <div class="md-content" data-md-component="content">
-            <article class="md-content__inner md-typeset">
-              
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
                 
-  <a href="https://github.com/Azure/PSRule.Rules.Azure/blob/main/docs/CHANGELOG-v1.md" title="Edit this page" class="md-content__button md-icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
-  </a>
-
-
+  
+                  
   
 
 
 
-<h1 id="changelog">Change log<a class="headerlink" href="#changelog" title="Permanent link">#</a></h1>
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/blob/main/docs/CHANGELOG-v1.md" title="Edit this page" class="md-content__button md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+<h1 id="change-log">Change log<a class="headerlink" href="#change-log" title="Permanent link">#</a></h1>
 <p>See <a href="../upgrade-notes/">upgrade notes</a> for helpful information when upgrading from previous versions.</p>
 <p><strong>Important notes</strong>:</p>
 <ul>
@@ -7781,8 +8629,465 @@
   See <a href="../upgrade-notes/">upgrade notes</a> for more information.</li>
 </ul>
 <h2 id="unreleased">Unreleased<a class="headerlink" href="#unreleased" title="Permanent link">#</a></h2>
+<ul>
+<li>New rules:<ul>
+<li>Azure Container Registry:<ul>
+<li>Check soft delete policy enabled by @bengeset96
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1674">#1674</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>What's changed since pre-release v1.20.0-B0028:</p>
+<ul>
+<li>New rules:<ul>
+<li>Azure Cache for Redis:<ul>
+<li>Check the number of firewall rules for caches by @jonathanruiz.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/544">#544</a></li>
+<li>Check the number of IP addresses in firewall rules for caches by @jonathanruiz.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/544">#544</a></li>
+</ul>
+</li>
+<li>App Configuration:<ul>
+<li>Check identity-based authentication is used for configuration stores by @pazdedav.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1691">#1691</a></li>
+</ul>
+</li>
+<li>Defender for Cloud:<ul>
+<li>Check Microsoft Defender for Cloud is enabled for Containers by @jdewisscher.
+  <a href="hhttps://github.com/Azure/PSRule.Rules.Azure/issues/1632">#1632</a></li>
+<li>Check Microsoft Defender for Cloud is enabled for Virtual Machines by @jdewisscher.
+  <a href="hhttps://github.com/Azure/PSRule.Rules.Azure/issues/1632">#1632</a></li>
+<li>Check Microsoft Defender for Cloud is enabled for SQL Servers by @jdewisscher.
+  <a href="hhttps://github.com/Azure/PSRule.Rules.Azure/issues/1632">#1632</a></li>
+<li>Check Microsoft Defender for Cloud is enabled for App Services by @jdewisscher.
+  <a href="hhttps://github.com/Azure/PSRule.Rules.Azure/issues/1632">#1632</a></li>
+<li>Check Microsoft Defender for Cloud is enabled for Storage Accounts by @jdewisscher.
+  <a href="hhttps://github.com/Azure/PSRule.Rules.Azure/issues/1632">#1632</a></li>
+<li>Check Microsoft Defender for Cloud is enabled for SQL Servers on machines by @jdewisscher.
+  <a href="hhttps://github.com/Azure/PSRule.Rules.Azure/issues/1632">#1632</a></li>
+</ul>
+</li>
+<li>Network Security Group:<ul>
+<li>Check AKS managed NSGs don't contain custom rules by @ms-sambell.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/8">#8</a></li>
+</ul>
+</li>
+<li>Storage Account:<ul>
+<li>Check blob container soft delete is enabled by @pazdedav.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1671">#1671</a></li>
+<li>Check file share soft delete is enabled by @jonathanruiz.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/966">#966</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Updated rules:<ul>
+<li><strong>Important change</strong>: Updated rules, tests and docs with Microsoft Defender for Cloud by @jonathanruiz.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/545">#545</a><ul>
+<li>The following rules have been renamed with aliases:<ul>
+<li>Renamed <code>Azure.SQL.ThreatDetection</code> to <code>Azure.SQL.DefenderCloud</code>.</li>
+<li>Renamed <code>Azure.SecurityCenter.Contact</code> to <code>Azure.DefenderCloud.Contact</code>.</li>
+<li>Renamed <code>Azure.SecurityCenter.Provisioning</code> to <code>Azure.DefenderCloud.Provisioning</code>.</li>
+</ul>
+</li>
+<li>If you are referencing the old names please consider updating to the new names.</li>
+</ul>
+</li>
+<li>Updated documentation examples for Front Door and Key Vault rules by @lluppesms.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1667">#1667</a></li>
+<li>Improved the way we check that VM or VMSS has Linux by @verabe
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1704">#1704</a></li>
+</ul>
+</li>
+<li>General improvements:<ul>
+<li>Updated NSG documentation with code snippets and links by @simone-bennett.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1607">#1607</a></li>
+<li>Updated Application Gateway documentation with code snippets by @ms-sambell.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1608">#1608</a></li>
+<li>Updated SQL firewall rules documentation by @ms-sambell.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1569">#1569</a></li>
+<li>Updated Container Apps documentation and rule to new resource type by @marie-schmidt.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1672">#1672</a></li>
+<li>Updated KeyVault and FrontDoor documentation with code snippets by @lluppesms.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1667">#1667</a></li>
+<li>Added tag and annotation metadata from policy for rules generation by @BernieWhite.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1652">#1652</a></li>
+</ul>
+</li>
+<li>Bug fixes:<ul>
+<li>Fixed continue processing policy assignments on error by @BernieWhite.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1651">#1651</a></li>
+<li>Fixed handling of runtime assessment data by @BernieWhite.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1707">#1707</a></li>
+<li>Fixed conversion of type conditions to pre-conditions by @BernieWhite
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1708">#1708</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v1200-b0028-pre-release">v1.20.0-B0028 (pre-release)<a class="headerlink" href="#v1200-b0028-pre-release" title="Permanent link">#</a></h2>
+<p>What's changed since pre-release v1.20.0-B0004:</p>
+<ul>
+<li>New rules:<ul>
+<li>AKS:<ul>
+<li>Check clusters use Ephemeral OS disk by @bengeset96.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1618">#1618</a></li>
+</ul>
+</li>
+<li>CDN:<ul>
+<li>Check CDN profile uses Front Door Standard or Premium tier by @bengeset96.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1612">#1612</a></li>
+</ul>
+</li>
+<li>VMSS:<ul>
+<li>Check Linux VMSS has disabled password authentication by @bengeset96.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1635">#1635</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Updated rules:<ul>
+<li>Azure Kubernetes Service:<ul>
+<li>Updated <code>Azure.AKS.Version</code> to use latest stable version <code>1.23.8</code> by @BernieWhite.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1627">#1627</a><ul>
+<li>Use <code>AZURE_AKS_CLUSTER_MINIMUM_VERSION</code> to configure the minimum version of the cluster.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Event Grid:<ul>
+<li>Promoted <code>Azure.EventGrid.DisableLocalAuth</code> to GA rule set by @BernieWhite.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1628">#1628</a></li>
+</ul>
+</li>
+<li>Key Vault:<ul>
+<li>Promoted <code>Azure.KeyVault.AutoRotationPolicy</code> to GA rule set by @BernieWhite.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1629">#1629</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Engineering:<ul>
+<li>Bump PSRule to v2.4.0.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/pull/1620">#1620</a></li>
+<li>Updated provider data for analysis.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/pull/1605">#1605</a></li>
+</ul>
+</li>
+<li>Bug fixes:<ul>
+<li>Fixed function <code>dateTimeAdd</code> errors handling <code>utcNow</code> output by @BernieWhite.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1637">#1637</a></li>
+<li>Fixed inconclusive failure of <code>Azure.Deployment.AdminUsername</code> by @BernieWhite.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1631">#1631</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v1200-b0004-pre-release">v1.20.0-B0004 (pre-release)<a class="headerlink" href="#v1200-b0004-pre-release" title="Permanent link">#</a></h2>
+<p>What's changed since v1.19.1:</p>
+<ul>
+<li>New rules:<ul>
+<li>Azure Resources:<ul>
+<li>Check that nested deployments securely pass through administrator usernames by @ms-sambell.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1479">#1479</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Engineering:<ul>
+<li>Bump Microsoft.NET.Test.Sdk to v17.3.1.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/pull/1603">#1603</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v1192">v1.19.2<a class="headerlink" href="#v1192" title="Permanent link">#</a></h2>
+<p>What's changed since v1.19.1:</p>
+<ul>
+<li>Bug fixes:<ul>
+<li>Fixed function <code>dateTimeAdd</code> errors handling <code>utcNow</code> output by @BernieWhite.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1637">#1637</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v1191">v1.19.1<a class="headerlink" href="#v1191" title="Permanent link">#</a></h2>
+<p>What's changed since v1.19.0:</p>
+<ul>
+<li>Bug fixes:<ul>
+<li>Fixed <code>Azure.VNET.UseNSGs</code> is missing exceptions by @BernieWhite.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1609">#1609</a><ul>
+<li>Added exclusions for <code>RouteServerSubnet</code> and any subnet with a dedicated HSM delegation.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="v1190">v1.19.0<a class="headerlink" href="#v1190" title="Permanent link">#</a></h2>
+<p>What's changed since v1.18.1:</p>
+<ul>
+<li>New rules:<ul>
+<li>Azure Kubernetes Service:<ul>
+<li>Check clusters use uptime SLA by @bengeset96.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1601">#1601</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>General improvements:<ul>
+<li>Updated rule level for the following rules by @BernieWhite.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1551">#1551</a><ul>
+<li>Set <code>Azure.APIM.APIDescriptors</code> to warning from error.</li>
+<li>Set <code>Azure.APIM.ProductDescriptors</code> to warning from error.</li>
+<li>Set <code>Azure.Template.UseLocationParameter</code> to warning from error.</li>
+<li>Set <code>Azure.Template.UseComments</code> to information from error.</li>
+<li>Set <code>Azure.Template.UseDescriptions</code> to information from error.</li>
+</ul>
+</li>
+<li>Improve reporting of failing resource property for rules by @BernieWhite.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1429">#1429</a></li>
+</ul>
+</li>
+<li>Engineering:<ul>
+<li>Added publishing of symbols for NuGet packages by @BernieWhite.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1549">#1549</a></li>
+<li>Bump Az.Resources to v6.1.0.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/pull/1557">#1557</a></li>
+<li>Bump Microsoft.NET.Test.Sdk to v17.3.0.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/pull/1563">#1563</a></li>
+<li>Bump PSRule to v2.3.2.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/pull/1574">#1574</a></li>
+<li>Bump support projects to .NET 6 by @BernieWhite.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1560">#1560</a></li>
+<li>Bump BenchmarkDotNet to v0.13.2.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/pull/1593">#1593</a></li>
+<li>Bump BenchmarkDotNet.Diagnostics.Windows to v0.13.2.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/pull/1594">#1594</a></li>
+<li>Updated provider data for analysis.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/pull/1598">#1598</a></li>
+</ul>
+</li>
+<li>Bug fixes:<ul>
+<li>Fixed parameter files linked to bicep code via naming convention is not working by @BernieWhite.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1582">#1582</a></li>
+<li>Fixed handling of storage accounts sub-resources with CMK by @BernieWhite.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1575">#1575</a></li>
+</ul>
+</li>
+</ul>
+<p>What's changed since pre-release v1.19.0-B0077:</p>
+<ul>
+<li>No additional changes.</li>
+</ul>
+<h2 id="v1190-b0077-pre-release">v1.19.0-B0077 (pre-release)<a class="headerlink" href="#v1190-b0077-pre-release" title="Permanent link">#</a></h2>
+<p>What's changed since pre-release v1.19.0-B0042:</p>
+<ul>
+<li>New rules:<ul>
+<li>Azure Kubernetes Service:<ul>
+<li>Check clusters use uptime SLA by @bengeset96.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1601">#1601</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="v1190-b0042-pre-release">v1.19.0-B0042 (pre-release)<a class="headerlink" href="#v1190-b0042-pre-release" title="Permanent link">#</a></h2>
+<p>What's changed since pre-release v1.19.0-B0010:</p>
+<ul>
+<li>General improvements:<ul>
+<li>Improve reporting of failing resource property for rules by @BernieWhite.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1429">#1429</a></li>
+</ul>
+</li>
+<li>Engineering:<ul>
+<li>Bump PSRule to v2.3.2.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/pull/1574">#1574</a></li>
+<li>Bump support projects to .NET 6 by @BernieWhite.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1560">#1560</a></li>
+<li>Bump BenchmarkDotNet to v0.13.2.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/pull/1593">#1593</a></li>
+<li>Bump BenchmarkDotNet.Diagnostics.Windows to v0.13.2.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/pull/1594">#1594</a></li>
+<li>Updated provider data for analysis.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/pull/1598">#1598</a></li>
+</ul>
+</li>
+<li>Bug fixes:<ul>
+<li>Fixed parameter files linked to bicep code via naming convention is not working by @BernieWhite.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1582">#1582</a></li>
+<li>Fixed handling of storage accounts sub-resources with CMK by @BernieWhite.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1575">#1575</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v1190-b0010-pre-release">v1.19.0-B0010 (pre-release)<a class="headerlink" href="#v1190-b0010-pre-release" title="Permanent link">#</a></h2>
+<p>What's changed since v1.18.1:</p>
+<ul>
+<li>General improvements:<ul>
+<li>Updated rule level for the following rules by @BernieWhite.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1551">#1551</a><ul>
+<li>Set <code>Azure.APIM.APIDescriptors</code> to warning from error.</li>
+<li>Set <code>Azure.APIM.ProductDescriptors</code> to warning from error.</li>
+<li>Set <code>Azure.Template.UseLocationParameter</code> to warning from error.</li>
+<li>Set <code>Azure.Template.UseComments</code> to information from error.</li>
+<li>Set <code>Azure.Template.UseDescriptions</code> to information from error.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Engineering:<ul>
+<li>Added publishing of symbols for NuGet packages by @BernieWhite.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1549">#1549</a></li>
+<li>Bump PSRule to v2.3.1.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/pull/1561">#1561</a></li>
+<li>Bump Az.Resources to v6.1.0.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/pull/1557">#1557</a></li>
+<li>Bump Microsoft.NET.Test.Sdk to v17.3.0.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/pull/1563">#1563</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v1181">v1.18.1<a class="headerlink" href="#v1181" title="Permanent link">#</a></h2>
+<p>What's changed since v1.18.0:</p>
+<ul>
+<li>Bug fixes:<ul>
+<li>Fixed <code>Azure.APIM.HTTPBackend</code> reports failure when service URL is not defined by @BernieWhite.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1555">#1555</a></li>
+<li>Fixed <code>Azure.SQL.AAD</code> failure with newer API by @BernieWhite.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1302">#1302</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v1180">v1.18.0<a class="headerlink" href="#v1180" title="Permanent link">#</a></h2>
+<p>What's changed since v1.17.1:</p>
+<ul>
+<li>New rules:<ul>
+<li>Cognitive Services:<ul>
+<li>Check accounts use network access restrictions by @BernieWhite.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1532">#1532</a></li>
+<li>Check accounts use managed identities to access Azure resources by @BernieWhite.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1532">#1532</a></li>
+<li>Check accounts only accept requests using Azure AD identities by @BernieWhite.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1532">#1532</a></li>
+<li>Check accounts disable access using public endpoints by @BernieWhite.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1532">#1532</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>General improvements:<ul>
+<li>Added support for array <code>indexOf</code>, <code>lastIndexOf</code>, and <code>items</code> ARM functions by @BernieWhite.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1440">#1440</a></li>
+<li>Added support for <code>join</code> ARM function by @BernieWhite.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1535">#1535</a></li>
+<li>Improved output of full path to emitted resources by @BernieWhite.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1523">#1523</a></li>
+</ul>
+</li>
+<li>Engineering:<ul>
+<li>Bump Az.Resources to v6.0.1.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/pull/1521">#1521</a></li>
+<li>Updated provider data for analysis.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/pull/1540">#1540</a></li>
+<li>Bump xunit to v2.4.2.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/pull/1542">#1542</a></li>
+<li>Added readme and tags to NuGet by @BernieWhite.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1513">#1513</a></li>
+</ul>
+</li>
+<li>Bug fixes:<ul>
+<li>Fixed <code>Azure.SQL.TDE</code> is not required to enable Transparent Data Encryption for IaC by @BernieWhite.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1530">#1530</a></li>
+</ul>
+</li>
+</ul>
+<p>What's changed since pre-release v1.18.0-B0027:</p>
+<ul>
+<li>No additional changes.</li>
+</ul>
+<h2 id="v1180-b0027-pre-release">v1.18.0-B0027 (pre-release)<a class="headerlink" href="#v1180-b0027-pre-release" title="Permanent link">#</a></h2>
+<p>What's changed since pre-release v1.18.0-B0010:</p>
+<ul>
+<li>New rules:<ul>
+<li>Cognitive Services:<ul>
+<li>Check accounts use network access restrictions by @BernieWhite.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1532">#1532</a></li>
+<li>Check accounts use managed identities to access Azure resources by @BernieWhite.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1532">#1532</a></li>
+<li>Check accounts only accept requests using Azure AD identities by @BernieWhite.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1532">#1532</a></li>
+<li>Check accounts disable access using public endpoints by @BernieWhite.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1532">#1532</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>General improvements:<ul>
+<li>Added support for array <code>indexOf</code>, <code>lastIndexOf</code>, and <code>items</code> ARM functions by @BernieWhite.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1440">#1440</a></li>
+<li>Added support for <code>join</code> ARM function by @BernieWhite.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1535">#1535</a></li>
+</ul>
+</li>
+<li>Engineering:<ul>
+<li>Updated provider data for analysis.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/pull/1540">#1540</a></li>
+<li>Bump xunit to v2.4.2.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/pull/1542">#1542</a></li>
+</ul>
+</li>
+<li>Bug fixes:<ul>
+<li>Fixed <code>Azure.SQL.TDE</code> is not required to enable Transparent Data Encryption for IaC by @BernieWhite.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1530">#1530</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v1180-b0010-pre-release">v1.18.0-B0010 (pre-release)<a class="headerlink" href="#v1180-b0010-pre-release" title="Permanent link">#</a></h2>
+<p>What's changed since pre-release v1.18.0-B0002:</p>
+<ul>
+<li>General improvements:<ul>
+<li>Improved output of full path to emitted resources by @BernieWhite.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1523">#1523</a></li>
+</ul>
+</li>
+<li>Engineering:<ul>
+<li>Bump Az.Resources to v6.0.1.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/pull/1521">#1521</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v1180-b0002-pre-release">v1.18.0-B0002 (pre-release)<a class="headerlink" href="#v1180-b0002-pre-release" title="Permanent link">#</a></h2>
+<p>What's changed since v1.17.1:</p>
+<ul>
+<li>Engineering:<ul>
+<li>Added readme and tags to NuGet by @BernieWhite.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1513">#1513</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v1171">v1.17.1<a class="headerlink" href="#v1171" title="Permanent link">#</a></h2>
+<p>What's changed since v1.17.0:</p>
+<ul>
+<li>Bug fixes:<ul>
+<li>Fixed union returns null when merged with built-in expansion objects by @BernieWhite.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1515">#1515</a></li>
+<li>Fixed missing zones in test for standalone VM by @BernieWhite.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1506">#1506</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v1170">v1.17.0<a class="headerlink" href="#v1170" title="Permanent link">#</a></h2>
 <p>What's changed since v1.16.1:</p>
 <ul>
+<li>New features:<ul>
+<li>Added more field count expression support for Azure Policy JSON rules by @ArmaanMcleod.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/181">#181</a></li>
+<li>Added June 2022 baselines <code>Azure.GA_2022_06</code> and <code>Azure.Preview_2022_06</code> by @BernieWhite.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1499">#1499</a><ul>
+<li>Includes rules released before or during June 2022.</li>
+<li>Marked <code>Azure.GA_2022_03</code> and <code>Azure.Preview_2022_03</code> baselines as obsolete.</li>
+</ul>
+</li>
+</ul>
+</li>
 <li>New rules:<ul>
 <li>Deployment:<ul>
 <li>Check for secure values in outputs by @BernieWhite.
@@ -7791,14 +9096,91 @@
 </li>
 </ul>
 </li>
+<li>Engineering:<ul>
+<li>Bump Newtonsoft.Json to v13.0.1.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/pull/1494">#1494</a></li>
+<li>Updated NuGet packaging metadata by @BernieWhite.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/pull/1428">#1428</a></li>
+<li>Updated provider data for analysis.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/pull/1502">#1502</a></li>
+<li>Bump PSRule to v2.2.0.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/pull/1444">#1444</a></li>
+<li>Updated NuGet packaging metadata by @BernieWhite.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1428">#1428</a></li>
+</ul>
+</li>
+<li>Bug fixes:<ul>
+<li>Fixed TDE property status to state by @Dylan-Prins.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/pull/1505">#1505</a></li>
+<li>Fixed the language expression value fails in outputs by @BernieWhite.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1485">#1485</a></li>
+</ul>
+</li>
+</ul>
+<p>What's changed since pre-release v1.17.0-B0064:</p>
+<ul>
+<li>No additional changes.</li>
+</ul>
+<h2 id="v1170-b0064-pre-release">v1.17.0-B0064 (pre-release)<a class="headerlink" href="#v1170-b0064-pre-release" title="Permanent link">#</a></h2>
+<p>What's changed since pre-release v1.17.0-B0035:</p>
+<ul>
+<li>Engineering:<ul>
+<li>Updated provider data for analysis.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/pull/1502">#1502</a></li>
+<li>Bump PSRule to v2.2.0.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/pull/1444">#1444</a></li>
+</ul>
+</li>
+<li>Bug fixes:<ul>
+<li>Fixed TDE property status to state by @Dylan-Prins.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/pull/1505">#1505</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v1170-b0035-pre-release">v1.17.0-B0035 (pre-release)<a class="headerlink" href="#v1170-b0035-pre-release" title="Permanent link">#</a></h2>
+<p>What's changed since pre-release v1.17.0-B0014:</p>
+<ul>
+<li>New features:<ul>
+<li>Added June 2022 baselines <code>Azure.GA_2022_06</code> and <code>Azure.Preview_2022_06</code> by @BernieWhite.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1499">#1499</a><ul>
+<li>Includes rules released before or during June 2022.</li>
+<li>Marked <code>Azure.GA_2022_03</code> and <code>Azure.Preview_2022_03</code> baselines as obsolete.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Engineering:<ul>
+<li>Bump Newtonsoft.Json to v13.0.1.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/pull/1494">#1494</a></li>
+<li>Updated NuGet packaging metadata by @BernieWhite.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/pull/1428">#1428</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="v1170-b0014-pre-release">v1.17.0-B0014 (pre-release)<a class="headerlink" href="#v1170-b0014-pre-release" title="Permanent link">#</a></h2>
+<p>What's changed since v1.16.1:</p>
+<ul>
 <li>New features:<ul>
 <li>Added more field count expression support for Azure Policy JSON rules by @ArmaanMcleod.
   <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/181">#181</a></li>
 </ul>
 </li>
+<li>New rules:<ul>
+<li>Deployment:<ul>
+<li>Check for secure values in outputs by @BernieWhite.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/297">#297</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li>Engineering:<ul>
 <li>Updated NuGet packaging metadata by @BernieWhite.
   <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1428">#1428</a></li>
+</ul>
+</li>
+<li>Bug fixes:<ul>
+<li>Fixed the language expression value fails in outputs by @BernieWhite.
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1485">#1485</a></li>
 </ul>
 </li>
 </ul>
@@ -7873,7 +9255,7 @@
 <ul>
 <li>No additional changes.</li>
 </ul>
-<h2 id="v1160-b0072pre-release">v1.16.0-B0072 (pre-release)<a class="headerlink" href="#v1160-b0072pre-release" title="Permanent link">#</a></h2>
+<h2 id="v1160-b0072-pre-release">v1.16.0-B0072 (pre-release)<a class="headerlink" href="#v1160-b0072-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since pre-release v1.16.0-B0041:</p>
 <ul>
 <li>Engineering:<ul>
@@ -7893,7 +9275,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="v1160-b0041pre-release">v1.16.0-B0041 (pre-release)<a class="headerlink" href="#v1160-b0041pre-release" title="Permanent link">#</a></h2>
+<h2 id="v1160-b0041-pre-release">v1.16.0-B0041 (pre-release)<a class="headerlink" href="#v1160-b0041-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since pre-release v1.16.0-B0017:</p>
 <ul>
 <li>Updated rules:<ul>
@@ -7922,7 +9304,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="v1160-b0017pre-release">v1.16.0-B0017 (pre-release)<a class="headerlink" href="#v1160-b0017pre-release" title="Permanent link">#</a></h2>
+<h2 id="v1160-b0017-pre-release">v1.16.0-B0017 (pre-release)<a class="headerlink" href="#v1160-b0017-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since v1.15.2:</p>
 <ul>
 <li>New rules:<ul>
@@ -8042,7 +9424,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="v1150-b0053pre-release">v1.15.0-B0053 (pre-release)<a class="headerlink" href="#v1150-b0053pre-release" title="Permanent link">#</a></h2>
+<h2 id="v1150-b0053-pre-release">v1.15.0-B0053 (pre-release)<a class="headerlink" href="#v1150-b0053-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since pre-release v1.15.0-B0022:</p>
 <ul>
 <li>New features:<ul>
@@ -8069,7 +9451,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="v1150-b0022pre-release">v1.15.0-B0022 (pre-release)<a class="headerlink" href="#v1150-b0022pre-release" title="Permanent link">#</a></h2>
+<h2 id="v1150-b0022-pre-release">v1.15.0-B0022 (pre-release)<a class="headerlink" href="#v1150-b0022-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since v1.14.3:</p>
 <ul>
 <li>Updated rules:<ul>
@@ -8182,7 +9564,7 @@
 <ul>
 <li>No additional changes.</li>
 </ul>
-<h2 id="v1140-b2204013pre-release">v1.14.0-B2204013 (pre-release)<a class="headerlink" href="#v1140-b2204013pre-release" title="Permanent link">#</a></h2>
+<h2 id="v1140-b2204013-pre-release">v1.14.0-B2204013 (pre-release)<a class="headerlink" href="#v1140-b2204013-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since pre-release v1.14.0-B2204007:</p>
 <ul>
 <li>Engineering:<ul>
@@ -8190,7 +9572,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="v1140-b2204007pre-release">v1.14.0-B2204007 (pre-release)<a class="headerlink" href="#v1140-b2204007pre-release" title="Permanent link">#</a></h2>
+<h2 id="v1140-b2204007-pre-release">v1.14.0-B2204007 (pre-release)<a class="headerlink" href="#v1140-b2204007-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since pre-release v1.14.0-B2203117:</p>
 <ul>
 <li>Bug fixes:<ul>
@@ -8199,7 +9581,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="v1140-b2203117pre-release">v1.14.0-B2203117 (pre-release)<a class="headerlink" href="#v1140-b2203117pre-release" title="Permanent link">#</a></h2>
+<h2 id="v1140-b2203117-pre-release">v1.14.0-B2203117 (pre-release)<a class="headerlink" href="#v1140-b2203117-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since pre-release v1.14.0-B2203088:</p>
 <ul>
 <li>New features:<ul>
@@ -8222,7 +9604,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="v1140-b2203088pre-release">v1.14.0-B2203088 (pre-release)<a class="headerlink" href="#v1140-b2203088pre-release" title="Permanent link">#</a></h2>
+<h2 id="v1140-b2203088-pre-release">v1.14.0-B2203088 (pre-release)<a class="headerlink" href="#v1140-b2203088-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since pre-release v1.14.0-B2203066:</p>
 <ul>
 <li>New features:<ul>
@@ -8238,7 +9620,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="v1140-b2203066pre-release">v1.14.0-B2203066 (pre-release)<a class="headerlink" href="#v1140-b2203066pre-release" title="Permanent link">#</a></h2>
+<h2 id="v1140-b2203066-pre-release">v1.14.0-B2203066 (pre-release)<a class="headerlink" href="#v1140-b2203066-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since v1.13.4:</p>
 <ul>
 <li>New features:<ul>
@@ -8365,7 +9747,7 @@
 <ul>
 <li>No additional changes.</li>
 </ul>
-<h2 id="v1130-b2202113pre-release">v1.13.0-B2202113 (pre-release)<a class="headerlink" href="#v1130-b2202113pre-release" title="Permanent link">#</a></h2>
+<h2 id="v1130-b2202113-pre-release">v1.13.0-B2202113 (pre-release)<a class="headerlink" href="#v1130-b2202113-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since pre-release v1.13.0-B2202108:</p>
 <ul>
 <li>Bug fixes:<ul>
@@ -8373,7 +9755,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="v1130-b2202108pre-release">v1.13.0-B2202108 (pre-release)<a class="headerlink" href="#v1130-b2202108pre-release" title="Permanent link">#</a></h2>
+<h2 id="v1130-b2202108-pre-release">v1.13.0-B2202108 (pre-release)<a class="headerlink" href="#v1130-b2202108-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since pre-release v1.13.0-B2202103:</p>
 <ul>
 <li>Bug fixes:<ul>
@@ -8381,7 +9763,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="v1130-b2202103pre-release">v1.13.0-B2202103 (pre-release)<a class="headerlink" href="#v1130-b2202103pre-release" title="Permanent link">#</a></h2>
+<h2 id="v1130-b2202103-pre-release">v1.13.0-B2202103 (pre-release)<a class="headerlink" href="#v1130-b2202103-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since pre-release v1.13.0-B2202090:</p>
 <ul>
 <li>Engineering:<ul>
@@ -8393,7 +9775,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="v1130-b2202090pre-release">v1.13.0-B2202090 (pre-release)<a class="headerlink" href="#v1130-b2202090pre-release" title="Permanent link">#</a></h2>
+<h2 id="v1130-b2202090-pre-release">v1.13.0-B2202090 (pre-release)<a class="headerlink" href="#v1130-b2202090-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since pre-release v1.13.0-B2202063:</p>
 <ul>
 <li>New rules:<ul>
@@ -8412,7 +9794,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="v1130-b2202063pre-release">v1.13.0-B2202063 (pre-release)<a class="headerlink" href="#v1130-b2202063pre-release" title="Permanent link">#</a></h2>
+<h2 id="v1130-b2202063-pre-release">v1.13.0-B2202063 (pre-release)<a class="headerlink" href="#v1130-b2202063-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since v1.12.2:</p>
 <ul>
 <li>New features:<ul>
@@ -8497,7 +9879,7 @@
 </li>
 <li>Azure API Management:<ul>
 <li>Check service disabled insecure ciphers.
-<a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1128">#1128</a></li>
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1128">#1128</a></li>
 <li>Refactored the cipher and protocol rule into individual rules.<ul>
 <li><code>Azure.APIM.Protocols</code></li>
 <li><code>Azure.APIM.Ciphers</code></li>
@@ -8528,7 +9910,7 @@
 <ul>
 <li>No additional changes.</li>
 </ul>
-<h2 id="v1120-b2201086pre-release">v1.12.0-B2201086 (pre-release)<a class="headerlink" href="#v1120-b2201086pre-release" title="Permanent link">#</a></h2>
+<h2 id="v1120-b2201086-pre-release">v1.12.0-B2201086 (pre-release)<a class="headerlink" href="#v1120-b2201086-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since pre-release v1.12.0-B2201067:</p>
 <ul>
 <li>New rules:<ul>
@@ -8553,7 +9935,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="v1120-b2201067pre-release">v1.12.0-B2201067 (pre-release)<a class="headerlink" href="#v1120-b2201067pre-release" title="Permanent link">#</a></h2>
+<h2 id="v1120-b2201067-pre-release">v1.12.0-B2201067 (pre-release)<a class="headerlink" href="#v1120-b2201067-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since pre-release v1.12.0-B2201054:</p>
 <ul>
 <li>New rules:<ul>
@@ -8570,7 +9952,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="v1120-b2201054pre-release">v1.12.0-B2201054 (pre-release)<a class="headerlink" href="#v1120-b2201054pre-release" title="Permanent link">#</a></h2>
+<h2 id="v1120-b2201054-pre-release">v1.12.0-B2201054 (pre-release)<a class="headerlink" href="#v1120-b2201054-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since v1.11.1:</p>
 <ul>
 <li>Updated rules:<ul>
@@ -8584,7 +9966,7 @@
 </li>
 <li>Azure API Management:<ul>
 <li>Check service disabled insecure ciphers.
-<a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1128">#1128</a></li>
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1128">#1128</a></li>
 <li>Refactored the cipher and protocol rule into individual rules.<ul>
 <li><code>Azure.APIM.Protocols</code></li>
 <li><code>Azure.APIM.Ciphers</code></li>
@@ -8734,7 +10116,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="v1110-b2112112pre-release">v1.11.0-B2112112 (pre-release)<a class="headerlink" href="#v1110-b2112112pre-release" title="Permanent link">#</a></h2>
+<h2 id="v1110-b2112112-pre-release">v1.11.0-B2112112 (pre-release)<a class="headerlink" href="#v1110-b2112112-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since pre-release v1.11.0-B2112104:</p>
 <ul>
 <li>New rules:<ul>
@@ -8749,7 +10131,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="v1110-b2112104pre-release">v1.11.0-B2112104 (pre-release)<a class="headerlink" href="#v1110-b2112104pre-release" title="Permanent link">#</a></h2>
+<h2 id="v1110-b2112104-pre-release">v1.11.0-B2112104 (pre-release)<a class="headerlink" href="#v1110-b2112104-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since pre-release v1.11.0-B2112073:</p>
 <ul>
 <li>New rules:<ul>
@@ -8792,7 +10174,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="v1110-b2112073pre-release">v1.11.0-B2112073 (pre-release)<a class="headerlink" href="#v1110-b2112073pre-release" title="Permanent link">#</a></h2>
+<h2 id="v1110-b2112073-pre-release">v1.11.0-B2112073 (pre-release)<a class="headerlink" href="#v1110-b2112073-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since pre-release v1.11.0-B2112024:</p>
 <ul>
 <li>New features:<ul>
@@ -8822,7 +10204,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="v1110-b2112024pre-release">v1.11.0-B2112024 (pre-release)<a class="headerlink" href="#v1110-b2112024pre-release" title="Permanent link">#</a></h2>
+<h2 id="v1110-b2112024-pre-release">v1.11.0-B2112024 (pre-release)<a class="headerlink" href="#v1110-b2112024-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since pre-release v1.11.0-B2111014:</p>
 <ul>
 <li>New rules:<ul>
@@ -8856,7 +10238,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="v1110-b2111014pre-release">v1.11.0-B2111014 (pre-release)<a class="headerlink" href="#v1110-b2111014pre-release" title="Permanent link">#</a></h2>
+<h2 id="v1110-b2111014-pre-release">v1.11.0-B2111014 (pre-release)<a class="headerlink" href="#v1110-b2111014-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since v1.10.0:</p>
 <ul>
 <li>New rules:<ul>
@@ -8978,7 +10360,7 @@
 <ul>
 <li>No additional changes.</li>
 </ul>
-<h2 id="v1100-b2111081pre-release">v1.10.0-B2111081 (pre-release)<a class="headerlink" href="#v1100-b2111081pre-release" title="Permanent link">#</a></h2>
+<h2 id="v1100-b2111081-pre-release">v1.10.0-B2111081 (pre-release)<a class="headerlink" href="#v1100-b2111081-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since pre-release v1.10.0-B2111072:</p>
 <ul>
 <li>New rules:<ul>
@@ -8989,7 +10371,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="v1100-b2111072pre-release">v1.10.0-B2111072 (pre-release)<a class="headerlink" href="#v1100-b2111072pre-release" title="Permanent link">#</a></h2>
+<h2 id="v1100-b2111072-pre-release">v1.10.0-B2111072 (pre-release)<a class="headerlink" href="#v1100-b2111072-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since pre-release v1.10.0-B2111058:</p>
 <ul>
 <li>New rules:<ul>
@@ -9006,7 +10388,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="v1100-b2111058pre-release">v1.10.0-B2111058 (pre-release)<a class="headerlink" href="#v1100-b2111058pre-release" title="Permanent link">#</a></h2>
+<h2 id="v1100-b2111058-pre-release">v1.10.0-B2111058 (pre-release)<a class="headerlink" href="#v1100-b2111058-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since pre-release v1.10.0-B2111040:</p>
 <ul>
 <li>New rules:<ul>
@@ -9023,7 +10405,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="v1100-b2111040pre-release">v1.10.0-B2111040 (pre-release)<a class="headerlink" href="#v1100-b2111040pre-release" title="Permanent link">#</a></h2>
+<h2 id="v1100-b2111040-pre-release">v1.10.0-B2111040 (pre-release)<a class="headerlink" href="#v1100-b2111040-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since v1.9.1:</p>
 <ul>
 <li>New features:<ul>
@@ -9106,7 +10488,7 @@
 <ul>
 <li>No additional changes.</li>
 </ul>
-<h2 id="v190-b2110087pre-release">v1.9.0-B2110087 (pre-release)<a class="headerlink" href="#v190-b2110087pre-release" title="Permanent link">#</a></h2>
+<h2 id="v190-b2110087-pre-release">v1.9.0-B2110087 (pre-release)<a class="headerlink" href="#v190-b2110087-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since pre-release v1.9.0-B2110082:</p>
 <ul>
 <li>Bug fixes:<ul>
@@ -9114,7 +10496,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="v190-b2110082pre-release">v1.9.0-B2110082 (pre-release)<a class="headerlink" href="#v190-b2110082pre-release" title="Permanent link">#</a></h2>
+<h2 id="v190-b2110082-pre-release">v1.9.0-B2110082 (pre-release)<a class="headerlink" href="#v190-b2110082-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since pre-release v1.9.0-B2110059:</p>
 <ul>
 <li>General improvements:<ul>
@@ -9130,7 +10512,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="v190-b2110059pre-release">v1.9.0-B2110059 (pre-release)<a class="headerlink" href="#v190-b2110059pre-release" title="Permanent link">#</a></h2>
+<h2 id="v190-b2110059-pre-release">v1.9.0-B2110059 (pre-release)<a class="headerlink" href="#v190-b2110059-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since pre-release v1.9.0-B2110040:</p>
 <ul>
 <li>New rules:<ul>
@@ -9146,7 +10528,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="v190-b2110040pre-release">v1.9.0-B2110040 (pre-release)<a class="headerlink" href="#v190-b2110040pre-release" title="Permanent link">#</a></h2>
+<h2 id="v190-b2110040-pre-release">v1.9.0-B2110040 (pre-release)<a class="headerlink" href="#v190-b2110040-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since pre-release v1.9.0-B2110025:</p>
 <ul>
 <li>New rules:<ul>
@@ -9164,7 +10546,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="v190-b2110025pre-release">v1.9.0-B2110025 (pre-release)<a class="headerlink" href="#v190-b2110025pre-release" title="Permanent link">#</a></h2>
+<h2 id="v190-b2110025-pre-release">v1.9.0-B2110025 (pre-release)<a class="headerlink" href="#v190-b2110025-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since pre-release v1.9.0-B2110014:</p>
 <ul>
 <li>Engineering:<ul>
@@ -9176,7 +10558,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="v190-b2110014pre-release">v1.9.0-B2110014 (pre-release)<a class="headerlink" href="#v190-b2110014pre-release" title="Permanent link">#</a></h2>
+<h2 id="v190-b2110014-pre-release">v1.9.0-B2110014 (pre-release)<a class="headerlink" href="#v190-b2110014-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since pre-release v1.9.0-B2110009:</p>
 <ul>
 <li>Bug fixes:<ul>
@@ -9185,7 +10567,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="v190-b2110009pre-release">v1.9.0-B2110009 (pre-release)<a class="headerlink" href="#v190-b2110009pre-release" title="Permanent link">#</a></h2>
+<h2 id="v190-b2110009-pre-release">v1.9.0-B2110009 (pre-release)<a class="headerlink" href="#v190-b2110009-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since pre-release v1.9.0-B2109027:</p>
 <ul>
 <li>Bug fixes:<ul>
@@ -9195,7 +10577,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="v190-b2109027pre-release">v1.9.0-B2109027 (pre-release)<a class="headerlink" href="#v190-b2109027pre-release" title="Permanent link">#</a></h2>
+<h2 id="v190-b2109027-pre-release">v1.9.0-B2109027 (pre-release)<a class="headerlink" href="#v190-b2109027-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since v1.8.0:</p>
 <ul>
 <li>New rules:<ul>
@@ -9293,7 +10675,7 @@
 <ul>
 <li>No additional changes.</li>
 </ul>
-<h2 id="v180-b2109086pre-release">v1.8.0-B2109086 (pre-release)<a class="headerlink" href="#v180-b2109086pre-release" title="Permanent link">#</a></h2>
+<h2 id="v180-b2109086-pre-release">v1.8.0-B2109086 (pre-release)<a class="headerlink" href="#v180-b2109086-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since pre-release v1.8.0-B2109060:</p>
 <ul>
 <li>New rules:<ul>
@@ -9314,7 +10696,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="v180-b2109060pre-release">v1.8.0-B2109060 (pre-release)<a class="headerlink" href="#v180-b2109060pre-release" title="Permanent link">#</a></h2>
+<h2 id="v180-b2109060-pre-release">v1.8.0-B2109060 (pre-release)<a class="headerlink" href="#v180-b2109060-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since pre-release v1.8.0-B2109046:</p>
 <ul>
 <li>New features:<ul>
@@ -9333,7 +10715,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="v180-b2109046pre-release">v1.8.0-B2109046 (pre-release)<a class="headerlink" href="#v180-b2109046pre-release" title="Permanent link">#</a></h2>
+<h2 id="v180-b2109046-pre-release">v1.8.0-B2109046 (pre-release)<a class="headerlink" href="#v180-b2109046-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since pre-release v1.8.0-B2109020:</p>
 <ul>
 <li>New rules:<ul>
@@ -9360,7 +10742,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="v180-b2109020pre-release">v1.8.0-B2109020 (pre-release)<a class="headerlink" href="#v180-b2109020pre-release" title="Permanent link">#</a></h2>
+<h2 id="v180-b2109020-pre-release">v1.8.0-B2109020 (pre-release)<a class="headerlink" href="#v180-b2109020-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since pre-release v1.8.0-B2108026:</p>
 <ul>
 <li>New rules:<ul>
@@ -9376,7 +10758,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="v180-b2108026pre-release">v1.8.0-B2108026 (pre-release)<a class="headerlink" href="#v180-b2108026pre-release" title="Permanent link">#</a></h2>
+<h2 id="v180-b2108026-pre-release">v1.8.0-B2108026 (pre-release)<a class="headerlink" href="#v180-b2108026-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since pre-release v1.8.0-B2108013:</p>
 <ul>
 <li>New rules:<ul>
@@ -9391,7 +10773,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="v180-b2108013pre-release">v1.8.0-B2108013 (pre-release)<a class="headerlink" href="#v180-b2108013pre-release" title="Permanent link">#</a></h2>
+<h2 id="v180-b2108013-pre-release">v1.8.0-B2108013 (pre-release)<a class="headerlink" href="#v180-b2108013-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since v1.7.0:</p>
 <ul>
 <li>New rules:<ul>
@@ -9463,7 +10845,7 @@
 <ul>
 <li>No additional changes.</li>
 </ul>
-<h2 id="v170-b2108059pre-release">v1.7.0-B2108059 (pre-release)<a class="headerlink" href="#v170-b2108059pre-release" title="Permanent link">#</a></h2>
+<h2 id="v170-b2108059-pre-release">v1.7.0-B2108059 (pre-release)<a class="headerlink" href="#v170-b2108059-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since pre-release v1.7.0-B2108049:</p>
 <ul>
 <li>General improvements:<ul>
@@ -9475,7 +10857,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="v170-b2108049pre-release">v1.7.0-B2108049 (pre-release)<a class="headerlink" href="#v170-b2108049pre-release" title="Permanent link">#</a></h2>
+<h2 id="v170-b2108049-pre-release">v1.7.0-B2108049 (pre-release)<a class="headerlink" href="#v170-b2108049-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since pre-release v1.7.0-B2108040:</p>
 <ul>
 <li>New rules:<ul>
@@ -9494,7 +10876,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="v170-b2108040pre-release">v1.7.0-B2108040 (pre-release)<a class="headerlink" href="#v170-b2108040pre-release" title="Permanent link">#</a></h2>
+<h2 id="v170-b2108040-pre-release">v1.7.0-B2108040 (pre-release)<a class="headerlink" href="#v170-b2108040-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since pre-release v1.7.0-B2108020:</p>
 <ul>
 <li>New rules:<ul>
@@ -9520,7 +10902,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="v170-b2108020pre-release">v1.7.0-B2108020 (pre-release)<a class="headerlink" href="#v170-b2108020pre-release" title="Permanent link">#</a></h2>
+<h2 id="v170-b2108020-pre-release">v1.7.0-B2108020 (pre-release)<a class="headerlink" href="#v170-b2108020-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since v1.6.0:</p>
 <ul>
 <li>New rules:<ul>
@@ -9574,7 +10956,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="v160-b2108038pre-release">v1.6.0-B2108038 (pre-release)<a class="headerlink" href="#v160-b2108038pre-release" title="Permanent link">#</a></h2>
+<h2 id="v160-b2108038-pre-release">v1.6.0-B2108038 (pre-release)<a class="headerlink" href="#v160-b2108038-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since pre-release v1.6.0-B2108023:</p>
 <ul>
 <li>Bug fixes:<ul>
@@ -9582,7 +10964,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="v160-b2108023pre-release">v1.6.0-B2108023 (pre-release)<a class="headerlink" href="#v160-b2108023pre-release" title="Permanent link">#</a></h2>
+<h2 id="v160-b2108023-pre-release">v1.6.0-B2108023 (pre-release)<a class="headerlink" href="#v160-b2108023-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since pre-release v1.6.0-B2107028:</p>
 <ul>
 <li>New features:<ul>
@@ -9595,7 +10977,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="v160-b2107028pre-release">v1.6.0-B2107028 (pre-release)<a class="headerlink" href="#v160-b2107028pre-release" title="Permanent link">#</a></h2>
+<h2 id="v160-b2107028-pre-release">v1.6.0-B2107028 (pre-release)<a class="headerlink" href="#v160-b2107028-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since v1.5.1:</p>
 <ul>
 <li>New rules:<ul>
@@ -9657,7 +11039,7 @@
 <ul>
 <li>No additional changes.</li>
 </ul>
-<h2 id="v150-b2107002pre-release">v1.5.0-B2107002 (pre-release)<a class="headerlink" href="#v150-b2107002pre-release" title="Permanent link">#</a></h2>
+<h2 id="v150-b2107002-pre-release">v1.5.0-B2107002 (pre-release)<a class="headerlink" href="#v150-b2107002-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since pre-release v1.5.0-B2106018:</p>
 <ul>
 <li>New features:<ul>
@@ -9678,7 +11060,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="v150-b2106018pre-release">v1.5.0-B2106018 (pre-release)<a class="headerlink" href="#v150-b2106018pre-release" title="Permanent link">#</a></h2>
+<h2 id="v150-b2106018-pre-release">v1.5.0-B2106018 (pre-release)<a class="headerlink" href="#v150-b2106018-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since v1.4.1:</p>
 <ul>
 <li>New rules:<ul>
@@ -9784,7 +11166,7 @@
 <ul>
 <li>No additional changes.</li>
 </ul>
-<h2 id="v140-b2105057pre-release">v1.4.0-B2105057 (pre-release)<a class="headerlink" href="#v140-b2105057pre-release" title="Permanent link">#</a></h2>
+<h2 id="v140-b2105057-pre-release">v1.4.0-B2105057 (pre-release)<a class="headerlink" href="#v140-b2105057-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since pre-release v1.4.0-B2105050:</p>
 <ul>
 <li>New rules:<ul>
@@ -9810,7 +11192,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="v140-b2105050pre-release">v1.4.0-B2105050 (pre-release)<a class="headerlink" href="#v140-b2105050pre-release" title="Permanent link">#</a></h2>
+<h2 id="v140-b2105050-pre-release">v1.4.0-B2105050 (pre-release)<a class="headerlink" href="#v140-b2105050-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since pre-release v1.4.0-B2105044:</p>
 <ul>
 <li>General improvements:<ul>
@@ -9821,7 +11203,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="v140-b2105044pre-release">v1.4.0-B2105044 (pre-release)<a class="headerlink" href="#v140-b2105044pre-release" title="Permanent link">#</a></h2>
+<h2 id="v140-b2105044-pre-release">v1.4.0-B2105044 (pre-release)<a class="headerlink" href="#v140-b2105044-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since pre-release v1.4.0-B2105027:</p>
 <ul>
 <li>New features:<ul>
@@ -9838,7 +11220,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="v140-b2105027pre-release">v1.4.0-B2105027 (pre-release)<a class="headerlink" href="#v140-b2105027pre-release" title="Permanent link">#</a></h2>
+<h2 id="v140-b2105027-pre-release">v1.4.0-B2105027 (pre-release)<a class="headerlink" href="#v140-b2105027-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since pre-release v1.4.0-B2105020:</p>
 <ul>
 <li>New rules:<ul>
@@ -9853,7 +11235,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="v140-b2105020pre-release">v1.4.0-B2105020 (pre-release)<a class="headerlink" href="#v140-b2105020pre-release" title="Permanent link">#</a></h2>
+<h2 id="v140-b2105020-pre-release">v1.4.0-B2105020 (pre-release)<a class="headerlink" href="#v140-b2105020-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since v1.3.2:</p>
 <ul>
 <li>General improvements:<ul>
@@ -9936,7 +11318,7 @@
 <ul>
 <li>No additional changes.</li>
 </ul>
-<h2 id="v130-b2104040pre-release">v1.3.0-B2104040 (pre-release)<a class="headerlink" href="#v130-b2104040pre-release" title="Permanent link">#</a></h2>
+<h2 id="v130-b2104040-pre-release">v1.3.0-B2104040 (pre-release)<a class="headerlink" href="#v130-b2104040-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since pre-release v1.3.0-B2104034:</p>
 <ul>
 <li>Bug fixes:<ul>
@@ -9947,7 +11329,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="v130-b2104034pre-release">v1.3.0-B2104034 (pre-release)<a class="headerlink" href="#v130-b2104034pre-release" title="Permanent link">#</a></h2>
+<h2 id="v130-b2104034-pre-release">v1.3.0-B2104034 (pre-release)<a class="headerlink" href="#v130-b2104034-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since pre-release v1.3.0-B2104023:</p>
 <ul>
 <li>New rules:<ul>
@@ -9966,7 +11348,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="v130-b2104023pre-release">v1.3.0-B2104023 (pre-release)<a class="headerlink" href="#v130-b2104023pre-release" title="Permanent link">#</a></h2>
+<h2 id="v130-b2104023-pre-release">v1.3.0-B2104023 (pre-release)<a class="headerlink" href="#v130-b2104023-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since pre-release v1.3.0-B2104013:</p>
 <ul>
 <li>General improvements:<ul>
@@ -9978,7 +11360,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="v130-b2104013pre-release">v1.3.0-B2104013 (pre-release)<a class="headerlink" href="#v130-b2104013pre-release" title="Permanent link">#</a></h2>
+<h2 id="v130-b2104013-pre-release">v1.3.0-B2104013 (pre-release)<a class="headerlink" href="#v130-b2104013-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since pre-release v1.3.0-B2103007:</p>
 <ul>
 <li>Engineering:<ul>
@@ -9990,7 +11372,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="v130-b2103007pre-release">v1.3.0-B2103007 (pre-release)<a class="headerlink" href="#v130-b2103007pre-release" title="Permanent link">#</a></h2>
+<h2 id="v130-b2103007-pre-release">v1.3.0-B2103007 (pre-release)<a class="headerlink" href="#v130-b2103007-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since v1.2.0:</p>
 <ul>
 <li>Removed rules:<ul>
@@ -10054,7 +11436,7 @@
 <ul>
 <li>No additional changes.</li>
 </ul>
-<h2 id="v120-b2103044pre-release">v1.2.0-B2103044 (pre-release)<a class="headerlink" href="#v120-b2103044pre-release" title="Permanent link">#</a></h2>
+<h2 id="v120-b2103044-pre-release">v1.2.0-B2103044 (pre-release)<a class="headerlink" href="#v120-b2103044-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since pre-release v1.2.0-B2103032:</p>
 <ul>
 <li>New features:<ul>
@@ -10073,7 +11455,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="v120-b2103032pre-release">v1.2.0-B2103032 (pre-release)<a class="headerlink" href="#v120-b2103032pre-release" title="Permanent link">#</a></h2>
+<h2 id="v120-b2103032-pre-release">v1.2.0-B2103032 (pre-release)<a class="headerlink" href="#v120-b2103032-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since pre-release v1.2.0-B2103024:</p>
 <ul>
 <li>New rules:<ul>
@@ -10088,7 +11470,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="v120-b2103024pre-release">v1.2.0-B2103024 (pre-release)<a class="headerlink" href="#v120-b2103024pre-release" title="Permanent link">#</a></h2>
+<h2 id="v120-b2103024-pre-release">v1.2.0-B2103024 (pre-release)<a class="headerlink" href="#v120-b2103024-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since v1.1.4:</p>
 <ul>
 <li>General improvements:<ul>
@@ -10182,7 +11564,7 @@
 <ul>
 <li>No additional changes.</li>
 </ul>
-<h2 id="v110-b2102034pre-release">v1.1.0-B2102034 (pre-release)<a class="headerlink" href="#v110-b2102034pre-release" title="Permanent link">#</a></h2>
+<h2 id="v110-b2102034-pre-release">v1.1.0-B2102034 (pre-release)<a class="headerlink" href="#v110-b2102034-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since pre-release v1.1.0-B2102023:</p>
 <ul>
 <li>General improvements:<ul>
@@ -10199,7 +11581,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="v110-b2102023pre-release">v1.1.0-B2102023 (pre-release)<a class="headerlink" href="#v110-b2102023pre-release" title="Permanent link">#</a></h2>
+<h2 id="v110-b2102023-pre-release">v1.1.0-B2102023 (pre-release)<a class="headerlink" href="#v110-b2102023-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since pre-release v1.1.0-B2102015:</p>
 <ul>
 <li>New features:<ul>
@@ -10212,7 +11594,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="v110-b2102015pre-release">v1.1.0-B2102015 (pre-release)<a class="headerlink" href="#v110-b2102015pre-release" title="Permanent link">#</a></h2>
+<h2 id="v110-b2102015-pre-release">v1.1.0-B2102015 (pre-release)<a class="headerlink" href="#v110-b2102015-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since pre-release v1.1.0-B2102010:</p>
 <ul>
 <li>Bug fixes:<ul>
@@ -10223,7 +11605,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="v110-b2102010pre-release">v1.1.0-B2102010 (pre-release)<a class="headerlink" href="#v110-b2102010pre-release" title="Permanent link">#</a></h2>
+<h2 id="v110-b2102010-pre-release">v1.1.0-B2102010 (pre-release)<a class="headerlink" href="#v110-b2102010-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since pre-release v1.1.0-B2102001:</p>
 <ul>
 <li>Engineering:<ul>
@@ -10235,7 +11617,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="v110-b2102001pre-release">v1.1.0-B2102001 (pre-release)<a class="headerlink" href="#v110-b2102001pre-release" title="Permanent link">#</a></h2>
+<h2 id="v110-b2102001-pre-release">v1.1.0-B2102001 (pre-release)<a class="headerlink" href="#v110-b2102001-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since v1.0.0:</p>
 <ul>
 <li>New rules:<ul>
@@ -10303,7 +11685,7 @@
 <ul>
 <li>No additional changes.</li>
 </ul>
-<h2 id="v100-b2101028pre-release">v1.0.0-B2101028 (pre-release)<a class="headerlink" href="#v100-b2101028pre-release" title="Permanent link">#</a></h2>
+<h2 id="v100-b2101028-pre-release">v1.0.0-B2101028 (pre-release)<a class="headerlink" href="#v100-b2101028-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since pre-release v1.0.0-B2101016:</p>
 <ul>
 <li>New rules:<ul>
@@ -10324,7 +11706,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="v100-b2101016pre-release">v1.0.0-B2101016 (pre-release)<a class="headerlink" href="#v100-b2101016pre-release" title="Permanent link">#</a></h2>
+<h2 id="v100-b2101016-pre-release">v1.0.0-B2101016 (pre-release)<a class="headerlink" href="#v100-b2101016-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since pre-release v1.0.0-B2101006:</p>
 <ul>
 <li>New rules:<ul>
@@ -10339,7 +11721,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="v100-b2101006pre-release">v1.0.0-B2101006 (pre-release)<a class="headerlink" href="#v100-b2101006pre-release" title="Permanent link">#</a></h2>
+<h2 id="v100-b2101006-pre-release">v1.0.0-B2101006 (pre-release)<a class="headerlink" href="#v100-b2101006-pre-release" title="Permanent link">#</a></h2>
 <p>What's changed since v0.19.0:</p>
 <ul>
 <li>New rules:<ul>
@@ -10370,6 +11752,10 @@
 <li>Bump PSRule dependency to v1.0.1. <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/611">#611</a></li>
 </ul>
 </li>
+<li>Redis Cache Enterprise<ul>
+<li>Check Redis Cache Enterprise uses minimum TLS 1.2 <a href="https://github.com/Azure/PSRule.Rules.Azure/issues/1179">1179</a></li>
+</ul>
+</li>
 </ul>
 
   <hr>
@@ -10377,15 +11763,26 @@
   <small>
     
       Last update:
-      2022-06-14
+      2022-09-25
     
   </small>
 </div>
 
-              
-            </article>
-            
-          </div>
+
+
+
+
+                
+
+  
+
+
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
         </div>
         
       </main>
@@ -10448,7 +11845,7 @@
       
     
     <a href="https://github.com/Azure/PSRule.Rules.Azure/" target="_blank" rel="noopener" title="github.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
     </a>
   
 </div>
@@ -10461,10 +11858,11 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.indexes", {"navigation.sections": {"level": 1}}, "navigation.tabs", "content.code.annotate"], "search": "../assets/javascripts/workers/search.85cb4492.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.indexes", {"navigation.sections": {"level": 1}}, "navigation.tabs", "content.code.annotate", "content.tabs.link"], "search": "../assets/javascripts/workers/search.5bf1dace.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.f758a944.min.js"></script>
+      <script src="../assets/javascripts/bundle.37e9125f.min.js"></script>
       
     
   </body>

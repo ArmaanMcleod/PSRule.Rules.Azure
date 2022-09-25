@@ -53,18 +53,19 @@ def replace_maml(markdown: str, page: mkdocs.structure.nav.Page, config: mkdocs.
         read_metadata(page)
 
     if page.meta.get('rule', 'None') != 'None':
-        markdown = markdown.replace('<!-- TAGS -->', '<nav class="md-tags"><rule/><ref/></nav>\r<!-- TAGS -->')
+        markdown = markdown.replace('<!-- TAGS -->', '<nav class="md-tags"><rule/><ref/><level/></nav>\r<!-- TAGS -->')
         markdown = markdown.replace('<rule/>', '<span class="md-tag">' + page.meta['rule'] + '</span>')
+        markdown = markdown.replace('<level/>', '<span class="md-tag">' + page.meta['level'] + '</span>')
         if page.meta.get('ref', 'None') != 'None':
             markdown = markdown.replace('<ref/>', '<span class="md-tag">' + page.meta['ref'] + '</span>')
         if page.meta.get('ref', 'None') == 'None':
             markdown = markdown.replace('<ref/>', '')
 
     if page.meta.get("pillar", "None") != "None":
-        markdown = markdown.replace("<!-- TAGS -->", "[:octicons-diamond-24: " + page.meta['pillar'] + "](module.md#" + page.meta['pillar'].lower().replace(" ", "") + ")\r<!-- TAGS -->")
+        markdown = markdown.replace("<!-- TAGS -->", "[:octicons-diamond-24: " + page.meta['pillar'] + "](module.md#" + page.meta['pillar'].lower().replace(" ", "-") + ")\r<!-- TAGS -->")
 
     if page.meta.get("resource", "None") != "None":
-        markdown = markdown.replace("<!-- TAGS -->", " · [:octicons-container-24: " + page.meta['resource'] + "](resource.md#" + page.meta['resource'].lower().replace(" ", "") + ")\r<!-- TAGS -->")
+        markdown = markdown.replace("<!-- TAGS -->", " · [:octicons-container-24: " + page.meta['resource'] + "](resource.md#" + page.meta['resource'].lower().replace(" ", "-") + ")\r<!-- TAGS -->")
 
     if page.meta.get('release', 'None') == 'preview':
         markdown = markdown.replace("<!-- TAGS -->", " · :octicons-beaker-24: Preview\r<!-- TAGS -->")
@@ -102,6 +103,13 @@ def read_metadata(page: mkdocs.structure.nav.Page):
 
         if page.meta.get('rule', '') != '' and data.get(name, None) != None and data[name].get('RuleSet', None) != None:
             page.meta['ruleSet'] = data[name]['RuleSet']
+
+        if page.meta.get('rule', '') != '' and data.get(name, None) != None and data[name].get('Level', None) != None:
+            page.meta['level'] = data[name]['Level']
+
+        if page.meta.get('rule', '') != '' and data.get(name, None) != None and data[name].get('Synopsis', None) != None:
+            description = data[name]['Synopsis']
+            page.meta['description'] = description
 
     page.meta['tags'] = tags
 

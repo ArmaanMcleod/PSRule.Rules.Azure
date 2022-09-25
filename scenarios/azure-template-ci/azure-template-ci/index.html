@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://azure.github.io/PSRule.Rules.Azure/scenarios/azure-template-ci/azure-template-ci/">
       
       <link rel="icon" href="../../../assets/ms_icon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.4">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.5.3">
     
     
       
@@ -23,7 +23,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.4a0965b7.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.7a952b86.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.cbb835fc.min.css">
@@ -34,6 +34,7 @@
         
       
       
+
     
     
     
@@ -48,10 +49,11 @@
     
       <link rel="stylesheet" href="../../../assets/stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
+    
     
     
 
@@ -61,10 +63,15 @@
     
   
 
+  <!-- Determine description -->
+  
+  
+
   <!-- The image needs to have an absolute URL -->
   
 
   <!-- Open graph meta tags -->
+  <meta property="og:site_name" content="PSRule for Azure" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="PSRule for Azure - Validate Azure resources from templates with continuous integration (CI)" />
   <meta property="og:description" content="Ready to go validation and governance controls for Azure Infrastructure as Code (IaC)." />
@@ -101,7 +108,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#validateazureresourcesfromtemplateswithcontinuousintegrationci" class="md-skip">
+        <a href="#validate-azure-resources-from-templates-with-continuous-integration-ci" class="md-skip">
           Skip to content
         </a>
       
@@ -111,9 +118,7 @@
     </div>
     
       <div data-md-component="outdated" hidden>
-        <aside class="md-banner md-banner--warning">
-          
-        </aside>
+        
       </div>
     
     
@@ -162,7 +167,7 @@
       </label>
       <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
@@ -186,7 +191,7 @@
         <a href="https://github.com/Azure/PSRule.Rules.Azure/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -268,7 +273,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../en/rules/module/" class="md-tabs__link">
+      <a href="../../../en/rules/" class="md-tabs__link">
         Reference
       </a>
     </li>
@@ -308,7 +313,7 @@
       <a href="https://github.com/Azure/PSRule.Rules.Azure/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -348,6 +353,8 @@
       
       
       
+        
+          
         
           
         
@@ -698,6 +705,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_2_6">
@@ -754,6 +763,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../customization/permit-outbound-management/" class="md-nav__link">
+        Permit outbound management
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -769,6 +792,20 @@
     <li class="md-nav__item">
       <a href="../../../troubleshooting/" class="md-nav__link">
         Troubleshooting
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../samples/" class="md-nav__link">
+        Samples
       </a>
     </li>
   
@@ -812,7 +849,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_10" type="checkbox" id="__nav_2_10" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_11" type="checkbox" id="__nav_2_11" >
       
       
       
@@ -825,13 +862,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_2_10">
+        <label class="md-nav__link" for="__nav_2_11">
           Releases
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Releases" data-md-level="2">
-        <label class="md-nav__title" for="__nav_2_10">
+        <label class="md-nav__title" for="__nav_2_11">
           <span class="md-nav__icon md-icon"></span>
           Releases
         </label>
@@ -846,7 +883,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_10_1" type="checkbox" id="__nav_2_10_1" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_11_1" type="checkbox" id="__nav_2_11_1" >
       
       
       
@@ -857,13 +894,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_2_10_1">
+        <label class="md-nav__link" for="__nav_2_11_1">
           Change log
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Change log" data-md-level="3">
-        <label class="md-nav__title" for="__nav_2_10_1">
+        <label class="md-nav__title" for="__nav_2_11_1">
           <span class="md-nav__icon md-icon"></span>
           Change log
         </label>
@@ -1108,6 +1145,12 @@
       
         
           
+            
+          
+        
+          
+        
+          
         
           
         
@@ -1119,10 +1162,16 @@
         
       
       
-        <label class="md-nav__link" for="__nav_4">
-          Reference
-          <span class="md-nav__icon md-icon"></span>
-        </label>
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../en/rules/">Reference</a>
+          
+            <label for="__nav_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
       
       <nav class="md-nav" aria-label="Reference" data-md-level="1">
         <label class="md-nav__title" for="__nav_4">
@@ -1130,6 +1179,8 @@
           Reference
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
+          
+            
           
             
               
@@ -1164,11 +1215,25 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../../../en/asb-v3/" class="md-nav__link">
+        Azure Security Benchmark
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
     
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3" type="checkbox" id="__nav_4_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_5" type="checkbox" id="__nav_4_5" >
       
       
       
@@ -1731,15 +1796,77 @@
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
       
       
-        <label class="md-nav__link" for="__nav_4_3">
+        <label class="md-nav__link" for="__nav_4_5">
           Rules
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Rules" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_3">
+        <label class="md-nav__title" for="__nav_4_5">
           <span class="md-nav__icon md-icon"></span>
           Rules
         </label>
@@ -1865,6 +1992,20 @@
     <li class="md-nav__item">
       <a href="../../../en/rules/Azure.ACR.Retention/" class="md-nav__link">
         Azure.ACR.Retention
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../en/rules/Azure.ACR.SoftDelete/" class="md-nav__link">
+        Azure.ACR.SoftDelete
       </a>
     </li>
   
@@ -2087,6 +2228,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../en/rules/Azure.AKS.EphemeralOSDisk/" class="md-nav__link">
+        Azure.AKS.EphemeralOSDisk
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../en/rules/Azure.AKS.HttpAppRouting/" class="md-nav__link">
         Azure.AKS.HttpAppRouting
       </a>
@@ -2285,6 +2440,20 @@
     <li class="md-nav__item">
       <a href="../../../en/rules/Azure.AKS.StandardLB/" class="md-nav__link">
         Azure.AKS.StandardLB
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../en/rules/Azure.AKS.UptimeSLA/" class="md-nav__link">
+        Azure.AKS.UptimeSLA
       </a>
     </li>
   
@@ -2549,6 +2718,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../en/rules/Azure.AppConfig.DisableLocalAuth/" class="md-nav__link">
+        Azure.AppConfig.DisableLocalAuth
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../en/rules/Azure.AppConfig.Name/" class="md-nav__link">
         Azure.AppConfig.Name
       </a>
@@ -2705,6 +2888,62 @@
     <li class="md-nav__item">
       <a href="../../../en/rules/Azure.AppGw.WAFRules/" class="md-nav__link">
         Azure.AppGw.WAFRules
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../en/rules/Azure.AppGwWAF.Enabled/" class="md-nav__link">
+        Azure.AppGwWAF.Enabled
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../en/rules/Azure.AppGwWAF.Exclusions/" class="md-nav__link">
+        Azure.AppGwWAF.Exclusions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../en/rules/Azure.AppGwWAF.PreventionMode/" class="md-nav__link">
+        Azure.AppGwWAF.PreventionMode
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../en/rules/Azure.AppGwWAF.RuleGroups/" class="md-nav__link">
+        Azure.AppGwWAF.RuleGroups
       </a>
     </li>
   
@@ -3053,6 +3292,76 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../en/rules/Azure.CDN.UseFrontDoor/" class="md-nav__link">
+        Azure.CDN.UseFrontDoor
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../en/rules/Azure.Cognitive.DisableLocalAuth/" class="md-nav__link">
+        Azure.Cognitive.DisableLocalAuth
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../en/rules/Azure.Cognitive.ManagedIdentity/" class="md-nav__link">
+        Azure.Cognitive.ManagedIdentity
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../en/rules/Azure.Cognitive.PrivateEndpoints/" class="md-nav__link">
+        Azure.Cognitive.PrivateEndpoints
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../en/rules/Azure.Cognitive.PublicAccess/" class="md-nav__link">
+        Azure.Cognitive.PublicAccess
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../en/rules/Azure.ContainerApp.Insecure/" class="md-nav__link">
         Azure.ContainerApp.Insecure
       </a>
@@ -3097,6 +3406,132 @@
     <li class="md-nav__item">
       <a href="../../../en/rules/Azure.DataFactory.Version/" class="md-nav__link">
         Azure.DataFactory.Version
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../en/rules/Azure.Defender.AppServices/" class="md-nav__link">
+        Azure.Defender.AppServices
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../en/rules/Azure.Defender.Containers/" class="md-nav__link">
+        Azure.Defender.Containers
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../en/rules/Azure.Defender.SQL/" class="md-nav__link">
+        Azure.Defender.SQL
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../en/rules/Azure.Defender.SQLOnVM/" class="md-nav__link">
+        Azure.Defender.SQLOnVM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../en/rules/Azure.Defender.Servers/" class="md-nav__link">
+        Azure.Defender.Servers
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../en/rules/Azure.Defender.Storage/" class="md-nav__link">
+        Azure.Defender.Storage
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../en/rules/Azure.DefenderCloud.Contact/" class="md-nav__link">
+        Azure.DefenderCloud.Contact
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../en/rules/Azure.DefenderCloud.Provisioning/" class="md-nav__link">
+        Azure.DefenderCloud.Provisioning
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../en/rules/Azure.Deployment.AdminUsername/" class="md-nav__link">
+        Azure.Deployment.AdminUsername
       </a>
     </li>
   
@@ -3377,6 +3812,62 @@
     <li class="md-nav__item">
       <a href="../../../en/rules/Azure.FrontDoor.WAF.Name/" class="md-nav__link">
         Azure.FrontDoor.WAF.Name
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../en/rules/Azure.FrontDoorWAF.Enabled/" class="md-nav__link">
+        Azure.FrontDoorWAF.Enabled
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../en/rules/Azure.FrontDoorWAF.Exclusions/" class="md-nav__link">
+        Azure.FrontDoorWAF.Exclusions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../en/rules/Azure.FrontDoorWAF.PreventionMode/" class="md-nav__link">
+        Azure.FrontDoorWAF.PreventionMode
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../en/rules/Azure.FrontDoorWAF.RuleGroups/" class="md-nav__link">
+        Azure.FrontDoorWAF.RuleGroups
       </a>
     </li>
   
@@ -3671,6 +4162,20 @@
     <li class="md-nav__item">
       <a href="../../../en/rules/Azure.MySQL.UseSSL/" class="md-nav__link">
         Azure.MySQL.UseSSL
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../en/rules/Azure.NSG.AKSRules/" class="md-nav__link">
+        Azure.NSG.AKSRules
       </a>
     </li>
   
@@ -4117,6 +4622,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../en/rules/Azure.Redis.FirewallIPRange/" class="md-nav__link">
+        Azure.Redis.FirewallIPRange
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../en/rules/Azure.Redis.FirewallRuleCount/" class="md-nav__link">
+        Azure.Redis.FirewallRuleCount
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../en/rules/Azure.Redis.MaxMemoryReserved/" class="md-nav__link">
         Azure.Redis.MaxMemoryReserved
       </a>
@@ -4175,6 +4708,20 @@
     <li class="md-nav__item">
       <a href="../../../en/rules/Azure.Redis.PublicNetworkAccess/" class="md-nav__link">
         Azure.Redis.PublicNetworkAccess
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../en/rules/Azure.RedisEnterprise.MinTLS/" class="md-nav__link">
+        Azure.RedisEnterprise.MinTLS
       </a>
     </li>
   
@@ -4313,6 +4860,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../en/rules/Azure.SQL.DefenderCloud/" class="md-nav__link">
+        Azure.SQL.DefenderCloud
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../en/rules/Azure.SQL.FGName/" class="md-nav__link">
         Azure.SQL.FGName
       </a>
@@ -4397,20 +4958,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../en/rules/Azure.SQL.ThreatDetection/" class="md-nav__link">
-        Azure.SQL.ThreatDetection
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../../en/rules/Azure.SQLMI.Name/" class="md-nav__link">
         Azure.SQLMI.Name
       </a>
@@ -4483,34 +5030,6 @@
     <li class="md-nav__item">
       <a href="../../../en/rules/Azure.Search.SKU/" class="md-nav__link">
         Azure.Search.SKU
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../en/rules/Azure.SecurityCenter.Contact/" class="md-nav__link">
-        Azure.SecurityCenter.Contact
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../en/rules/Azure.SecurityCenter.Provisioning/" class="md-nav__link">
-        Azure.SecurityCenter.Provisioning
       </a>
     </li>
   
@@ -4623,6 +5142,34 @@
     <li class="md-nav__item">
       <a href="../../../en/rules/Azure.Storage.BlobPublicAccess/" class="md-nav__link">
         Azure.Storage.BlobPublicAccess
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../en/rules/Azure.Storage.ContainerSoftDelete/" class="md-nav__link">
+        Azure.Storage.ContainerSoftDelete
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../en/rules/Azure.Storage.FileShareSoftDelete/" class="md-nav__link">
+        Azure.Storage.FileShareSoftDelete
       </a>
     </li>
   
@@ -5433,6 +5980,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../en/rules/Azure.VMSS.PublicKey/" class="md-nav__link">
+        Azure.VMSS.PublicKey
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../en/rules/Azure.VNET.LocalDNS/" class="md-nav__link">
         Azure.VNET.LocalDNS
       </a>
@@ -5667,7 +6228,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4" type="checkbox" id="__nav_4_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_6" type="checkbox" id="__nav_4_6" >
       
       
       
@@ -5700,15 +6261,19 @@
         
           
         
+          
+        
+          
+        
       
       
-        <label class="md-nav__link" for="__nav_4_4">
+        <label class="md-nav__link" for="__nav_4_6">
           Baselines
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Baselines" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_4">
+        <label class="md-nav__title" for="__nav_4_6">
           <span class="md-nav__icon md-icon"></span>
           Baselines
         </label>
@@ -5860,6 +6425,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../en/baselines/Azure.GA_2022_06/" class="md-nav__link">
+        Azure.GA_2022_06
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../en/baselines/Azure.Preview/" class="md-nav__link">
         Azure.Preview
       </a>
@@ -5910,6 +6489,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../en/baselines/Azure.Preview_2022_06/" class="md-nav__link">
+        Azure.Preview_2022_06
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -5926,7 +6519,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_5" type="checkbox" id="__nav_4_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_7" type="checkbox" id="__nav_4_7" >
       
       
       
@@ -5943,13 +6536,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_4_5">
+        <label class="md-nav__link" for="__nav_4_7">
           Selectors
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Selectors" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_5">
+        <label class="md-nav__title" for="__nav_4_7">
           <span class="md-nav__icon md-icon"></span>
           Selectors
         </label>
@@ -6065,14 +6658,14 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#installingpsrulewithinacipipeline" class="md-nav__link">
+  <a href="#installing-psrule-within-a-ci-pipeline" class="md-nav__link">
     Installing PSRule within a CI pipeline
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#exportingruledataforanalysis" class="md-nav__link">
+  <a href="#exporting-rule-data-for-analysis" class="md-nav__link">
     Exporting rule data for analysis
   </a>
   
@@ -6080,14 +6673,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#exportcmdletparameters" class="md-nav__link">
+  <a href="#export-cmdlet-parameters" class="md-nav__link">
     Export cmdlet parameters
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#useofplaceholdervalues" class="md-nav__link">
+  <a href="#use-of-placeholder-values" class="md-nav__link">
     Use of placeholder values
   </a>
   
@@ -6099,35 +6692,35 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#validatingexportedresources" class="md-nav__link">
+  <a href="#validating-exported-resources" class="md-nav__link">
     Validating exported resources
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#formattingoutput" class="md-nav__link">
+  <a href="#formatting-output" class="md-nav__link">
     Formatting output
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#failingthepipeline" class="md-nav__link">
+  <a href="#failing-the-pipeline" class="md-nav__link">
     Failing the pipeline
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#generatingnunitoutput" class="md-nav__link">
+  <a href="#generating-nunit-output" class="md-nav__link">
     Generating NUnit output
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#completeexample" class="md-nav__link">
+  <a href="#complete-example" class="md-nav__link">
     Complete example
   </a>
   
@@ -6135,14 +6728,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#installdependencies" class="md-nav__link">
+  <a href="#install-dependencies" class="md-nav__link">
     Install dependencies
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#validatetemplates" class="md-nav__link">
+  <a href="#validate-templates" class="md-nav__link">
     Validate templates
   </a>
   
@@ -6154,7 +6747,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#additionaloptions" class="md-nav__link">
+  <a href="#additional-options" class="md-nav__link">
     Additional options
   </a>
   
@@ -6162,14 +6755,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#usinginvoke-build" class="md-nav__link">
+  <a href="#using-invoke-build" class="md-nav__link">
     Using Invoke-Build
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#callingfrompester" class="md-nav__link">
+  <a href="#calling-from-pester" class="md-nav__link">
     Calling from Pester
   </a>
   
@@ -6181,7 +6774,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#moreinformation" class="md-nav__link">
+  <a href="#more-information" class="md-nav__link">
     More information
   </a>
   
@@ -6195,20 +6788,23 @@
               </div>
             
           
-          <div class="md-content" data-md-component="content">
-            <article class="md-content__inner md-typeset">
-              
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
                 
-  <a href="https://github.com/Azure/PSRule.Rules.Azure/blob/main/docs/scenarios/azure-template-ci/azure-template-ci.md" title="Edit this page" class="md-content__button md-icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
-  </a>
-
-
+  
+                  
   
 
 
 
-<h1 id="validateazureresourcesfromtemplateswithcontinuousintegrationci">Validate Azure resources from templates with continuous integration (CI)<a class="headerlink" href="#validateazureresourcesfromtemplateswithcontinuousintegrationci" title="Permanent link">#</a></h1>
+  <a href="https://github.com/Azure/PSRule.Rules.Azure/blob/main/docs/scenarios/azure-template-ci/azure-template-ci.md" title="Edit this page" class="md-content__button md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+<h1 id="validate-azure-resources-from-templates-with-continuous-integration-ci">Validate Azure resources from templates with continuous integration (CI)<a class="headerlink" href="#validate-azure-resources-from-templates-with-continuous-integration-ci" title="Permanent link">#</a></h1>
 <p>Azure Resource Manager (ARM) templates are a JSON-based file structure.
 ARM templates are typically not static, they include parameters, functions and conditions.
 Depending on the parameters provided to a template, resources may differ significantly.</p>
@@ -6228,7 +6824,7 @@ The examples provided can be integrated into a continuous integration (CI) pipel
 <li><a href="#complete-example">Complete example</a></li>
 <li><a href="#additional-options">Additional options</a></li>
 </ul>
-<h2 id="installingpsrulewithinacipipeline">Installing PSRule within a CI pipeline<a class="headerlink" href="#installingpsrulewithinacipipeline" title="Permanent link">#</a></h2>
+<h2 id="installing-psrule-within-a-ci-pipeline">Installing PSRule within a CI pipeline<a class="headerlink" href="#installing-psrule-within-a-ci-pipeline" title="Permanent link">#</a></h2>
 <p>Typically, PSRule is not pre-installed on CI worker nodes and must be installed within the pipeline.
 PSRule PowerShell modules need to be installed prior to calling PSRule cmdlets.</p>
 <p>If your CI pipeline runs on a persistent virtual machine that you control, consider pre-installing PSRule.
@@ -6264,11 +6860,11 @@ The NuGet package provider can be installed using the <code>Install-PackageProvi
 </code></pre></div>
 <p>Add <code>-AllowPrerelease</code> to install pre-release versions.
 See the <a href="https://github.com/Azure/PSRule.Rules.Azure/blob/main/CHANGELOG.md">change log</a> for the latest version.</p>
-<h2 id="exportingruledataforanalysis">Exporting rule data for analysis<a class="headerlink" href="#exportingruledataforanalysis" title="Permanent link">#</a></h2>
+<h2 id="exporting-rule-data-for-analysis">Exporting rule data for analysis<a class="headerlink" href="#exporting-rule-data-for-analysis" title="Permanent link">#</a></h2>
 <p>In PSRule, the <code>Export-AzRuleTemplateData</code> cmdlet resolves a template and returns a resultant set of resources.
 The resultant set of resources can then be validated.</p>
 <p>No connectivity to Azure is required by default when calling <code>Export-AzRuleTemplateData</code>.</p>
-<h3 id="exportcmdletparameters">Export cmdlet parameters<a class="headerlink" href="#exportcmdletparameters" title="Permanent link">#</a></h3>
+<h3 id="export-cmdlet-parameters">Export cmdlet parameters<a class="headerlink" href="#export-cmdlet-parameters" title="Permanent link">#</a></h3>
 <p>To run <code>Export-AzRuleTemplateData</code> two key parameters are required:</p>
 <ul>
 <li><code>-TemplateFile</code> - An absolute or relative path to the template JSON file.</li>
@@ -6292,7 +6888,7 @@ If not specified placeholder values will be used.</li>
 </code></pre></div>
 <p>Multiple parameter files that map to the same template can be supplied in a single cmdlet call.
 Additional templates can be exported by calling <code>Export-AzRuleTemplateData</code> multiple times.</p>
-<h3 id="useofplaceholdervalues">Use of placeholder values<a class="headerlink" href="#useofplaceholdervalues" title="Permanent link">#</a></h3>
+<h3 id="use-of-placeholder-values">Use of placeholder values<a class="headerlink" href="#use-of-placeholder-values" title="Permanent link">#</a></h3>
 <p>A number of functions that can be used within Azure templates retrieve information from Azure.
 Some examples include <code>reference</code>, <code>subscription</code>, <code>resourceGroup</code>, <code>list*</code>.</p>
 <p>The default for <code>Export-AzRuleTemplateData</code> is to operate without requiring authenticated connectivity to Azure.
@@ -6302,7 +6898,7 @@ When using <code>-Subscription</code> and <code>-ResourceGroup</code> the subscr
 Additionally the context running the cmdlet must have at least read access (i.e. <code>Reader</code>).</p>
 <p>It is currently not possible to provide a real value for <code>reference</code> and <code>list*</code>, only placeholders will be used.</p>
 <p>Key Vault references in parameter files use placeholders instead of the real value to prevent accidental exposure of secrets.</p>
-<h2 id="validatingexportedresources">Validating exported resources<a class="headerlink" href="#validatingexportedresources" title="Permanent link">#</a></h2>
+<h2 id="validating-exported-resources">Validating exported resources<a class="headerlink" href="#validating-exported-resources" title="Permanent link">#</a></h2>
 <p>To validate exported resources use <code>Invoke-PSRule</code>, <code>Assert-PSRule</code> or <code>Test-PSRuleTarget</code>.
 In a CI pipeline, <code>Assert-PSRule</code> is recommended.
 <code>Assert-PSRule</code> outputs preformatted results ideal for use within a CI pipeline.</p>
@@ -6325,7 +6921,7 @@ In a CI pipeline, <code>Assert-PSRule</code> is recommended.
 <p>To process multiple input files a wildcard <code>*</code> can be used.</p>
 <div class="highlight"><pre><span></span><code><span class="nb">Assert-PSRule</span> <span class="n">-InputPath</span> <span class="p">.\</span><span class="n">out</span><span class="p">\*.</span><span class="n">json</span> <span class="n">-Module</span> <span class="n">PSRule</span><span class="p">.</span><span class="n">Rules</span><span class="p">.</span><span class="n">Azure</span><span class="p">;</span>
 </code></pre></div>
-<h2 id="formattingoutput">Formatting output<a class="headerlink" href="#formattingoutput" title="Permanent link">#</a></h2>
+<h2 id="formatting-output">Formatting output<a class="headerlink" href="#formatting-output" title="Permanent link">#</a></h2>
 <p>When executing a CI pipeline, feedback on any validation failures is important.
 The <code>Assert-PSRule</code> cmdlet provides easy to read formatted output instead of PowerShell objects.</p>
 <p>Additionally, <code>Assert-PSRule</code> supports styling formatted output for Azure Pipelines and GitHub Actions.
@@ -6333,7 +6929,7 @@ Use the <code>-Style AzurePipelines</code> or <code>-Style GitHubActions</code> 
 <p>For example:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">Assert-PSRule</span> <span class="n">-InputPath</span> <span class="p">.\</span><span class="n">out</span><span class="p">\*.</span><span class="n">json</span> <span class="n">-Style</span> <span class="n">AzurePipelines</span> <span class="n">-Module</span> <span class="n">PSRule</span><span class="p">.</span><span class="n">Rules</span><span class="p">.</span><span class="n">Azure</span><span class="p">;</span>
 </code></pre></div>
-<h2 id="failingthepipeline">Failing the pipeline<a class="headerlink" href="#failingthepipeline" title="Permanent link">#</a></h2>
+<h2 id="failing-the-pipeline">Failing the pipeline<a class="headerlink" href="#failing-the-pipeline" title="Permanent link">#</a></h2>
 <p>When using PSRule within a CI pipeline, a failed rule should stop the pipeline.
 When using <code>Assert-PSRule</code> if any rules fail, an error will be generated.</p>
 <div class="highlight"><pre><span></span><code>Assert-PSRule : One or more rules reported failure.
@@ -6348,7 +6944,7 @@ If you are using a different configuration additionally <code>-ErrorAction Stop<
 <p>For example:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">Assert-PSRule</span> <span class="n">-Module</span> <span class="n">PSRule</span><span class="p">.</span><span class="n">Rules</span><span class="p">.</span><span class="n">Azure</span> <span class="n">-InputPath</span> <span class="p">.\</span><span class="n">out</span><span class="p">\*.</span><span class="n">json</span> <span class="n">-ErrorAction</span> <span class="n">Stop</span><span class="p">;</span>
 </code></pre></div>
-<h2 id="generatingnunitoutput">Generating NUnit output<a class="headerlink" href="#generatingnunitoutput" title="Permanent link">#</a></h2>
+<h2 id="generating-nunit-output">Generating NUnit output<a class="headerlink" href="#generating-nunit-output" title="Permanent link">#</a></h2>
 <p>NUnit is a popular unit test framework for .NET.
 NUnit generates a test report format that is widely interpreted by CI systems.
 While PSRule does not use NUnit directly, it support outputting validation results in the NUnit3 format.
@@ -6361,9 +6957,9 @@ Using a common format allows integration with any system that supports the NUnit
 <div class="highlight"><pre><span></span><code><span class="nb">Assert-PSRule</span> <span class="n">-OutputFormat</span> <span class="n">NUnit3</span> <span class="n">-OutputPath</span> <span class="p">.\</span><span class="n">reports</span><span class="p">\</span><span class="n">rule-report</span><span class="p">.</span><span class="n">xml</span> <span class="n">-Module</span> <span class="n">PSRule</span><span class="p">.</span><span class="n">Rules</span><span class="p">.</span><span class="n">Azure</span> <span class="n">-InputPath</span> <span class="p">.\</span><span class="n">out</span><span class="p">\*.</span><span class="n">json</span><span class="p">;</span>
 </code></pre></div>
 <p>The output path will be created if it does not exist.</p>
-<h2 id="completeexample">Complete example<a class="headerlink" href="#completeexample" title="Permanent link">#</a></h2>
+<h2 id="complete-example">Complete example<a class="headerlink" href="#complete-example" title="Permanent link">#</a></h2>
 <p>Putting each of these steps together.</p>
-<h3 id="installdependencies">Install dependencies<a class="headerlink" href="#installdependencies" title="Permanent link">#</a></h3>
+<h3 id="install-dependencies">Install dependencies<a class="headerlink" href="#install-dependencies" title="Permanent link">#</a></h3>
 <div class="highlight"><pre><span></span><code><span class="c"># Install dependencies for connecting to PowerShell Gallery</span>
 <span class="k">if</span> <span class="p">(</span><span class="nv">$Null</span> <span class="o">-eq</span> <span class="p">(</span><span class="nb">Get-PackageProvider</span> <span class="n">-Name</span> <span class="n">NuGet</span> <span class="n">-ErrorAction</span> <span class="n">Ignore</span><span class="p">))</span> <span class="p">{</span>
     <span class="nb">Install-PackageProvider</span> <span class="n">-Name</span> <span class="n">NuGet</span> <span class="n">-Force</span> <span class="n">-Scope</span> <span class="n">CurrentUser</span><span class="p">;</span>
@@ -6373,7 +6969,7 @@ Using a common format allows integration with any system that supports the NUnit
     <span class="nb">Install-Module</span> <span class="n">PowerShellGet</span> <span class="n">-MinimumVersion</span> <span class="n">2</span><span class="p">.</span><span class="n">2</span><span class="p">.</span><span class="n">1</span> <span class="n">-Scope</span> <span class="n">CurrentUser</span> <span class="n">-Force</span> <span class="n">-AllowClobber</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
-<h3 id="validatetemplates">Validate templates<a class="headerlink" href="#validatetemplates" title="Permanent link">#</a></h3>
+<h3 id="validate-templates">Validate templates<a class="headerlink" href="#validate-templates" title="Permanent link">#</a></h3>
 <div class="highlight"><pre><span></span><code><span class="c"># Install PSRule.Rules.Azure module</span>
 <span class="k">if</span> <span class="p">(</span><span class="nv">$Null</span> <span class="o">-eq</span> <span class="p">(</span><span class="nb">Get-InstalledModule</span> <span class="n">-Name</span> <span class="n">PSRule</span><span class="p">.</span><span class="n">Rules</span><span class="p">.</span><span class="n">Azure</span> <span class="n">-MinimumVersion</span> <span class="s1">&#39;0.12.1&#39;</span> <span class="n">-ErrorAction</span> <span class="n">SilentlyContinue</span><span class="p">))</span> <span class="p">{</span>
     <span class="nv">$Null</span> <span class="p">=</span> <span class="nb">Install-Module</span> <span class="n">-Name</span> <span class="n">PSRule</span><span class="p">.</span><span class="n">Rules</span><span class="p">.</span><span class="n">Azure</span> <span class="n">-Scope</span> <span class="n">CurrentUser</span> <span class="n">-MinimumVersion</span> <span class="s1">&#39;0.12.1&#39;</span> <span class="n">-Force</span><span class="p">;</span>
@@ -6392,8 +6988,8 @@ Using a common format allows integration with any system that supports the NUnit
 <span class="p">}</span>
 <span class="nb">Assert-PSRule</span> <span class="nv">@assertParams</span><span class="p">;</span>
 </code></pre></div>
-<h2 id="additionaloptions">Additional options<a class="headerlink" href="#additionaloptions" title="Permanent link">#</a></h2>
-<h3 id="usinginvoke-build">Using Invoke-Build<a class="headerlink" href="#usinginvoke-build" title="Permanent link">#</a></h3>
+<h2 id="additional-options">Additional options<a class="headerlink" href="#additional-options" title="Permanent link">#</a></h2>
+<h3 id="using-invoke-build">Using Invoke-Build<a class="headerlink" href="#using-invoke-build" title="Permanent link">#</a></h3>
 <p><code>Invoke-Build</code> is a build automation cmdlet that can be installed from the PowerShell Gallery by installing the <em>InvokeBuild</em> module.
 Within Invoke-Build, each build process is broken into tasks.</p>
 <p>The following example shows an example of using <em>PSRule.Rules.Azure</em> with <em>InvokeBuild</em> tasks.</p>
@@ -6425,7 +7021,7 @@ Within Invoke-Build, each build process is broken into tasks.</p>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code><span class="nb">Invoke-Build</span> <span class="n">Build</span><span class="p">;</span>
 </code></pre></div>
-<h3 id="callingfrompester">Calling from Pester<a class="headerlink" href="#callingfrompester" title="Permanent link">#</a></h3>
+<h3 id="calling-from-pester">Calling from Pester<a class="headerlink" href="#calling-from-pester" title="Permanent link">#</a></h3>
 <p>Pester is a unit test framework for PowerShell that can be installed from the PowerShell Gallery.</p>
 <p>Typically, Pester unit tests are built for a particular pipeline.
 PSRule can complement Pester unit tests by providing dynamic and sharable rules that are easy to reuse.
@@ -6452,7 +7048,7 @@ By using <code>-If</code> or <code>-Type</code> pre-conditions, rules can dynami
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-<h2 id="moreinformation">More information<a class="headerlink" href="#moreinformation" title="Permanent link">#</a></h2>
+<h2 id="more-information">More information<a class="headerlink" href="#more-information" title="Permanent link">#</a></h2>
 <ul>
 <li><a href="../pipeline-deps.ps1">pipeline-deps.ps1</a> - Example script installing pipeline dependencies.</li>
 <li><a href="../validate-template.ps1">validate-template.ps1</a> - Example script for running template validation.</li>
@@ -6470,10 +7066,75 @@ By using <code>-If</code> or <code>-Type</code> pre-conditions, rules can dynami
   </small>
 </div>
 
-              
-            </article>
-            
-          </div>
+
+
+
+
+                
+
+  
+
+
+  <!-- Giscus -->
+  <h2 id="__comments">Comments</h2>
+  
+
+  
+    <script src="https://giscus.app/client.js"
+      data-repo="Azure/PSRule.Rules.Azure"
+      data-repo-id="MDEwOlJlcG9zaXRvcnkxODQxNTQ2Njg="
+      data-category="Documentation"
+      data-category-id="DIC_kwDOCvn6LM4CQqE6"
+      data-mapping="pathname"
+      data-strict="0"
+      data-reactions-enabled="1"
+      data-emit-metadata="0"
+      data-input-position="top"
+      data-theme="light"
+      data-lang="en"
+      data-loading="lazy"
+      crossorigin="anonymous"
+      async>
+    </script>
+  
+
+  <!-- Synchronize Giscus theme with palette -->
+  <script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    /* Set palette on initial load */
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate" ? "dark" : "light"
+      giscus.setAttribute("data-theme", theme) 
+    }
+
+    /* Register event handlers after documented loaded */
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate" ? "dark" : "light"
+
+          /* Instruct Giscus to change theme */
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
+
+
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
         </div>
         
       </main>
@@ -6500,7 +7161,7 @@ By using <code>-If</code> or <code>-Type</code> pre-conditions, rules can dynami
       
     
     <a href="https://github.com/Azure/PSRule.Rules.Azure/" target="_blank" rel="noopener" title="github.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
     </a>
   
 </div>
@@ -6513,10 +7174,11 @@ By using <code>-If</code> or <code>-Type</code> pre-conditions, rules can dynami
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.indexes", {"navigation.sections": {"level": 1}}, "navigation.tabs", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.85cb4492.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.indexes", {"navigation.sections": {"level": 1}}, "navigation.tabs", "content.code.annotate", "content.tabs.link"], "search": "../../../assets/javascripts/workers/search.5bf1dace.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.f758a944.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.37e9125f.min.js"></script>
       
     
   </body>
